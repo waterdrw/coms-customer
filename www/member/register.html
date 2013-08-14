@@ -14,7 +14,8 @@
 <script type="text/javascript" src="../js/iscroll.js"></script>
 <script type="text/javascript" src="../js/params.js"></script>
 <script type="text/javascript" src="../js/loginHandler.js"></script>
-
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="../js/imageUploader.js"></script>
 <script type="text/javascript" src="./js/register.js"></script>
 
 </head>
@@ -92,10 +93,14 @@
         <a href="" data-rel="back" data-role="button">닫기</a>
     </div><!-- /header -->
 
-    <div data-role="content" class="area-register">
-        
+    <div data-role="content" class="area-register">       
         <div class="area-divider">프로필 정보 입력</div>
         <div class="area-padding">
+        	<div class="row area-member-info">
+        		<div class="span"><img id="img-profile" src="../img/logo.png"></div>
+        		<div class="span"><button id="btn-img-modify">이미지 선택</button></div>
+        	</div>
+        	<hr>
             <div class="row">
                 <div class="span area-label">콤스 닉네임</div>
                 <div class="span area-input"><input type="text" id="nickname" placeholder="ex) 김준우"></div>
@@ -123,6 +128,7 @@
     </div><!-- /content -->
 </div><!-- /page -->
 
+<script type="text/javascript">initPhonegap();</script>
 </body>
 </html>
 
