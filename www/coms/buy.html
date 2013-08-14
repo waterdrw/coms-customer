@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>콤스토리</title>
+<link rel="stylesheet" href="../css/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet" href="../css/common.css"/>
+<link rel="stylesheet" href="../css/iscroll.css"/>
+<link rel="stylesheet" href="../css/font-awesome.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.mobile-1.3.1.min.js"></script>
+<script type="text/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/params.js"></script>
+<script type="text/javascript" src="../js/loginHandler.js"></script>
+<script type="text/javascript" src="./js/buy.js"></script>
+
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
+        <h1>콤폰 구매하기</h1>
+        <a href="./index.html" data-ajax="false" class="ui-btn-right btn-custom-back" data-role="button">닫기</a>
+    </div><!-- /header -->
+
+    <div data-role="content">
+    <div id="wrapper" class="content-near-shop">
+        <div id="scroller">
+            <div class="notice-near-shop">
+                <p><i class="icon-asterisk"></i> 콤폰(콤보쿠폰)은 상점의 모든 메뉴를 자유롭게 이용할 수 있는 정액 자유이용권입니다.</p>
+                <p><i class="icon-asterisk"></i> 상점 이용금액이 콤폰 금액 미달 시 미달 금액에 대해서는 환불이나 적립되지 않으니 이용금액에 따라 콤폰을 알맞게 선택하여 구매하세요.</p>
+            </div>
+            <div class="area-notice">우리 상점의 판매 콤폰(자유 이용권)은 아래와 같습니다.</div>
+            <div class="row area-padding">
+                <div class="span banner-coupon" value="0">
+                    <div class="banner-inner-coupon">
+                        <span id="compon1"></span> 만원
+                        <hr>솔로 콤폰<hr>
+                    </div>
+                </div>
+                <div class="span banner-coupon" value="1">
+                    <div class="banner-inner-coupon">
+                        <span id="compon2"></span> 만원
+                        <hr>커플 콤폰<hr>
+                    </div>
+                </div>
+                <div class="span banner-coupon" value="2">
+                    <div class="banner-inner-coupon">
+                        <span id="compon3"></span> 만원
+                        <hr>단체 콤폰<hr>
+                    </div>
+                </div>
+                <div class="span banner-coupon" value="3">
+                    <div class="banner-inner-coupon">
+                        <span id="compon4"></span> 만원
+                        <hr>회식 콤폰<hr>
+                    </div>
+                </div>
+            </div>
+            <div class="area-divider"><i class="icon-arrow-right"></i> 선택한 콤폰의 결제 금액을 확인하세요.</div>
+            <div class="area-padding">
+                <div class="banner-coupon2 active main">
+                    <div class="banner-inner-coupon row">
+                        <div class="span"><img src="./img/img-shop-profile1.jpg"></div>
+                        <div class="span">
+                            <p id="shop-name"></p>
+                            <span id="compon-price"></span> 만원권
+                            <p>콤폰 사용기간 : <span id="limit-date"></span>까지</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="area-padding area-price-info">
+                <p><span id="combo"></span>콤보(<span id="discount"></span>%) 할인이 적용된 가격은 아래와 같습니다.</p>
+                <p>결제금액 : <span id="buy-discount-price">9,000</span>(<span id="buy-price">10,000</span>)</p>
+                <a id="btn-credit" href="#" data-role="button" data-theme="b"><i class="icon-credit-card"></i> 결제하기</a>
+                
+                <p>콤스 스타일 -> 당일 구매, 당일 사용 하기!</p>
+            </div>
+            <input type="hidden" id="compon-num" value="">
+        </div>
+
+
+    </div><!-- /content -->
+    </div>
+    
+    <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-grid="d">
+            <ul class="apple-navbar-ui comboSprite">
+                <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active" data-ajax="false">콤스토어</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>
+                <li><a href="../comstory/index.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤스토리</a></li>
+                <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
+            </ul>
+        </div>
+    </div>       
+</div><!-- /page -->
+
+</body>
+</html>
+

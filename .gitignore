@@ -1,0 +1,26 @@
+coms/*
+cordova/*
+CordovaLib/*
+www/spec/*
+
+coms.xcodeproj/project.pbxproj
+
+coms.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+
+coms.xcodeproj/project.xcworkspace/xcuserdata/waterdrw.xcuserdatad/UserInterfaceState (waterdrw-PC와(과) 충돌하는 사본 2013-06-23).xcuserstate
+
+coms.xcodeproj/project.xcworkspace/xcuserdata/waterdrw.xcuserdatad/UserInterfaceState.xcuserstate
+
+coms.xcodeproj/xcuserdata/waterdrw.xcuserdatad/xcschemes/coms.xcscheme
+
+coms.xcodeproj/xcuserdata/waterdrw.xcuserdatad/xcschemes/xcschememanagement.plist
+
+www/.DS_Store
+
+.DS_Store
+
+www/.SyncID
+
+www/.SyncIgnore
+
+www/spec.html
