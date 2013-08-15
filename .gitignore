@@ -2,7 +2,7 @@ coms/*
 cordova/*
 CordovaLib/*
 www/spec/*
-
+cordova.js
 coms.xcodeproj/project.pbxproj
 
 coms.xcodeproj/project.xcworkspace/contents.xcworkspacedata
