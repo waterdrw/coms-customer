@@ -198,21 +198,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 }
 .combo-box{
 	font-size: 20px;
-	width: 12%;
-	float: left;
+	width: 20%;	
 	line-height: 0px;
 	text-align: center;
-	margin: 0px 0px 0px 8%;
+	display: inline-block;
 }
 .combo-box .icon-gift{
-	font-size: 25px;
-	top: -3px;
-	position: relative;
+	background-color: tomato;
+	padding: 1px 3px 1px;
+	border-radius: 5px;
+	color: gold;
 }
 
 .combo-text{
 	font-size:10px;
 	line-height: 13px;
+	display: block;
 }
 .combo-progress .active{
 	color:#428bca;
