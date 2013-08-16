@@ -194,7 +194,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	margin: 0 0 0 5%;
 }
 .with-line{
-	background: url('../img/bg-combo-progress.png') 2px 0 repeat-x;
+	background: url('../img/bg-combo-progress.png') 0 2px repeat-x;
 }
 .combo-box{
 	font-size: 20px;
@@ -204,10 +204,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	display: inline-block;
 }
 .combo-box .icon-gift{
-	background-color: tomato;
+	background-color: wheat;
 	padding: 1px 3px 1px;
 	border-radius: 5px;
-	color: gold;
+	color: tomato;
 }
 
 .combo-text{
@@ -217,6 +217,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 }
 .combo-progress .active{
 	color:#428bca;
+}
+.combo-progress .active .icon-gift{
+	color:#428bca;	
 }
 
 .notice-near-shop{
