@@ -271,8 +271,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	text-align: center;
 }
 .area-shop-combo .shop-combo .combo-box{
-	margin: 3px 8px 0px 8px;
+	margin: 1% 2% 0px 2%;
 	font-size: 25px;
+	width: 15%;
 }
 .area-shop-combo .shop-combo .combo-text{
 	line-height: 12px
@@ -540,7 +541,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	margin-left:10px;
 }
 .list-mycompon .combo-left{
-	padding: 3px 20px;
+	padding: 2% 3%;
 	border-radius: 5px;
 	color: #fff;
 	text-shadow: none;
@@ -548,7 +549,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 }
 .list-mycompon .compon-code{
 	border: 1px solid gray;
-	padding: 3px 10px;
+	padding: 2% 3%;
 	border-radius: 5px;
 	margin-left:5px;
 	font-weight: bold;

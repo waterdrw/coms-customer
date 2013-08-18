@@ -20,7 +20,7 @@ $(document).ready(function(){
         $('#shop-name').html(data.shop_name);
         $('#limit-date').html(data.limit_date);
         $('#left-date').html(data.combo_left_day);
-        $('#compon-num').html(data.compon_num);
+        //$('#compon-num').html(data.compon_num);
         $('#shop-img').attr('src', data.shop_profile_img_path);
         $('#price').html(data.price);
         
