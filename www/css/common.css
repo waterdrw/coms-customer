@@ -160,12 +160,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	background-color: #888;
 	border-radius: 5px;
 	color: #fff;
-	padding:2% 4%;
+	padding:2% 3%;
 	font-size: 10px;
 	text-shadow:none;
 	font-weight: bolder;
 	text-align: center;
-	width: 16%;
+	width: 17%;
 }
 .header-combo2{
 	background-color: red;
