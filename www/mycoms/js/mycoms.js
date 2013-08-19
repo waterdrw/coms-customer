@@ -33,6 +33,7 @@ $(document).ready(function(){
         $('#zone-name').html(data.zone_name);
         $('#heart-cash').html(data.heart_cash);
       
+        //$('#compon-num').html(data.)
 
 
         myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
