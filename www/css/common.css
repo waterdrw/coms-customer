@@ -568,6 +568,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	color: cornflowerblue;
 	font-weight: bold;
 	font-size: 13px;
+	width: 80%;
 }
 .combo-notice #next-combo{
 	font-weight: bolder;
