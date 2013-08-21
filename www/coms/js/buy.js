@@ -3,7 +3,7 @@ $(document).ready(function(){
     var userData = lh.getLocalLoginInfo();
     var compon_list = new Array();
 
-    console.log(userData);
+    //console.log(userData);
 
     var url = "http://teamsf.co.kr/~coms/shop_compon_list_show.php";
     var sId = $.getUrlVar("shopId");
@@ -16,7 +16,7 @@ $(document).ready(function(){
         url: url,
         data: params        
     }).done(function(compons){
-        console.log(compons);
+        //console.log(compons);
         compon_list = compons;
 
         for (var i in compons) {
@@ -27,20 +27,18 @@ $(document).ready(function(){
 
         $('.banner-coupon:nth-child(1)').tap();
 
-        myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
-
-        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
     });
 
     $('.banner-coupon').on('tap',function(e){
-        e.preventDefault();
-        e.stopImmediatePropagation();
-
+        
         var index = $(this).attr('value');
         var compon = compon_list[index];
+
+        //console.log(index);
         
         for (var i in compon_list) {
-            var temp = parseInt(i);
+            var temp = parseInt(i)+1;
+            //console.log(temp);
             $('.banner-coupon:nth-child('+temp+')').removeClass('active');
         }
 
@@ -59,13 +57,13 @@ $(document).ready(function(){
         $(this).addClass('active');
 
 
-        console.log(compon_list[i]);
+        //console.log(compon_list[i]);
     });
-    $('#btn-phone').click(function(){
+    $('#btn-phone').on('tap', function(){
         var itemId = $('#compon-num').val();
         window.location = "./buy_result.html?shopId="+sId+"&itemId="+itemId;
     });
-    $('#btn-credit').click(function(){
+    $('#btn-credit').on('tap', function(){
         var itemId = $('#compon-num').val();
         window.location = "./buy_result.html?shopId="+sId+"&itemId="+itemId;
     });

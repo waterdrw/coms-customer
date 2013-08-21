@@ -284,6 +284,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 .combo-notice p{
 	margin-left: 10px;
 	color: gray;
+	font-size:10px;
 }
 .combo-notice .left-combo-text{
 	color: #000;

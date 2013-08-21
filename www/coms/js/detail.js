@@ -38,7 +38,8 @@ $(document).ready(function(){
         $('#combo4').html(currentShop.combo_4);
         $('#combo5').html(currentShop.combo_5);
 
-        $('.currentCombo').html(currentShop.member_combo);
+        $('.currentCombo').html(currentShop.member_combo-1);
+        $('.currentCombo2').html(currentShop.member_combo);
         $('#left-comboday').html(currentShop.combo_left_day);
 
         $('#title').html(currentShop.name);
@@ -51,7 +52,7 @@ $(document).ready(function(){
     });
 
 
-    $('#btn-buy').click(function(){
+    $('#btn-buy').on('tap', function(){
 
         lh.doLogin ( function ( resultObj )
         {

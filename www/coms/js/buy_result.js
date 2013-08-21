@@ -28,12 +28,12 @@ $(document).ready(function(){
                 
 
 
-        myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
+        //myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
 
-        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+        //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
     });
 
-    $('#btn-use').on('click', function(){
+    $('#btn-use').on('tap', function(){
 
         var url = "http://teamsf.co.kr/~coms/member_compon_use.php";
         var pid = $('#pid').val();
@@ -45,7 +45,7 @@ $(document).ready(function(){
             url: url,
             data: params        
         }).done(function(data){
-            alert("사용신청이 완료되었습니다.");
+            window.location="../mycoms/used_compon.html"
         });
     });
 
