@@ -33,7 +33,7 @@ $(document).ready(function(){
         //document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
     });
 
-    $('#btn-use').on('tap', function(){
+    $('#btn-use').on('click tap', function(){
 
         var url = "http://teamsf.co.kr/~coms/member_compon_use.php";
         var pid = $('#pid').val();
@@ -45,7 +45,9 @@ $(document).ready(function(){
             url: url,
             data: params        
         }).done(function(data){
-            window.location="../mycoms/used_compon.html"
+            
+            window.location.replace("../mycoms/used_compon.html");
+            
         });
     });
 

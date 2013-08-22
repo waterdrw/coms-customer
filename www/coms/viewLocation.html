@@ -5,15 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 
 <title>콤스토리</title>
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<link rel="stylesheet" href="../css/jquery.mobile-1.3.1.min.css" />
 <link rel="stylesheet" href="../css/common.css"/>
 <link rel="stylesheet" href="../css/iscroll.css"/>
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<link rel="stylesheet" href="../css/font-awesome.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.mobile-1.3.1.min.js"></script>
 <script type="text/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/params.js"></script>
+<script type="text/javascript" src="../js/loginHandler.js"></script>
 
-<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
+<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="./js/viewLocation.js"></script>
 <script type="text/javascript">
 
 var myScroll;
@@ -30,23 +33,21 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
 <div data-role="page">
     <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
         <h1>맛있는 집</h1>
-        <a href="./index.html" class="ui-btn-right" data-ajax="false" data-rel="dialog">닫기</a>
+        <a class="ui-btn-right" data-ajax="false" data-rel="back">이전</a>
     </div><!-- /header -->
 
     <div data-role="content">
-    <div id="wrapper" class="content-shop"><div id="scroller">
-        <div class="area-shop-location"><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.kr/maps?client=safari&amp;q=%EA%B5%AC%EA%B8%80+%EC%A7%80%EB%8F%84+%EC%82%BD%EC%9E%85&amp;oe=UTF-8&amp;ie=UTF8&amp;hl=ko&amp;hq=%EC%82%BD%EC%9E%85&amp;hnear=%EA%B2%BD%EC%83%81%EB%B6%81%EB%8F%84+%EA%B5%AC%EB%AF%B8%EC%8B%9C&amp;t=m&amp;fll=36.131497,128.41404&amp;fspn=0.035424,0.027595&amp;st=105250506097979753968&amp;rq=1&amp;ev=zi&amp;split=1&amp;ll=36.212686,128.164736&amp;spn=0.035423,0.027595&amp;output=embed"></iframe></div>
-    </div></div><!-- /content -->
+    </div><!-- /content -->
 
 
-    <div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false">
-        <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
-            <ul>
-                <li><a href="../mycoms/index.html" id="mycoms" data-icon="custom" data-ajax="false">마이콤스</a></li>
-                <li><a href="../coms/index.html" id="coms" class="ui-btn-active"  data-icon="custom" data-ajax="false">콤스토어</a></li>
-                <li><a href="../friend/" id="friend" data-icon="custom">콤스친구</a></li>
-                <li><a href="../comstory" id="comstory" data-icon="custom">콤스토리</a></li>
-                <li><a href="../setting/index.html" id="setting" data-icon="custom">설정</a></li>
+    <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-grid="d">
+            <ul class="apple-navbar-ui comboSprite">
+                <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active  ui-state-persist" data-ajax="false">콤스토어</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>
+                <li><a href="../comstory/index.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤스토리</a></li>
+                <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
             </ul>
         </div>
     </div>            
