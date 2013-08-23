@@ -1,10 +1,23 @@
+var current;
+
+
+$( document ).on( "mobileinit", function() {
+  $.mobile.loader.prototype.options.text = "loading...";
+  $.mobile.loader.prototype.options.textVisible = true;
+  $.mobile.loader.prototype.options.theme = "a";
+  $.mobile.loading( 'show');
+
+});
+
 $(document).ready(function(){
+
     var lh = new LoginHandler ();
     var userData = lh.getLocalLoginInfo();
 
     var url = "http://teamsf.co.kr/~coms/shop_detail_show.php";
     var sId = $.getUrlVar("shopId");
     var params;
+    
     
     if (lh.isLogged() == true) {
         params  = {sid:sId, mid:userData.id};
@@ -22,6 +35,7 @@ $(document).ready(function(){
         data: params        
     }).done(function(currentShop){
         console.log(currentShop);
+        current = currentShop;
 
         var openTime = currentShop.start_time + " ~ " + currentShop.end_time;
 
@@ -51,7 +65,6 @@ $(document).ready(function(){
         document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
     });
 
-
     $('#btn-buy').on('tap', function(){
 
         lh.doLogin ( function ( resultObj )
@@ -66,6 +79,43 @@ $(document).ready(function(){
 
     });
 
+    
+    $( "#page-location" ).on( "pagecreate", function( event ) {
+        //console.log(current);
+        $.mobile.loading( 'show');
+        var lat = current.latitude;
+        var lng = current.longitude;
+          
+        var latlng = new google.maps.LatLng (lat, lng);
+        var options = { 
+            zoom : 15, 
+            center : latlng, 
+            mapTypeId : google.maps.MapTypeId.ROADMAP 
+        };
+    
+        var $content = $("#page-location div:jqmData(role=content)");
+        $content.height (screen.height-60);
+        var map = new google.maps.Map ($content[0], options);
+          //$.mobile.changePage ($("#win2"));
+          
+        new google.maps.Marker ( 
+        { 
+          map : map, 
+          animation : google.maps.Animation.DROP,
+          position : latlng  
+        });  
+
+        $('#l-title').html(current.name);
+        $.mobile.loading( 'hide');
+    });
+
+    $( "#page-menu" ).on( "pagecreate", function( event ) {
+        //console.log(current);
+        $('#m-title').html(current.name);
+        $('#img-menu').attr({'src':current.menu_img_path, 'width':'100%'});
+
+    });
 
 
+    $.mobile.loading( "hide" );
 })

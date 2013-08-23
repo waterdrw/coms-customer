@@ -15,7 +15,9 @@
 <script type="text/javascript" src="../js/iscroll.js"></script>
 <script type="text/javascript" src="../js/params.js"></script>
 <script type="text/javascript" src="../js/loginHandler.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="./js/detail.js"></script>
+
 
 </head>
 <body>
@@ -36,13 +38,13 @@
                     <p>영업시간 <span id="time"></span></p>
                     <p>정기휴일 <span id="closed"></span></p>
                     <p>전화번호 <span id="phone"></span></p>
-                    <p>판매종료 임박 <span id="endtime"></span></p>
+                    <p></p>
 
                 </div>
             </div>
             <div class="area-shop-more ui-grid-b">
-                <div class="ui-block-a"><a href="./viewMenu.html" data-ajax="false" data-role="button" data-mini="true"><i class="icon-list-alt"></i> 메뉴보기</a></div>
-                <div class="ui-block-b"><a href="./viewLocation.html" data-ajax="false" data-role="button" data-mini="true"><i class="icon-map-marker"></i> 위치보기</a></div>
+                <div class="ui-block-a"><a href="#page-menu" data-ajax="false" data-role="button" data-mini="true"><i class="icon-list-alt"></i> 메뉴보기</a></div>
+                <div class="ui-block-b"><a href="#page-location" data-ajax="false" data-role="button" data-mini="true"><i class="icon-map-marker"></i> 위치보기</a></div>
                 <div class="ui-block-c"><a id="tag-phone" href="#" data-role="button" data-mini="true"><i class="icon-phone"></i> 전화걸기</a></div>
             </div>
             <div class="area-divider">아래의 콤보할인 정보를 확인하세요.</div>
@@ -69,8 +71,54 @@
 
                 <a data-role="button" id="btn-buy" data-ajax="false" data-theme="b"><i class="icon-star"></i> 콤폰 구매하기</a>
             </div>
+        </div></div></div>
+    </div><!-- /content -->
+
+    <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-grid="d">
+            <ul class="apple-navbar-ui comboSprite">
+                <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active" data-ajax="false">콤스토어</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>
+                <li><a href="../comstory/index.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤스토리</a></li>
+                <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
+            </ul>
         </div>
-    </div></div><!-- /content -->
+    </div>         
+</div><!-- /page -->
+
+<div data-role="page" id="page-location" data-dom-cache="false">
+    <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
+        <h1 id="l-title">맛있는 집</h1>
+        <a data-rel="back" class="ui-btn-right btn-custom-back" data-ajax="false" data-role="button">이전</a>
+    </div><!-- /header -->
+
+    <div data-role="content">
+    
+    </div><!-- /content -->
+
+    <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-grid="d">
+            <ul class="apple-navbar-ui comboSprite">
+                <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active" data-ajax="false">콤스토어</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>
+                <li><a href="../comstory/index.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤스토리</a></li>
+                <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
+            </ul>
+        </div>
+    </div>         
+</div><!-- /page -->
+
+<div data-role="page" id="page-menu" data-dom-cache="false">
+    <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
+        <h1 id="m-title">맛있는 집</h1>
+        <a data-rel="back" class="ui-btn-right btn-custom-back" data-ajax="false" data-role="button">이전</a>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <img id="img-menu">
+    </div><!-- /content -->
 
     <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
         <div data-role="navbar" data-grid="d">
