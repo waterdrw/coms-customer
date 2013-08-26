@@ -50,6 +50,9 @@ $(document).ready(function(){
             
         });
     });
-
+    $('#btn-unuse').on('click tap', function(){
+        
+        window.location.replace("../mycoms/compon.html");     
+    });
 
 })

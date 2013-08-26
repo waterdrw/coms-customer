@@ -4,14 +4,30 @@ var g_isOpen = false;
 function initAll ()
 {
     var lh = new LoginHandler ();
+    var comszone_url = "http://teamsf.co.kr/~coms/site_list_show.php";
+
     lh.flushLogin ();
     
     g_iu = new ImageUploader ();
     g_iu.setNavigatorObj ( navigator );
-    
-    
+        
     $("#img-profile").attr("imgid",0);
     
+    $.ajax({
+        type: 'post',
+        dataType: 'json',
+        url: url2,
+        data: s_params      
+    }).done(function(data){
+        //console.log(data);
+        var temp = "";
+        for(var i in data) {
+            temp += "<option value='"+data[i].id+"'>"+data[i].name+"</option>";       
+
+        }
+        $("#select-comszone").append(temp).selectmenu("refresh", true);
+    });
+
     $("#btn-img-modify").on ( "click" , function ()
     {
     	if ( g_isOpen == false )

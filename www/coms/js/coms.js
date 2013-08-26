@@ -32,7 +32,7 @@ $(document).ready(function(){
 		url: url2,
 		data: s_params		
 	}).done(function(data){
-		console.log(data);
+		//console.log(data);
 		var temp = "";
 		for(var i in data) {
 			temp += "<li data-icon='false'><a>"+data[i].name+"</a></li>";		
@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 	    for(var i in data.list) {
    	    	var temp = data.list[i];
-   	    	console.log(temp);
+   	    	//console.log(temp);
    	    	combo_list[i] = temp.member_combo;
 
 			str += "<div class='list-shop'><a class='a-shop-detail' href='./shop.html?shopId="+temp.id+"' rel='external'>";
@@ -88,7 +88,7 @@ $(document).ready(function(){
 		// display combo progress
 		for (var i in combo_list){
 			var temp = parseInt(i)+1;
-			console.log(temp+" : "+combo_list[i]);
+			//console.log(temp+" : "+combo_list[i]);
 			$('.list-shop:nth-child('+temp+') .combo-box:nth-child('+(combo_list[i])+')').addClass('active');
 		}
 	    myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
