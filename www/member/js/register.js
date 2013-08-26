@@ -20,10 +20,6 @@ function initAll ()
         data: {type:"campus"}      
     }).done(function(data)
     {
-        url: url2,
-        data: s_params      
-    }).done(function(data){
-        alert(data);
         var temp = "";
         for(var i in data) 
         {
@@ -78,9 +74,12 @@ function initAll ()
             url: url,
             data: params        
         }).done(function(data){
-            console.log(data);
-            alert("회원 등록이 완료 되었습니다.");
-            window.location="../mycoms/index.html";
+            if ( data.success == true )
+            {
+            	alert("회원 등록이 완료 되었습니다.");
+            	window.location="../mycoms/index.html";
+            }
+            else { alert ( "에러 : " + data.cause ); }
         });
     });
 }
