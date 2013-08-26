@@ -19,7 +19,7 @@ function initAll ()
         url: url2,
         data: s_params      
     }).done(function(data){
-        //console.log(data);
+        alert(data);
         var temp = "";
         for(var i in data) {
             temp += "<option value='"+data[i].id+"'>"+data[i].name+"</option>";       
