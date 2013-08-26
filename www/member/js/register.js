@@ -16,14 +16,14 @@ function initAll ()
     $.ajax({
         type: 'post',
         dataType: 'json',
-        url: url2,
-        data: s_params      
-    }).done(function(data){
-        //console.log(data);
+        url:'http://teamsf.co.kr/~coms/site_list_show.php',
+        data: {type:"campus"}      
+    }).done(function(data)
+    {
         var temp = "";
-        for(var i in data) {
+        for(var i in data) 
+        {
             temp += "<option value='"+data[i].id+"'>"+data[i].name+"</option>";       
-
         }
         $("#select-comszone").append(temp).selectmenu("refresh", true);
     });
@@ -64,7 +64,7 @@ function initAll ()
             phone:$('#phone1').val()+"-"+$('#phone2').val()+"-"+$('#phone3').val(),
             nick:$('#nickname').val(),
             pw:$('#pw').val(),
-            zid:1,
+            zid:$("#select-comszone").val(),
             pimgid:$("#img-profile").attr("imgid")
         };
         
