@@ -26,6 +26,9 @@ function initAll ()
         data: s_params      
     }).done(function(data){
         alert(data);
+<<<<<<< HEAD
+>>>>>>> 426fe2501a514471309f2c18825aa27b04769c25
+=======
 >>>>>>> 426fe2501a514471309f2c18825aa27b04769c25
         var temp = "";
         for(var i in data) 
