@@ -65,16 +65,16 @@
                         <div class="span"><img src="./img/img-shop-profile1.jpg"></div>
                         <div class="span">
                             <p id="shop-name"></p>
-                            <span id="compon-price"></span> 만원권
-                            <p>콤폰 사용기간 : <span id="limit-date"></span>까지</p>
+                            <p><span class="buy-price"></span> 원 이상 이용시 <span class="buy-discount-price"></span> 원 할인권</p>
+                            <p>콤보타임 마감일 : <span id="limit-date"></span>까지</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="area-padding area-price-info">
-                <p><span id="combo"></span>콤보(<span id="discount"></span>%) 할인이 적용된 가격은 아래와 같습니다.</p>
-                <p>결제금액 : <span id="buy-discount-price">9,000</span>(<span id="buy-price">10,000</span>)</p>
-                <a id="btn-credit" href="#" data-role="button" data-theme="b"><i class="icon-credit-card"></i> 결제하기</a>
+                <p><span id="combo"></span>콤보(<span id="discount"></span>%) 가 적용된 할인액은 아래와 같습니다.</p>
+                <p>할인금액 : <span class="buy-discount-price"></span>원 (<span class="buy-price"></span> 원 이용시)</p>
+                <a id="btn-credit" href="#" data-role="button" data-theme="b"><i class="icon-credit-card"></i> 콤폰 발급받기</a>
                 
                 <p>콤스 스타일 -> 당일 구매, 당일 사용 하기!</p>
             </div>
@@ -87,11 +87,11 @@
     
     <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
         <div data-role="navbar" data-grid="d">
-            <ul class="apple-navbar-ui comboSprite">
+            <ul class="apple-navbar-ui comboSprite">                
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active ui-state-persist" data-ajax="false">콤스토어</a></li>
+                <li><a href="../mycoms/compon.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤폰함</a></li>
                 <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
-                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active" data-ajax="false">콤스토어</a></li>
-                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>
-                <li><a href="../comstory/index.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤스토리</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>                
                 <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
             </ul>
         </div>

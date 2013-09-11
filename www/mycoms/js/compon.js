@@ -2,6 +2,13 @@ $(document).ready(function(){
     var lh = new LoginHandler ();
     var userData = lh.getLocalLoginInfo();
 
+    lh.doLogin ( function ( resultObj ) {
+        if ( resultObj.success == false ) { 
+            window.location = "../member/index.html";
+        }
+    });
+
+
     console.log(userData);
 
     var url = "http://teamsf.co.kr/~coms/member_compon_list_show.php";

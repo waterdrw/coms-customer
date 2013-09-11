@@ -26,9 +26,9 @@
         <div data-role="navbar">
         <ul>
             <li><a class="ui-btn-active" href="./index.html">관심지역</a></li>
-            <li><a data-transition="slidefade">내 근처</a></li>
+            <li><a href="#page-near">내 근처</a></li>
         </ul>        
-    </div><!-- /navbar -->
+        </div><!-- /navbar -->
     </div><!-- /header -->
 
     <div data-role="content">
@@ -41,11 +41,49 @@
 
     <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
         <div data-role="navbar" data-grid="d">
-            <ul class="apple-navbar-ui comboSprite">
+            <ul class="apple-navbar-ui comboSprite">                
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active ui-state-persist" data-ajax="false">콤스토어</a></li>
+                <li><a href="../mycoms/compon.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤폰함</a></li>
                 <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
-                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active" data-ajax="false">콤스토어</a></li>
-                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>
-                <li><a href="../comstory/index.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤스토리</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>                
+                <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
+            </ul>
+        </div>
+    </div>      
+    <div data-role="panel" id="panel-street" data-position="right" data-position-fixed="true" data-display="push" data-theme="c">
+    <!-- panel content goes here -->
+        <ul data-role="listview" id="list-street">
+        </ul>
+    </div><!-- /panel -->
+
+</div><!-- /page -->
+<div data-role="page" id="page-near">
+    <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
+        <h1>콤스토어</h1>        
+        <a class="ui-btn-right" href="#panel-street" data-corners="false" data-shadow="false" data-iconshadow="false" data-icon="grid" data-iconpos="notext"></a>
+        <div data-role="navbar">
+        <ul>
+            <li><a class="ui-btn-active" href="./index.html">관심지역</a></li>
+            <li><a data-transition="slidefade">내 근처</a></li>
+        </ul>        
+        </div><!-- /navbar -->
+    </div><!-- /header -->
+
+    <div data-role="content">
+    <div id="wrapper" class="content-coms">
+        <div id="scroller">
+
+        </div>
+    </div><!-- /content -->
+    </div>
+
+    <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-grid="d">
+            <ul class="apple-navbar-ui comboSprite">                
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active ui-state-persist" data-ajax="false">콤스토어</a></li>
+                <li><a href="../mycoms/compon.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤폰함</a></li>
+                <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>                
                 <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
             </ul>
         </div>

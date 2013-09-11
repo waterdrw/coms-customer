@@ -28,7 +28,7 @@ $(document).ready(function(){
             compons_html += "</p>";
             compons_html += "<p class='limit-date'>"+data[i].limit_date+" 까지";
             compons_html += "</p>";
-            compons_html += "<p class='foo'><span class='combo-left used-compon'>달성완료</span><span class='compon-code'>콤폰번호 : "+data[i].coupon_code+"</span>";
+            compons_html += "<p class='foo'><span class='combo-left used-compon'><i class='icon-time'></i> "+data[i].combo_left_day+"일</span><span class='compon-code'>콤폰번호 : "+data[i].coupon_code+"</span>";
             compons_html += "</p>";            
             compons_html += "</div></div>";
         }

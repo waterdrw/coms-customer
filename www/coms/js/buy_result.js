@@ -22,7 +22,8 @@ $(document).ready(function(){
         $('#left-date').html(data.combo_left_day);
         //$('#compon-num').html(data.compon_num);
         $('#shop-img').attr('src', data.shop_profile_img_path);
-        $('#price').html(data.price);
+        $('#buy-price').html(data.price*10000);
+        $('#buy-discount-price').html(data.price*10000-data.discount_price*10000);
         
         $('#pid').val(data.purchase_id);
                 
