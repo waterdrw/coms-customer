@@ -49,14 +49,14 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
         
     </div></div><!-- /content -->
     </div>
-    <div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-tap-toggle="false">
-        <div data-role="navbar" class="nav-glyphish-example" data-grid="d">
-            <ul>
-                <li><a href="../mycoms/index.html" id="mycoms" data-icon="custom" data-ajax="false">마이콤스</a></li>
-                <li><a href="../coms/index.html" id="coms" class="ui-btn-active"  data-icon="custom" data-ajax="false">콤스토어</a></li>
-                <li><a href="../friend/" id="friend" data-icon="custom">콤스친구</a></li>
-                <li><a href="../comstory" id="comstory" data-icon="custom">콤스토리</a></li>
-                <li><a href="../setting/index.html" id="setting" data-icon="custom">설정</a></li>
+    <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
+        <div data-role="navbar" data-grid="d">
+            <ul class="apple-navbar-ui comboSprite">                
+                <li><a href="../coms/index.html" data-iconpos="top" data-icon="brands" class="ui-btn-active ui-state-persist" data-ajax="false">콤스토어</a></li>
+                <li><a href="../mycoms/compon.html" data-iconpos="top" data-icon="contact" data-ajax="false">콤폰함</a></li>
+                <li><a href="../mycoms/index.html" data-iconpos="top" data-icon="features" data-ajax="false">마이콤스</a></li>
+                <li><a href="../friend/index.html" data-ajax="false" data-iconpos="top" data-icon="fees">콤스친구</a></li>                
+                <li><a href="../setting/index.html" data-iconpos="top" data-icon="about" data-ajax="false">설정</a></li>
             </ul>
         </div>
     </div>            
