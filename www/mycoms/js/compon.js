@@ -31,7 +31,7 @@ $(document).ready(function(){
             compons_html += "<img class='img' src='"+data[i].shop_profile_img_path+"'>";
             compons_html += "<p class='name'>"+data[i].shop_name;
             compons_html += "</p>";
-            compons_html += "<p class='price'>"+data[i].price+"만원권";
+            compons_html += "<p class='price'>"+data[i].price*10000+" 원 이상 이용시 "+(data[i].price*10000 - data[i].discount_price*10000)+" 원 할인권";
             compons_html += "</p>";
             compons_html += "<p class='limit-date'>콤폰 사용기한 : "+data[i].limit_date+" 까지";
             compons_html += "</p>";
@@ -45,7 +45,7 @@ $(document).ready(function(){
         myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
         document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
-        $('.list-mycompon').on('click', function(){
+        $('.list-mycompon').on('click tap', function(){
             var cId = $(this).attr('value');
 
             console.log(cId);

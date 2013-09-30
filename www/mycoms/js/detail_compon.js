@@ -16,7 +16,7 @@ $(document).ready(function(){
         console.log(data);
         
         $('.name').html(data.shop_name);
-        $('.price').html(data.price+"원권");
+        $('.price').html(data.price*10000+" 원 이상 이용시 "+(data.price*10000 - data.discount_price*10000)+" 원 할인권");
         $('.limit-date').html(data.limit_date+"까지");
         $('.icon-time').html(" "+data.combo_left_day+"일");
         $('.compon-code').html("콤폰번호 : "+data.compon_code);

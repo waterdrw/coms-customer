@@ -19,8 +19,8 @@ $(document).ready(function(){
         console.log(data);
         $('#shop-name').html(data.shop_name);
         $('#limit-date').html(data.limit_date);
-        $('#left-date').html(data.combo_left_day);
-        //$('#compon-num').html(data.compon_num);
+        $('.foo #left-date').html(data.combo_left_day);
+        $('.foo #compon-code').html(data.coupon_code);
         $('#shop-img').attr('src', data.shop_profile_img_path);
         $('#buy-price').html(data.price*10000);
         $('#buy-discount-price').html(data.price*10000-data.discount_price*10000);
