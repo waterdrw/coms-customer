@@ -20,9 +20,11 @@ $(document).ready(function(){
 
         for(var i in data) {
 
+            if (data[i].ok_date == null) {data[i].ok_date = "승인 대기 중"};
+
             compons_html += "<div class='list-mycompon used-compon' value='"+data[i].id+"'><div class='list-inner'>";
             compons_html += "<img class='img' src='"+data[i].shop_profile_img_path+"'>";
-            compons_html += "<p class='name'>"+data[i].shop_name+"</p>";
+            compons_html += "<p class='name'>"+data[i].shop_name+" ["+data[i].ok_date+"] "+"</p>";
             compons_html += "<p class='price'>"+data[i].price*1000+" 원 이상 이용시 "+(data[i].price*1000 - data[i].discount_price*1000)+" 원 할인권";            
             compons_html += "</p>";
             compons_html += "<p class='limit-date'>"+data[i].limit_date+" 까지";
