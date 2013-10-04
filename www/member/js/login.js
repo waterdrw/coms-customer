@@ -1,28 +1,53 @@
-$(document).ready(function(){
-    var lh = new LoginHandler ();
 
+var g_lh = null;
 
-    $('#btn-login').click(function(){
-        var email = $('#usr-email').val();
-        var pwd = $('#usr-passwd').val();
+function initAll ()
+{
+	g_lh = new LoginHandler ();
+	initLoginPage ();
+	initLostFoundPage ();
+}
 
-        console.log(email+":"+pwd);
+function initLoginPage ()
+{
+	$("#page-login" ). on ( "pagebeforeshow" , function ()
+	{
+		$("#btn-login").click ( function ()
+		{
+	        var email = $("#usr-email").val();
+	        var pwd = $("#usr-passwd").val();
 
-        lh.setId(email);
-        lh.setPw(pwd);
+	        g_lh.setId(email); g_lh.setPw(pwd);
 
-        lh.doLogin ( function ( resultObj )
-        {
-            if ( resultObj.success == true ) { 
-                history.back();
-            }
-            else {
-                alert(resultObj.cause);
-            }
-        });
+	        g_lh.doLogin ( function ( resultObj )
+	        {
+	            if ( resultObj.success == true ) 
+	            { 
+	                history.back();
+	            }
+	            else 
+	            {
+	            	alert(resultObj.cause);
+	            }
+	        });
+	    });
+	});
+}
 
-    });
+function initLostFoundPage ()
+{
+	$("#page-lost-found-id").on ( "pagebeforeshow" , function ()
+	{
+		
+	});
+	
+	$("#page-lost-found-pw").on ( "pagebeforeshow" , function ()
+	{
+				
+	});
+}
 
-
-
-})
+function initPhonegap ()
+{
+	document.addEventListener("deviceready", initAll , false);	
+}
