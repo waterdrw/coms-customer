@@ -54,8 +54,33 @@ function initAll ()
 		}
     });
     
+    $("#btn-register-default").on("click",function()
+    {  	
+    	var pw = $("#pw").val(); var pwConfirm = $("#pw-re").val();
+    	var email = $("#email").val(); var name = $("#name").val();
+    	var phone1 = $("#phone1").val(); var phone2=$("#phone2").val();
+    	var phone3 = $("#phone3").val();
+    	
+    	if ( pw.length == 0 ) { alert("패스워드를 입력하세요!"); return; }
+    	if ( pw != pwConfirm ) { alert("패스워드가 서로 다릅니다!"); return; }
+    	if ( email.length == 0 ) { alert("이메일 아이디를 입력하세요!"); return; }
+    	if ( name.length == 0 ) { alert("이름을 입력하세요!"); return; }
+    	if ( phone1.length == 0 || phone2.length == 0 || phone3.length == 0 ) 
+    	{
+    		alert ( "휴대폰 번호를 입력하세요!" ); return; 
+    	}
+    	
+    	$.mobile.changePage("#register2");
+    });
+    
     $("#btn-register").on("click", function()
     {
+    	var nick = $("#nickname").val();
+    	var imgid = $("#img-profile").attr("imgid");
+    	
+    	if ( nick.length == 0 ) { alert("콤스 닉네임을 입력하세요!"); return; }
+    	if ( parseInt(imgid) == 0 ) { alert("프로실 사진을 선택하세요!"); return; }
+    	
         var url = "http://teamsf.co.kr/~coms/member_join.php";
         var params = 
         {

@@ -39,12 +39,14 @@
         <div class="area-padding">
             <p><i class="icon-asterisk"></i>위의 이용약관과 개인정보 취급방침에 모두 동의하시면 아래의 동의를 클릭하세요.</p>
             <div class="row nav-register">
-                <div class="span"><a href="#register2" data-role="button">동의 안함</a></div>
+                <div class="span"><a href="./index.html" data-role="button" data-ajax="false">동의 안함</a></div>
                 <div class="span"><a href="#register1" data-role="button" data-theme="b">동의</a></div>
-            </div>
+            </div>z
         </div>
     </div><!-- /content -->
 </div><!-- /page -->
+
+
 <div data-role="page" id="register1">
     <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
         <h1>콤스 회원가입</h1> 
@@ -83,10 +85,12 @@
                 <div class="span area-input"><input type="text" id="pw-re" placeholder="비밀번호를 입력해주세요."></div>
             </div>
 
-            <a href="#register2" data-role="button" data-theme="b">콤스 회원가입</a>
+            <a id="btn-register-default" data-role="button" data-theme="b">콤스 회원가입</a>
         </div>
     </div><!-- /content -->
 </div><!-- /page -->
+
+
 <div data-role="page" id="register2">
     <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
         <h1>콤스 회원가입</h1> 
@@ -97,7 +101,7 @@
         <div class="area-divider">프로필 정보 입력</div>
         <div class="area-padding">
         	<div class="row area-member-info">
-        		<div class="span"><img id="img-profile" src="../img/logo.png"></div>
+        		<div class="span"><img id="img-profile" src="../img/logo.png" imgid="0"></div>
         		<div class="span"><button id="btn-img-modify">이미지 선택</button></div>
         	</div>
         	<hr>
