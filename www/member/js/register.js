@@ -70,16 +70,28 @@ function initAll ()
     		alert ( "휴대폰 번호를 입력하세요!" ); return; 
     	}
     	
-    	$.mobile.changePage("#register2");
+    	$.ajax ({
+    		type:"post",
+            dataType:"json",
+            url: "http://teamsf.co.kr/~coms/member_join_email_check.php",
+            data: {email:email},
+            success:function ( resultObj )
+            {
+            	if ( resultObj.success == true ) { $.mobile.changePage("#register2"); }
+            	else { alert ( "에러 : 중복되는 이메일입니다." ); }
+            }
+    	});
     });
     
     $("#btn-register").on("click", function()
     {
     	var nick = $("#nickname").val();
     	var imgid = $("#img-profile").attr("imgid");
+    	var zoneId = $("#select-comszone").val();
     	
-    	if ( nick.length == 0 ) { alert("콤스 닉네임을 입력하세요!"); return; }
-    	if ( parseInt(imgid) == 0 ) { alert("프로실 사진을 선택하세요!"); return; }
+    	if ( zoneId == null ) { alert("콤스존을 선택해 주세요!"); return; }
+    	//if ( nick.length == 0 ) { alert("콤스 닉네임을 입력하세요!"); return; }
+    	//if ( parseInt(imgid) == 0 ) { alert("프로실 사진을 선택하세요!"); return; }
     	
         var url = "http://teamsf.co.kr/~coms/member_join.php";
         var params = 
