@@ -1,4 +1,5 @@
-$(document).ready(function(){
+function initAll ()
+{
     var lh = new LoginHandler ();
     var userData = lh.getLocalLoginInfo();
     var compon_list = new Array();
@@ -23,6 +24,7 @@ $(document).ready(function(){
             var compon = compons[i];
             var temp = parseInt(i)+1;
             $('#compon'+temp).html(compon.price);
+            $('#compon-'+temp+'-name').html(compon.item_name);
         }
 
         $('.banner-coupon:nth-child(1)').tap();
@@ -34,18 +36,15 @@ $(document).ready(function(){
         var index = $(this).attr('value');
         var compon = compon_list[index];
 
-        //console.log(index);
-        
         for (var i in compon_list) {
             var temp = parseInt(i)+1;
-            //console.log(temp);
             $('.banner-coupon:nth-child('+temp+')').removeClass('active');
         }
 
         var combo = compon.combo_count;
         $('#shop-name').html(compon.shop_name);
-        //$('#compon-price').html(compon.price);
         $('#limit-date').html(compon.limit_date);
+        $('#compon-image').attr('src',compon.shop_profile_img_path);
 
         $('#combo').html(compon.combo_count);
         $('#discount').html(compon.discount_rate);
@@ -55,17 +54,49 @@ $(document).ready(function(){
         $('#compon-num').val(parseInt(index)+1);
         
         $(this).addClass('active');
-
-
         //console.log(compon_list[i]);
     });
     $('#btn-phone').on('tap', function(){
         var itemId = $('#compon-num').val();
         window.location = "./buy_result.html?shopId="+sId+"&itemId="+itemId;
     });
-    $('#btn-credit').on('tap', function(){
-        var itemId = $('#compon-num').val();
-        window.location = "./buy_result.html?shopId="+sId+"&itemId="+itemId;
+    $('#btn-credit').on('tap', function()
+    {
+    	var ajaxParam =
+    	{
+    		mid:userData.id,
+    		sid:sId
+    	};
+    	
+    	$.ajax (
+    	{
+    		url:"http://teamsf.co.kr/~coms/shop_compon_duplication_check.php",
+    		data:ajaxParam,
+    		type:"post",
+    		dataType:"json",
+    		success:function ( existJsonObj )
+    		{
+    			if ( existJsonObj.exist == true )
+    			{
+    				doAlert("이미 발급한 콤폰이 있습니다!","콤폰 발급 오류",function(){});
+    				return;
+    			}
+    			else
+    			{
+    				var itemId = $('#compon-num').val();
+    		        window.location = "./buy_result.html?shopId="+sId+"&itemId="+itemId;
+    			}
+    		}
+    	});
     });
+}
 
-})
+function doAlert ( msg , title , callbackFunction )
+{
+	navigator.notification.alert ( msg , callbackFunction , title , "확인" );
+}
+
+function initPhonegap ()
+{
+	document.addEventListener("deviceready", initAll , false);	
+}

@@ -1,5 +1,5 @@
-$(document).ready(function(){
-
+$(document).ready(function()
+{
 	navigator.geolocation.getCurrentPosition (function (pos)
 	{
 	  var lat = pos.coords.latitude;
@@ -23,7 +23,5 @@ $(document).ready(function(){
 	    position : latlng  
 	  });  
 	});
-
-
-
+	
 });
