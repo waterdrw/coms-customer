@@ -41,11 +41,8 @@ $(document).ready(function(){
 
         $('.list-mycompon').on('click tap', function(){
             var cId = $(this).attr('value');
-
             console.log(cId);
-
-            window.location = "./detail_used_compon.html?cId="+cId;
-            
+            //window.location = "./detail_used_compon.html?cId="+cId;
         })
 
     });

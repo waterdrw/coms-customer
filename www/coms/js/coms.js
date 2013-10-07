@@ -72,7 +72,8 @@ function initNearPage ()
 				type:"post",
 				success:function ( resultObj )
 				{
-					drawShopList ( myScroll , resultObj , combo_list , "#wrapper-near" , "#scroller-near" );
+					//drawShopList ( myScroll , resultObj , combo_list , "#wrapper-near" , "#scroller-near" );
+					drawShopList ( myScroll , resultObj , combo_list , "#wrapper-near" , "#wrapper-near" );
 				}
 			});
 		});
@@ -129,7 +130,8 @@ function initMainPage ()
 		url: url,
 		data: params		
 	}).done(function(data){
-		drawShopList ( myScroll , data , combo_list , "#wrapper" , "#scroller" );
+		//drawShopList ( myScroll , data , combo_list , "#wrapper" , "#scroller" );
+		drawShopList ( myScroll , data , combo_list , "#wrapper" , "#wrapper" );
 	});
 }
 
