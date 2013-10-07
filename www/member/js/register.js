@@ -27,6 +27,12 @@ function initAll ()
         }
         $("#select-comszone").append(temp).selectmenu("refresh", true);
     });
+    
+    $("#register2").on ( "pagebeforeshow" , function ()
+    {
+    	var name = $("#name").val();
+    	$("#nickname").val(name);
+    });
 
     $("#btn-img-modify").on ( "click" , function ()
     {

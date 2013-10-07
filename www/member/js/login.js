@@ -8,30 +8,31 @@ function initAll ()
 	initLostFoundPage ();
 }
 
+function doAlert ( msg , title , callbackFunction )
+{
+	navigator.notification.alert ( msg , callbackFunction , title , "확인" );
+}
+
 function initLoginPage ()
 {
-	$("#page-login" ). on ( "pagebeforeshow" , function ()
+	$("#btn-login").click ( function ()
 	{
-		$("#btn-login").click ( function ()
-		{
-	        var email = $("#usr-email").val();
-	        var pwd = $("#usr-passwd").val();
+        var email = $("#usr-email").val();
+        var pwd = $("#usr-passwd").val();
 
-	        g_lh.setId(email); g_lh.setPw(pwd);
-
-	        g_lh.doLogin ( function ( resultObj )
-	        {
-	            if ( resultObj.success == true ) 
-	            { 
-	                history.back();
-	            }
-	            else 
-	            {
-	            	alert(resultObj.cause);
-	            }
-	        });
-	    });
-	});
+        g_lh.setId(email); g_lh.setPw(pwd);
+        g_lh.doLogin ( function ( resultObj )
+        {
+            if ( resultObj.success == true ) 
+            { 
+                history.back();
+            }
+            else 
+            {
+            	doAlert ( resultObj.cause , "로그인 오류" , function (){} );
+            }
+        });
+    });
 }
 
 function initLostFoundPage ()
