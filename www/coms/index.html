@@ -14,29 +14,29 @@
 <script type="text/javascript" src="../js/iscroll.js"></script>
 <script type="text/javascript" src="../js/params.js"></script>
 <script type="text/javascript" src="../js/loginHandler.js"></script>
-
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="../js/gpsHandler.js"></script>
 <script type="text/javascript" src="./js/coms.js"></script>
-
 </head>
 <body>
-<div data-role="page">
+
+<div id="page-main" data-role="page">
     <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
         <h1>콤스토어</h1>        
         <a class="ui-btn-right" href="#panel-street" data-corners="false" data-shadow="false" data-iconshadow="false" data-icon="grid" data-iconpos="notext"></a>
         <div data-role="navbar">
-        <ul>
-            <li><a class="ui-btn-active" href="./index.html">관심지역</a></li>
-            <li><a href="#page-near">내 근처</a></li>
-        </ul>        
+        	<ul>
+        		<li><a class="ui-btn-active a-favorite">관심지역</a></li>
+        		<li><a href="#page-near" class="a-near">내 근처</a></li>
+        	</ul>        
         </div><!-- /navbar -->
     </div><!-- /header -->
 
     <div data-role="content">
-    <div id="wrapper" class="content-coms">
-        <div id="scroller">
-
-        </div>
-    </div><!-- /content -->
+    	<div id="wrapper" class="content-coms" style="overflow:auto;">
+    		<div id="scroller">
+        	</div>
+    	</div><!-- /content -->
     </div>
 
     <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
@@ -55,27 +55,32 @@
         <ul data-role="listview" id="list-street">
         </ul>
     </div><!-- /panel -->
-
 </div><!-- /page -->
+
+
+<!-- NEAR COMS PAGE -->
 <div data-role="page" id="page-near">
     <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
         <h1>콤스토어</h1>        
         <a class="ui-btn-right" href="#panel-street" data-corners="false" data-shadow="false" data-iconshadow="false" data-icon="grid" data-iconpos="notext"></a>
         <div data-role="navbar">
         <ul>
-            <li><a class="ui-btn-active" href="./index.html">관심지역</a></li>
-            <li><a data-transition="slidefade">내 근처</a></li>
+            <li><a href="#page-main" class="a-favorite">관심지역</a></li>
+            <li><a class="ui-btn-active" class="a-near">내 근처</a></li>
         </ul>        
         </div><!-- /navbar -->
     </div><!-- /header -->
 
     <div data-role="content">
-    <div id="wrapper" class="content-coms">
-        <div id="scroller">
-
-        </div>
-    </div><!-- /content -->
+	    <div id="wrapper-gps-loading" class="area-padding" style="display:none;">
+	    	<center><b>GPS 좌표를 받아오는 중 ...</b></center>	
+	    </div>
+	    <div id="wrapper-near" class="content-coms" style="display:none;overflow:auto;">
+	        <div id="scroller-near">
+	        </div>
+	    </div><!-- /content -->
     </div>
+    
 
     <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
         <div data-role="navbar" data-grid="d">
@@ -89,13 +94,12 @@
         </div>
     </div>      
     <div data-role="panel" id="panel-street" data-position="right" data-position-fixed="true" data-display="push" data-theme="c">
-    <!-- panel content goes here -->
         <ul data-role="listview" id="list-street">
         </ul>
-    </div><!-- /panel -->
+    </div>
+</div>
 
-</div><!-- /page -->
-
+<script type="text/javascript">initPhonegap();</script>
 </body>
 </html>
 
