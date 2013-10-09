@@ -1,12 +1,17 @@
 var g_gps = null;
+var g_lh = null;
+var g_zoneId = 0;
 
-function initAll ()
+function initAll () 
 {
 	g_gps = new GPSHandler ();
 	g_gps.setNavigatorObj ( navigator );
+	g_lh = new LoginHandler ();
 	
-    initMainPage ();
-    initNearPage ();
+	$(".a-favorite").on ( "tap", function() { g_zoneId=0; initMainPage(); } );
+	$(".a-near").on ( "tap", initNearPage );
+	
+	initMainPage ();
 }
 
 function doAlert ( msg , title , callbackFunction )
@@ -14,128 +19,169 @@ function doAlert ( msg , title , callbackFunction )
 	navigator.notification.alert ( msg , callbackFunction , title , "확인" );
 }
 
+//관심지역 상점 리스트 로드
+function initMainPage ()
+{
+	$("#wrapper").css("display","none");
+	$("#loading-wrapper").css("display","block");
+	$("#loading-msg").html("상점 리스트를 가져옵니다...");
+	
+	$(".a-favorite").removeClass("ui-btn-active");
+	$(".a-near").removeClass("ui-btn-active");
+	$(".a-favorite").addClass("ui-btn-active");
+	
+	$("#coms-title").html("콤스토어");
+	
+	// inner function : ajax request for shop list loading
+	function requestShopList ( param )
+	{
+		var comboList = new Array ();
+		
+		$.ajax ({
+			url:"http://teamsf.co.kr/~coms/shop_list_show.php",
+			data:param,
+			dataType:"json",
+			type:"post",
+			success:function ( shopListObj )
+			{
+				$("#loading-msg").html("콤스존 리스트를 가져옵니다...");
+				
+				if ( shopListObj.zone_name != null ) { $("#coms-title").html(shopListObj.zone_name); } 
+				
+				$.ajax ({
+					url:"http://teamsf.co.kr/~coms/site_list_show.php",
+					data:{type:"all"},
+					dataType:"json",
+					type:"post",
+					success:function ( siteListObj )
+					{
+						$("#loading-wrapper").css("display","none");
+						$("#wrapper").css("display","block");
+						
+						$("#wrapper").html("");
+						drawShopList ( shopListObj , comboList , "#wrapper" );
+						
+						$("#list-street").html("");
+						var temp = "";
+						for(var i in siteListObj) 
+						{ 
+							temp += "<li data-icon='false' class='site-item' stid='" + siteListObj[i].id + "'>" +
+										"<a>"+siteListObj[i].name+"</a></li>"; 
+						}
+						$("#list-street").append(temp).listview("refresh");
+						
+						$(".site-item").off().on ( "tap" , function ()
+						{
+							var stid = $(this).attr("stid");
+							g_zoneId = parseInt(stid);
+							$("#panel-street").panel("close");
+							initMainPage ();
+						});
+					}
+				});
+			}
+		});
+	}
+	
+	var shopListParam = null;
+	if ( g_lh.isLogged() == true ) 
+	{
+		g_lh.doLogin ( function ( loginInfoObj )
+		{	
+			if ( loginInfoObj.success == true )
+			{
+				var zid = 1; 
+				if ( g_zoneId != 0 ) { zid = g_zoneId; }
+				else { zid = loginInfoObj.memberInfo.zone_id; }
+				shopListParam = 
+				{
+					start:0, 
+					end:30, 
+					zid:zid, 
+					mid:loginInfoObj.memberInfo.id
+				};
+				requestShopList ( shopListParam );
+			}
+			else { doAlert("사용자 정보 로드 실패","관심지역 로드 실패",function(){}); return;}
+		});
+	}
+	else 
+	{
+		var zid = 1; if ( g_zoneId != 0 ) { zid = g_zoneId; }
+		shopListParam = {start:0, end:30, zid:zid};
+		requestShopList ( shopListParam );
+	}
+}
+
+// 내 근처 상점 리스트 로드
 function initNearPage ()
 {
-	$("#page-near").on ( "pagebeforeshow" , function()
+	$("#wrapper").css("display","none");
+	$("#loading-wrapper").css("display","block");
+	$("#loading-msg").html("GPS 정보를 가져옵니다...");
+	
+	$(".a-favorite").removeClass("ui-btn-active");
+	$(".a-near").removeClass("ui-btn-active");
+	$(".a-near").addClass("ui-btn-active");
+	
+	$("#coms-title").html("내 근처 상점");
+	
+	g_gps.getCoodinate ( function ( coordObj )
 	{
-		$(".a-favorite").removeClass("ui-btn-active");
-		$(".a-near").removeClass("ui-btn-active");
+		if ( coordObj.success == false ) 
+		{ 	
+			doAlert ( coordObj.cause , "GPS 수신 오류" , function (){});
+			initMainPage ();
+			return; 
+		}	
 		
-		$(".a-near").addClass("ui-btn-active");
+		$("#loading-msg").html("상점 리스트를 가져옵니다...");
 		
-		$("#wrapper-gps-loading").css("display","block");
-		$("#wrapper-near").css("display","none");
-		
-		g_gps.getCoodinate ( function ( coordObj )
+		var ajaxParam = null;
+		if ( g_lh.isLogged() == true )
 		{
-			$("#wrapper-gps-loading").css ( "display","none" );
-			$("#wrapper-near").css("display","block");
-			
-			if ( coordObj.success == false ) 
-			{ 	
-				doAlert ( coordObj.cause , "GPS 수신 오류" , function () 
-				{
-					$.mobile.changePage("#page-main");
-				});
-				return; 
-			}	
-			
-			var lh = new LoginHandler ();
-			var ajaxParam = null;
-			if ( lh.isLogged() == true )
+			ajaxParam = 
 			{
-				ajaxParam = 
-				{
-					mid:lh.getLocalLoginInfo().id,
-					lat:coordObj.lat,
-					lng:coordObj.lng,
-					km:10.0
-				};
-			}
-			else 
+				mid:g_lh.getLocalLoginInfo().id,
+				lat:coordObj.lat,
+				lng:coordObj.lng,
+				km:10.0
+			};
+		}
+		else 
+		{
+			ajaxParam = 
 			{
-				ajaxParam = 
-				{
-					lat:coordObj.lat,
-					lng:coordObj.lng,
-					km:10.0
-				};
+				lat:coordObj.lat,
+				lng:coordObj.lng,
+				km:10.0
+			};
+		}
+		
+		var comboList = new Array ();
+		
+		$.ajax ({
+			url:"http://teamsf.co.kr/~coms/shop_list_nearest_show.php",
+			dataType:"json",
+			data:ajaxParam,
+			type:"post",
+			success:function ( resultObj )
+			{
+				$("#wrapper").css("display","block");
+				$("#loading-wrapper").css("display","none");
+				$("#wrapper").html("");
+				drawShopList ( resultObj , comboList , "#wrapper" );
 			}
-			
-			var myScroll;
-			var combo_list = new Array ();
-			
-			$.ajax ({
-				url:"http://teamsf.co.kr/~coms/shop_list_nearest_show.php",
-				dataType:"json",
-				data:ajaxParam,
-				type:"post",
-				success:function ( resultObj )
-				{
-					//drawShopList ( myScroll , resultObj , combo_list , "#wrapper-near" , "#scroller-near" );
-					drawShopList ( myScroll , resultObj , combo_list , "#wrapper-near" , "#wrapper-near" );
-				}
-			});
 		});
 	});
 }
 
-function initMainPage ()
-{	
-	$("#page-main").on ( "pagebeforeshow" , function()
-	{
-		$(".a-favorite").removeClass("ui-btn-active");
-		$(".a-near").removeClass("ui-btn-active");
-		
-		$(".a-favorite").addClass("ui-btn-active");
-	});
-	
-	var lh = new LoginHandler ();
-	var userData = lh.getLocalLoginInfo();
-
-	var myScroll;
-	var currentShop;
-
-	var url = "http://teamsf.co.kr/~coms/shop_list_show.php";
-	var url2 = "http://teamsf.co.kr/~coms/site_list_show.php";
-	
-	var list_start = 0;
-	var list_end = 30;
-	var zid = 1;
-	var params;
-	var s_params = {type:"street"};
-	var store_type = "null";
-	var combo_list = new Array();
-
-	if (lh.isLogged() == true)  { params = {start:list_start, end:list_end, zid:zid, mid:userData.id}; }
-	else { params = {start:list_start, end:list_end, zid:zid}; }
-
-	$.ajax({
-		type: "post",
-		dataType: "json",
-		url: url2,
-		data: s_params		
-	}).done(function(data){
-		//console.log(data);
-		var temp = "";
-		for(var i in data) {
-			temp += "<li data-icon='false'><a>"+data[i].name+"</a></li>";
-		}
-		$("#list-street").append(temp).listview("refresh");
-	});
-
-	$.ajax({
-		type: "post",
-		dataType: "json",
-		url: url,
-		data: params		
-	}).done(function(data){
-		//drawShopList ( myScroll , data , combo_list , "#wrapper" , "#scroller" );
-		drawShopList ( myScroll , data , combo_list , "#wrapper" , "#wrapper" );
-	});
+function initPhoneGap () 
+{
+	document.addEventListener ( "deviceready", initAll , false );
 }
 
-function drawShopList ( myScroll , data , combo_list , wrapperSelector , scrollerSelector )
+function drawShopList ( data , combo_list , wrapperSelector )
 {
     var str = "";
     for(var i in data.list) 
@@ -160,7 +206,7 @@ function drawShopList ( myScroll , data , combo_list , wrapperSelector , scrolle
 		str += "</div>";
 		str += "<div class='row'>";
 		str += "<hr class='list-divider'>";
-		str += "<div class='span header-combo'>콤보<br>할인</div>";
+		str += "<div class='span header-combo'>콤	보<br>할인</div>";
 		str += "<div class='span combo-progress with-line'>";
 		str += "<div class='combo-box'><i class='icon-heart'></i><span class='combo-text'>"+temp.combo_1+"%</span></div>";
 		str += "<div class='combo-box'><i class='icon-heart '></i><span class='combo-text'>"+temp.combo_2+"%</span></div>";
@@ -171,22 +217,12 @@ function drawShopList ( myScroll , data , combo_list , wrapperSelector , scrolle
 		str += "</div>";                 
 		str += "</a></div>";
     }
-
-	$(scrollerSelector).append(str);
-
-	// display combo progress
-	for (var i in combo_list){
+    
+	$(wrapperSelector).append(str);
+	
+	for (var i in combo_list)
+	{
 		var temp = parseInt(i)+1;
-		//console.log(temp+" : "+combo_list[i]);
 		$('.list-shop:nth-child('+temp+') .combo-box:nth-child('+(combo_list[i])+')').addClass('active');
 	}
-    //myScroll = new IScroll(wrapperSelector, { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
-    
-    //document.removeEventListener("touchmove");
-	//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-}
-
-function initPhonegap ()
-{
-	document.addEventListener("deviceready", initAll , false);	
 }
