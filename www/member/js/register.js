@@ -1,5 +1,6 @@
 var g_iu = null;
 var g_isOpen = false;
+var g_dlgTitle = "가입 오류";
 
 function initAll ()
 {
@@ -49,7 +50,7 @@ function initAll ()
 					g_isOpen = false;
 					if ( result.success == false ) 
 					{ 
-						alert ( "프로필 이미지 업로드 실패 : " + result.cause );
+						doAlert ( "프로필 이미지 업로드 실패 : " + result.cause , g_dlgTitle , function(){} );
 						return;
 					}
 					
@@ -67,13 +68,13 @@ function initAll ()
     	var phone1 = $("#phone1").val(); var phone2=$("#phone2").val();
     	var phone3 = $("#phone3").val();
     	
-    	if ( pw.length == 0 ) { alert("패스워드를 입력하세요!"); return; }
-    	if ( pw != pwConfirm ) { alert("패스워드가 서로 다릅니다!"); return; }
-    	if ( email.length == 0 ) { alert("이메일 아이디를 입력하세요!"); return; }
-    	if ( name.length == 0 ) { alert("이름을 입력하세요!"); return; }
+    	if ( pw.length == 0 ) { doAlert("패스워드를 입력하세요!",g_dlgTitle,function(){}); return; }
+    	if ( pw != pwConfirm ) { doAlert("패스워드가 서로 다릅니다!",g_dlgTitle,function(){}); return; }
+    	if ( email.length == 0 ) { doAlert("이메일 아이디를 입력하세요!",g_dlgTitle,function(){}); return; }
+    	if ( name.length == 0 ) { doAlert("이름을 입력하세요!",g_dlgTitle,function(){}); return; }
     	if ( phone1.length == 0 || phone2.length == 0 || phone3.length == 0 ) 
     	{
-    		alert ( "휴대폰 번호를 입력하세요!" ); return; 
+    		doAlert ( "휴대폰 번호를 입력하세요!",g_dlgTitle,function(){}); return; 
     	}
     	
     	$.ajax ({
@@ -84,7 +85,7 @@ function initAll ()
             success:function ( resultObj )
             {
             	if ( resultObj.success == true ) { $.mobile.changePage("#register2"); }
-            	else { alert ( "에러 : 중복되는 이메일입니다." ); }
+            	else { doAlert ( "중복되는 이메일입니다.",g_dlgTitle,function(){} ); }
             }
     	});
     });
@@ -95,7 +96,7 @@ function initAll ()
     	var imgid = $("#img-profile").attr("imgid");
     	var zoneId = $("#select-comszone").val();
     	
-    	if ( zoneId == null ) { alert("콤스존을 선택해 주세요!"); return; }
+    	if ( zoneId == null ) { doAlert("콤스존을 선택해 주세요!",g_dlgTitle,function(){}); return; }
     	//if ( nick.length == 0 ) { alert("콤스 닉네임을 입력하세요!"); return; }
     	//if ( parseInt(imgid) == 0 ) { alert("프로실 사진을 선택하세요!"); return; }
     	
@@ -119,12 +120,17 @@ function initAll ()
         }).done(function(data){
             if ( data.success == true )
             {
-            	alert("회원 등록이 완료 되었습니다.");
+            	doAlert("회원 등록이 완료 되었습니다.","축하합니다!",function(){});
             	window.location="../mycoms/index.html";
             }
-            else { alert ( "에러 : " + data.cause ); }
+            else { doAlert ( "에러 : " + data.cause , g_dlgTitle , function(){} ); }
         });
     });
+}
+
+function doAlert ( msg , title , callbackFunction )
+{
+	navigator.notification.alert ( msg , callbackFunction , title , "확인" );
 }
 
 function initPhonegap () 
