@@ -189,11 +189,23 @@ function bindAccountSettingPage ()
 			
 			if ( newPw.length != 0 )
 			{
-				if ( newPw != confirmPw ) { alert("두 패스워드를 확인하세요!"); return; }
+				if ( newPw != confirmPw ) 
+				{ 
+					doAlert ( "두 패스워드가 서로 다릅니다!" , "계정 설정 오류" , function () {} );
+					return; 
+				}
 			}
 			
-			if ( $("#phone2").val().length == 0 ) { phoneNum = ""; }
+			if ( $("#phone1").val().length == 0 ||
+					$("#phone2").val().length == 0 || 
+					$("#phone3").val().length == 0 ) { phoneNum = ""; }
 			//else if ( authCode.length == 0 ) { alert ( "인증번호를 입력하셔야 합니다!" ); return; }
+			
+			if ( phoneNum.length == 0 ) 
+			{
+				doAlert ( "휴대폰 번호를 적으셔야 합니다!" , "계정 설정 오류" , function () {} );
+				return; 
+			}
 			
 			var ajaxParam = {
 				mid:memberId,
@@ -267,6 +279,11 @@ function loadPrevAccountSetting ( id )
 					$("#account-customer-email").html ( resultObj.email );
 					$("#zone-selector").val(resultObj.zone_id);
 					$("#zone-selector").selectmenu("refresh");
+					
+					var phone = resultObj.phone;
+					var phoneArr = phone.split ( "-" );
+					
+					$("#phone1").val(phoneArr[0]); $("#phone2").val(phoneArr[1]); $("#phone3").val(phoneArr[2]);
 				}
 			});
 		}
