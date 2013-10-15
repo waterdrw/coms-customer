@@ -70,6 +70,13 @@ function initMainPage ()
 						}
 						$("#list-street").append(temp).listview("refresh");
 						
+						$(".site-item").off().on ( "tap" , function ()
+						{
+							var siteId = $(this).attr("stid");
+							g_zoneId = parseInt(siteId);
+							initMainPage ();
+							$("#panel-street").panel ( "close" );
+						});
 					}
 				});
 			}
