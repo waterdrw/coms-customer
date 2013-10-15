@@ -70,13 +70,6 @@ function initMainPage ()
 						}
 						$("#list-street").append(temp).listview("refresh");
 						
-						$(".site-item").off().on ( "tap" , function ()
-						{
-							var stid = $(this).attr("stid");
-							g_zoneId = parseInt(stid);
-							$("#panel-street").panel("close");
-							initMainPage ();
-						});
 					}
 				});
 			}
@@ -189,7 +182,7 @@ function drawShopList ( data , combo_list , wrapperSelector )
     	var temp = data.list[i];
     	combo_list[i] = temp.member_combo;
 
-		str += "<div class='list-shop'><a class='a-shop-detail' href='./shop.html?shopId="+temp.id+"' rel='external'>";
+		str += "<div class='list-shop'><a class='a-shop-detail' shopid='" + temp.id + "' href='./shop.html?shopId="+temp.id+"' rel='external'>";
 		str += "<div class='row'>";
 		str += "<div class='span shop-info'>";
 		str += "<img src='"+temp.profile_img_path+"'>";
