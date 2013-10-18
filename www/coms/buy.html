@@ -29,10 +29,10 @@
     <div id="wrapper" class="content-near-shop">
         <div id="scroller">
             <div class="notice-near-shop">
-                <p><i class="icon-asterisk"></i> 콤폰(콤보쿠폰)은 상점의 모든 메뉴를 자유롭게 이용할 수 있는 정액 자유이용권입니다.</p>
-                <p><i class="icon-asterisk"></i> 상점 이용금액이 콤폰 금액 미달 시 미달 금액에 대해서는 환불이나 적립되지 않으니 이용금액에 따라 콤폰을 알맞게 선택하여 구매하세요.</p>
+                <p><i class="icon-asterisk"></i> 콤폰(콤보쿠폰)은 콤보 달성에 따라 단골할인 혜택을 받을 수 있는 무료 발급 쿠폰입니다.</p>
+                <p><i class="icon-asterisk"></i> 목표 금액 이용시에 할인혜택을 받을 수 있으니 이용하실 예상 금액에 따라 콤폰을 알맞게 선택하여 발급 받으세요.</p>
             </div>
-            <div class="area-notice">우리 상점의 판매 콤폰(자유 이용권)은 아래와 같습니다.</div>
+            <div class="area-notice" style="text-align:center;">아래의 콤폰 유형(목표 이용 금액)을 선택하세요.</div>
             <div class="row area-padding">
                 <div class="span banner-coupon" value="0">
                     <div class="banner-inner-coupon">
@@ -59,14 +59,14 @@
                     </div>
                 </div>
             </div>
-            <div class="area-divider"><i class="icon-arrow-right"></i> 선택한 콤폰의 결제 금액을 확인하세요.</div>
+            <div class="area-divider"><i class="icon-arrow-right"></i> 선택한 콤폰의 할인 금액을 확인하세요.</div>
             <div class="area-padding">
                 <div class="banner-coupon2 active main">
                     <div class="banner-inner-coupon row">
                         <div class="span"><img id="compon-image" src="./img/img-shop-profile1.jpg"></div>
                         <div class="span">
                             <p id="shop-name"></p>
-                            <p><span class="buy-price"></span> 원 이상 이용시 <span class="buy-discount-price"></span> 원 할인권</p>
+                            <p><span class="buy-price"></span>원 이상 이용시 <span class="buy-discount-price"></span> 원 할인권</p>
                             <p>콤보타임 마감일 : <span id="limit-date"></span>까지</p>
                         </div>
                     </div>
@@ -74,10 +74,12 @@
             </div>
             <div class="area-padding area-price-info">
                 <p><span id="combo"></span>콤보(<span id="discount"></span>%) 가 적용된 할인액은 아래와 같습니다.</p>
-                <p>할인금액 : <span class="buy-discount-price"></span>원 (<span class="buy-price"></span> 원 이용시)</p>
-                <a id="btn-credit" href="#" data-role="button" data-theme="b"><i class="icon-credit-card"></i> 콤폰 발급받기</a>
+                <p>할인금액 : <span class="buy-discount-price"></span>원 (<span class="buy-price"></span>원 이용시)</p>
+                <a id="btn-credit" href="#" data-role="button" data-theme="b">
+                	<!--<i class="icon-credit-card"></i>-->콤폰 발급받기
+                </a>
                 
-                <p>콤스 스타일 -> 당일 구매, 당일 사용 하기!</p>
+                <!-- <p>콤스 스타일 -> 당일 구매, 당일 사용 하기!</p> -->
             </div>
             <input type="hidden" id="compon-num" value="">
         </div>

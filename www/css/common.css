@@ -642,6 +642,7 @@ code								{ font-family: Courier New !important; font-size: 0.85em;}
 .apple-navbar-ui a											{ background: none; padding: 0px; display: inline-block !important; position: static; border-left-width: 0;}
 .apple-navbar-ui .ui-icon-shadow 							{ -webkit-box-shadow: none; -moz-box-shadow: none;  box-shadow: none; }
 .apple-navbar-ui .ui-btn-inner 								{ position: relative; border: none; overflow: visible; padding: 0px !important; text-align: center;}
+.ui-body-c, .ui-overlay-c									{ background:#FFFFFF; }
 
 /*  2. BUTTON BACKGROUND .ui-icon  
  *  IE7+8 */
