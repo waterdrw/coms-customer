@@ -69,20 +69,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 
 .menu1-header {
 	background-size: 100% auto;
-	background-color: #B1E6E6;
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#B1E6E6),to(#B1E6E6));
-	background-image: -webkit-linear-gradient(#B1E6E6,#B1E6E6);
-	background-image: -moz-linear-gradient(#B1E6E6,#B1E6E6);
-	background-image: -ms-linear-gradient(#B1E6E6,#B1E6E6);
-	background-image: -o-linear-gradient(#B1E6E6,#B1E6E6);
-	background-image: linear-gradient(#B1E6E6,#B1E6E6)
+	background-color: rgb(84,168,219);
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgb(84,168,219)),to(rgb(84,168,219)));
+	background-image: -webkit-linear-gradient(rgb(84,168,219),rgb(84,168,219));
+	background-image: -moz-linear-gradient(rgb(84,168,219),rgb(84,168,219));
+	background-image: -ms-linear-gradient(rgb(84,168,219),rgb(84,168,219));
+	background-image: -o-linear-gradient(rgb(84,168,219),rgb(84,168,219));
+	background-image: linear-gradient(rgb(84,168,219),rgb(84,168,219))
 }
 .ui-header .ui-title, .ui-footer .ui-title{
 	margin: 0.3em 16% 0.3em
 }
 .menu1-header h1{
-	color: #000;
-	text-shadow:1px 1px 2px #fff;	
+	color: #fff;
+	text-decoration: none;
 	font-size: 23px !important;
 }
 #header-coms{
@@ -828,14 +828,9 @@ code								{ font-family: Courier New !important; font-size: 0.85em;}
 
 .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
 .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; background-size: 100%!important }
-#chat .ui-icon { background:  url(../img/glyphish-icons/09-chat2.png) 50% 50% no-repeat; background-size: 24px 22px; }
-#email .ui-icon { background:  url(../img/glyphish-icons/18-envelope.png) 50% 50% no-repeat; background-size: 24px 16px;  }
-#login .ui-icon { background:  url(../img/glyphish-icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
-#beer .ui-icon { background:  url(../img/glyphish-icons/88-beermug.png) 50% 50% no-repeat;  background-size: 22px 27px; }
-#coffee .ui-icon { background:  url(../img/glyphish-icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
-#skull .ui-icon { background:  url(../img/glyphish-icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
-#mycoms .ui-icon { background:  url(../img/glyphish-icons/btn-mycoms.png) 50% 50% no-repeat; background-size: 62px 51px; }
-#coms .ui-icon { background:  url(../img/glyphish-icons/btn-coms.png) 50% 50% no-repeat; background-size: 58px 54px;  }
-#friend .ui-icon { background:  url(../img/glyphish-icons/btn-friend.png) 50% 50% no-repeat;  background-size: 63px 65px; }
-#comstory .ui-icon { background:  url(../img/glyphish-icons/btn-bubble.png) 50% 50% no-repeat;  background-size: 62px 51px; }
-#setting .ui-icon { background:  url(../img/glyphish-icons/btn-setting.png) 50% 50% no-repeat;  background-size: 50px 53px; }
+
+#mycoms .ui-icon { background:  url(../img/glyphish-icons/btn-mycoms.png) 50% 50% no-repeat; background-size: 100px 100px; }
+#coms .ui-icon { background:  url(../img/glyphish-icons/btn-coms.png) 50% 50% no-repeat; background-size: 100px 100px;  }
+#friend .ui-icon { background:  url(../img/glyphish-icons/btn-friends.png) 50% 50% no-repeat;  background-size: 100px 100px; }
+#comstory .ui-icon { background:  url(../img/glyphish-icons/btn-compons.png) 50% 50% no-repeat;  background-size: 100px 100px; }
+#setting .ui-icon { background:  url(../img/glyphish-icons/btn-setting.png) 50% 50% no-repeat;  background-size: 100px 100px; }
