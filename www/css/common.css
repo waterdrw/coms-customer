@@ -7,18 +7,32 @@ p{
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-
+.ui-btn.ui-btn-right {
+	border:none;
+	border-radius: 0px;
+}
 .ui-page .ui-header .ui-btn.ui-btn-right .ui-btn-inner {
     color      : black;    
-background: #d6f9ff; /* Old browsers */
-background: -moz-linear-gradient(top,  #d6f9ff 0%, #9ee8fa 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6f9ff), color-stop(100%,#9ee8fa)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #d6f9ff 0%,#9ee8fa 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #d6f9ff 0%,#9ee8fa 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #d6f9ff 0%,#9ee8fa 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #d6f9ff 0%,#9ee8fa 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', endColorstr='#9ee8fa',GradientType=0 ); /* IE6-9 */
-
+	background: rgb(84,168,219); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(84,168,219) 0%, rgb(84,168,219) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(84,168,219)), color-stop(100%,rgb(84,168,219))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(84,168,219)', endColorstr='rgb(84,168,219)',GradientType=0 ); /* IE6-9 */
+}
+.ui-btn-active {
+	text-decoration: none;
+	color      : black; 
+	background: rgb(248,248,248); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(248,248,248) 0%, rgb(248,248,248) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(248,248,248)), color-stop(100%,rgb(248,248,248))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgb(248,248,248) 0%,rgb(248,248,248) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgb(248,248,248) 0%,rgb(248,248,248) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgb(248,248,248) 0%,rgb(248,248,248) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgb(248,248,248) 0%,rgb(248,248,248) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(248,248,248)', endColorstr='rgb(248,248,248)',GradientType=0 ); /* IE6-9 */	
 }
 
 .row::before, .row::after{
@@ -212,10 +226,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	display: inline-block;
 }
 .combo-box .icon-gift{
-	background-color: wheat;
+	background-color: #d3cec4;
 	padding: 1px 3px 1px;
 	border-radius: 5px;
-	color: tomato;
+	color: #888;
 }
 
 .combo-text{
@@ -224,10 +238,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	display: block;
 }
 .combo-progress .active{
-	color:#428bca;
+	color:rgb(218,68,63);
 }
 .combo-progress .active .icon-gift{
-	color:#428bca;	
+	color:rgb(218,68,63);
 }
 
 .notice-near-shop{
@@ -464,7 +478,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	padding: 10px;
 	border-bottom: 1px solid #a8a8a8;
 	font-size:15px;
-	text-align: right;
+	text-align: left;
 }
 .area-heart-cash .area-heart-top .icon-plus{
 	color: #fff;
@@ -531,7 +545,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 
 }
 .list-mycompon .img{
-	width:75px;
+	width:20%;
 	height:55px;
 	float: left;
 	margin-right:5px;
@@ -559,6 +573,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	color: #fff;
 	text-shadow: none;
 	font-weight: bold;
+	width: 18%;
 }
 .list-mycompon .compon-code{
 	border: 1px solid gray;
@@ -601,7 +616,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	border-radius: 5px;
 }
 
-*                                        		{font-family: 'Droid Sans', 'Myriad Pro', Helvetica, 'Garamont Premr Pro', Arial, sans-serif; font-size: 1em;}
+
 html 							{-webkit-font-smoothing: antialiased;}
 pre 								{ white-space: pre-wrap; word-wrap: break-word; line-height: 0.95em; text-shadow: none; background-color: #d3d3d3; }
 div[data-role="content"]			{ background: #ffffff; }

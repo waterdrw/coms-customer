@@ -206,7 +206,7 @@ function drawShopList ( data , combo_list , wrapperSelector )
 		str += "</div>";
 		str += "<div class='row'>";
 		str += "<hr class='list-divider'>";
-		str += "<div class='span header-combo'>콤	보<br>할인</div>";
+		str += "<div class='span header-combo'>콤보<br>할인</div>";
 		str += "<div class='span combo-progress with-line'>";
 		str += "<div class='combo-box'><i class='icon-heart'></i><span class='combo-text'>"+temp.combo_1+"%</span></div>";
 		str += "<div class='combo-box'><i class='icon-heart '></i><span class='combo-text'>"+temp.combo_2+"%</span></div>";

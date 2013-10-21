@@ -183,3 +183,26 @@ function LoginHandler ()
 		return ret;
 	};
 }
+
+// 화폐단위 세자리마다 쉼표 삽입
+function commaNum(num) {  
+    if (num < 0) { num *= -1; var minus = true} 
+    else var minus = false      
+    var dotPos = (num+"").split(".")
+    var dotU = dotPos[0] 
+    var dotD = dotPos[1] 
+    var commaFlag = dotU.length%3
+
+    if(commaFlag) { 
+            var out = dotU.substring(0, commaFlag)  
+            if (dotU.length > 3) out += "," 
+    } 
+    else var out = "" 
+    for (var i=commaFlag; i < dotU.length; i+=3) { 
+            out += dotU.substring(i, i+3)  
+            if( i < dotU.length-3) out += "," 
+    } 
+    if(minus) out = "-" + out 
+    if(dotD) return out + "." + dotD 
+    else return out 
+}
