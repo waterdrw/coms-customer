@@ -2,6 +2,7 @@ var g_gps = null;
 var g_lh = null;
 var g_zoneId = 0;
 var g_isOpen = false;
+var g_panelOpen = false;
 
 function initAll () 
 {
@@ -12,8 +13,17 @@ function initAll ()
 	$(".a-favorite").on ( "tap", function() { g_zoneId=0; initMainPage(); } );
 	$(".a-near").on ( "tap", initNearPage );
 	
+	bindPanelEvent ();
 	bindBackButton ();
 	initMainPage ();
+}
+
+function bindPanelEvent ()
+{
+	$("#panel-street").panel ({
+		beforeopen:function ( event , ui ) { g_panelOpen=true; },
+		close:function ( event , ui ) { g_panelOpen=false; }
+	});
 }
 
 function bindBackButton ()
@@ -207,7 +217,8 @@ function drawShopList ( data , combo_list , wrapperSelector )
     	var temp = data.list[i];
     	combo_list[i] = temp.member_combo;
 
-		str += "<div class='list-shop'><a class='a-shop-detail' shopid='" + temp.id + "' href='./shop.html?shopId="+temp.id+"' rel='external'>";
+		//str += "<div class='list-shop'><a class='a-shop-detail' shopid='" + temp.id + "' href='./shop.html?shopId="+temp.id+"' rel='external'>";
+		str += "<div class='list-shop'><a class='a-shop-detail' shopid='" + temp.id + "'>";
 		str += "<div class='row'>";
 		str += "<div class='span shop-info'>";
 		str += "<img src='"+temp.profile_img_path+"'>";
@@ -243,4 +254,11 @@ function drawShopList ( data , combo_list , wrapperSelector )
 		var temp = parseInt(i)+1;
 		$('.list-shop:nth-child('+temp+') .combo-box:nth-child('+(combo_list[i])+')').addClass('active');
 	}
+	
+	$(".a-shop-detail").off().on ( "tap" , function ()
+	{
+		if ( g_panelOpen == true ) { return; }
+		var shopId = $(this).attr("shopid");
+		location.href = "./shop.html?shopId=" + shopId;
+	});
 }
