@@ -15,20 +15,13 @@
 <script type="text/javascript" src="../js/params.js"></script>
 <script type="text/javascript" src="../js/loginHandler.js"></script>
 <script type="text/javascript" src="./js/mycoms.js"></script>
+<script type="text/javascript" src="../cordova.js"></script>
 
 <script type="text/javascript">
 
-var myScroll;
-
-function loaded () {
-    myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
-}
-
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-
 </script>
 </head>
-<body onload="loaded()">
+<body>
 <div data-role="page">
     <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
         <h1>마이콤스</h1>
@@ -67,10 +60,9 @@ document.addEventListener('touchmove', function (e) { e.preventDefault(); }, fal
             </ul>
         </div>
     </div> 
-    
-                 
 </div><!-- /page -->
 
+<script type="text/javascript">initPhoneGap();</script>
 </body>
 </html>
 

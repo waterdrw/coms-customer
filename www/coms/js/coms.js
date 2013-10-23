@@ -1,6 +1,7 @@
 var g_gps = null;
 var g_lh = null;
 var g_zoneId = 0;
+var g_isOpen = false;
 
 function initAll () 
 {
@@ -11,7 +12,24 @@ function initAll ()
 	$(".a-favorite").on ( "tap", function() { g_zoneId=0; initMainPage(); } );
 	$(".a-near").on ( "tap", initNearPage );
 	
+	bindBackButton ();
 	initMainPage ();
+}
+
+function bindBackButton ()
+{
+	navigator.app.overrideBackbutton(true);
+	document.addEventListener("backbutton", function ()
+	{
+		if ( g_isOpen == true ) { return; }
+    	g_isOpen = true;
+    	
+		navigator.notification.confirm ( "콤스를 종료하시겠습니까?", function ( btnIndex )
+    	{	
+    		g_isOpen = false;
+    		if ( btnIndex == 1 ) { navigator.app.exitApp(); }
+    	}, "콤스 종료" ,"확인,취소" );
+	}, true );
 }
 
 function doAlert ( msg , title , callbackFunction )

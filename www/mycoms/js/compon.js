@@ -1,4 +1,9 @@
-$(document).ready(function(){
+var g_isOpen = false;
+
+function initAll () 
+{
+	bindBackButton ();
+	
     var lh = new LoginHandler ();
     var userData = lh.getLocalLoginInfo();
 
@@ -7,7 +12,6 @@ $(document).ready(function(){
             window.location = "../member/index.html";
         }
     });
-
 
     console.log(userData);
 
@@ -55,7 +59,25 @@ $(document).ready(function(){
         })
 
     });
-    
-    
+}
 
-})
+function bindBackButton ()
+{
+	navigator.app.overrideBackbutton(true);
+	document.addEventListener("backbutton", function ()
+	{
+		if ( g_isOpen == true ) { return; }
+    	g_isOpen = true;
+    	
+		navigator.notification.confirm ( "콤스를 종료하시겠습니까?", function ( btnIndex )
+    	{	
+    		g_isOpen = false;
+    		if ( btnIndex == 1 ) { navigator.app.exitApp(); }
+    	}, "콤스 종료" ,"확인,취소" );
+	}, true );
+}
+
+function initPhoneGap () 
+{
+	document.addEventListener ( "deviceready", initAll , false );
+}
