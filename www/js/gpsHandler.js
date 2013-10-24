@@ -64,6 +64,11 @@ function GPSHandler ()
 				"success":false,
 				"cause":"GPS 좌표 획득 실패"
 			});
+		},
+		{
+			maximumAge:3000, 
+			timeout:5000,
+			enableHighAccuracy: true
 		});
 	};
 }
