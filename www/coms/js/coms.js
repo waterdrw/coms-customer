@@ -173,7 +173,7 @@ function initNearPage ()
 				mid:g_lh.getLocalLoginInfo().id,
 				lat:coordObj.lat,
 				lng:coordObj.lng,
-				km:10.0
+				km:20.0
 			};
 		}
 		else 
@@ -182,7 +182,7 @@ function initNearPage ()
 			{
 				lat:coordObj.lat,
 				lng:coordObj.lng,
-				km:10.0
+				km:20.0
 			};
 		}
 		
