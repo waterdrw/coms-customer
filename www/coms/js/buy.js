@@ -82,9 +82,16 @@ function initAll ()
     				return;
     			}
     			else
-    			{
-    				var itemId = $('#compon-num').val();
-    		        window.location = "./buy_result.html?shopId="+sId+"&itemId="+itemId;
+    			{   
+    		        navigator.notification.confirm ( "콤폰을 발급받으시겠습니까?", function ( btnIndex )
+	            	{
+	            		g_isOpen = false;
+	            		if ( btnIndex == 1 )
+	            		{
+	            			var itemId = $('#compon-num').val();
+	        		        window.location = "./buy_result.html?shopId="+sId+"&itemId="+itemId;
+	            		}
+	            	}, "콤폰 발급" ,"확인,취소" );
     			}
     		}
     	});

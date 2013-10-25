@@ -82,10 +82,7 @@ function initMainPage ()
 					dataType:"json",
 					type:"post",
 					success:function ( siteListObj )
-					{
-						$("#loading-wrapper").css("display","none");
-						$("#wrapper").css("display","block");
-						
+					{	
 						$("#wrapper").html("");
 						drawShopList ( shopListObj , comboList , "#wrapper" );
 						
@@ -105,6 +102,9 @@ function initMainPage ()
 							initMainPage ();
 							$("#panel-street").panel ( "close" );
 						});
+						
+						$("#loading-wrapper").css("display","none");
+						$("#wrapper").css("display","block");
 					}
 				});
 			}

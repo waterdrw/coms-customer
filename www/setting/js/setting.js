@@ -249,17 +249,20 @@ function bindAccountSettingPage ()
 							g_lh.setId ( resultObj.email ); g_lh.setPw ( newPw );
 							g_lh.doLogin ( function ( loginResult )
 							{
-								alert("정보 변경 성공!");
+								doAlert ( "정보를 변경하는데 성공하였습니다!" , "계정 설정" , function () {} );
 								location.href="./index.html";
 							});
 						}
 						else
 						{
-							alert("정보 변경 성공!");
+							doAlert ( "정보를 변경하는데 성공하였습니다!" , "계정 설정" , function () {} );
 							location.href="./index.html";
 						}
 					}
-					else { alert ( "변경 실패! : " + resultObj.cause ); }
+					else 
+					{
+						doAlert ( resultObj.cause , "계정 설정 실패" , function () {} ); 
+					}
 				}
 			});
 		});

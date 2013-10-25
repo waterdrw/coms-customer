@@ -29,8 +29,8 @@ function initAll ()
         
         var compons_html = "<div class='area-padding'>";
 
-        for(var i in data) {
-
+        for(var i in data) 
+        {
             compons_html += "<div class='list-mycompon unused-compon' value='"+data[i].id+"'><div class='list-inner'>";
             compons_html += "<img class='img' src='"+data[i].shop_profile_img_path+"'>";
             compons_html += "<p class='name'>"+data[i].shop_name;
@@ -49,15 +49,11 @@ function initAll ()
         myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
         document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
-        $('.list-mycompon').on('click tap', function(){
+        $('.list-mycompon').on('click tap', function()
+        {
             var cId = $(this).attr('value');
-
-            console.log(cId);
-
             window.location = "./detail_compon.html?cId="+cId;
-            
-        })
-
+        });
     });
 }
 
