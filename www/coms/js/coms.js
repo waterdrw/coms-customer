@@ -224,13 +224,19 @@ function drawShopList ( data , combo_list , wrapperSelector )
 		str += "<img src='"+temp.profile_img_path+"'>";
 		str += "<p>"+temp.name+"</p>";
 		str += "<p>위치 : "+temp.location+"</p>";
-		str += "<p></p>";
+		
+		if ( temp.is_near == true ) 
+		{ 
+			str += "<p style='color:#DA443F;'>판매 종료 임박 -" + temp.near_left_day + "</p>"; 
+		}
+		else { str += "<p></p>"; }
+		
 		str += "</div>";
 		str += "<div class='span combo-timer'>";
 		//str += "<i class='icon-time'></i>";
 		str += "<p>콤보타임</p>";
 		str += "<hr>";
-		str += "<p><i class='icon-time'></i> -"+temp.combo_left_day+"일</p>";
+		str += "<p><i class='icon-time'></i> -"+temp.combo_left_day+ "일</p>";
 		str += "</div>";
 		str += "</div>";
 		str += "<div class='row'>";
