@@ -29,10 +29,10 @@ p{
 	background: linear-gradient(to bottom,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(84,168,219)', endColorstr='rgb(84,168,219)',GradientType=0 ); /* IE6-9 */
 }
-.ui-btn-active,  .ui-btn-active:hover{
+.ui-btn-active,  .ui-btn-active:hover, .ui-btn-active:visited{
 	text-decoration: none;
 	text-shadow:none;
-	color      : black; 
+	color: black; 
 	background: rgb(248,248,248); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgb(248,248,248) 0%, rgb(248,248,248) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(248,248,248)), color-stop(100%,rgb(248,248,248))); /* Chrome,Safari4+ */
