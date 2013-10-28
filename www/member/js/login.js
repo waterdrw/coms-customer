@@ -25,7 +25,7 @@ function initLoginPage ()
         {
             if ( resultObj.success == true ) 
             { 
-                history.back();
+                location.href="../coms/index.html";
             }
             else 
             {
@@ -121,6 +121,7 @@ function initLostFoundPage ()
 			dataType:"json",
 			success:function ( resultObj )
 			{
+				g_lh.flushLogin ();
 				if ( resultObj.success == true )
 				{
 					doAlert ( "가입시의 이메일로 임시 패스워드가 전송되었습니다." , "비밀번호 찾기 성공" , function (){} );

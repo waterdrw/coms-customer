@@ -28,6 +28,9 @@ function bindPanelEvent ()
 
 function bindBackButton ()
 {
+	var deviceType = (navigator.userAgent.match(/iPad/i))  == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i))  == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
+	if ( deviceType != "Android" ) { return; }
+
 	navigator.app.overrideBackbutton(true);
 	document.addEventListener("backbutton", function ()
 	{
@@ -130,7 +133,19 @@ function initMainPage ()
 				};
 				requestShopList ( shopListParam );
 			}
-			else { doAlert("사용자 정보 로드 실패","관심지역 로드 실패",function(){}); return;}
+			else 
+			{
+				// 사용자 정보 로드 실패시 -> 비로그인시 
+				//doAlert("사용자 정보 로드 실패","관심지역 로드 실패",function(){}); return;
+				
+				shopListParam = 
+				{
+					start:0, 
+					end:30, 
+					zid:1
+				};
+				requestShopList ( shopListParam );
+			}
 		});
 	}
 	else 

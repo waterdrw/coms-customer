@@ -62,12 +62,12 @@ function GPSHandler ()
 			console.log ( err );
 			callback ({
 				"success":false,
-				"cause":"GPS 좌표 획득 실패"
+				"cause":"GPS 좌표 획득에 실패하였습니다."
 			});
 		},
 		{
 			maximumAge:3000, 
-			timeout:5000,
+			timeout:10000,
 			enableHighAccuracy: true
 		});
 	};

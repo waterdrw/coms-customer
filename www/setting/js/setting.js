@@ -35,6 +35,9 @@ function initAll ()
 
 function bindBackButton ()
 {
+	var deviceType = (navigator.userAgent.match(/iPad/i))  == "iPad" ? "iPad" : (navigator.userAgent.match(/iPhone/i))  == "iPhone" ? "iPhone" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
+	if ( deviceType != "Android" ) { return; }
+	
 	navigator.app.overrideBackbutton(true);
 	document.addEventListener("backbutton", function ()
 	{
@@ -217,7 +220,6 @@ function bindAccountSettingPage ()
 			if ( $("#phone1").val().length == 0 ||
 					$("#phone2").val().length == 0 || 
 					$("#phone3").val().length == 0 ) { phoneNum = ""; }
-			//else if ( authCode.length == 0 ) { alert ( "인증번호를 입력하셔야 합니다!" ); return; }
 			
 			if ( phoneNum.length == 0 ) 
 			{
