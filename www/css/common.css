@@ -22,7 +22,7 @@ p{
 	background: linear-gradient(to bottom,  rgb(84,168,219) 0%,rgb(84,168,219) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(84,168,219)', endColorstr='rgb(84,168,219)',GradientType=0 ); /* IE6-9 */
 }
-.ui-btn-active {
+.ui-btn-active,  .ui-btn-active:hover{
 	text-decoration: none;
 	color      : black; 
 	background: rgb(248,248,248); /* Old browsers */
