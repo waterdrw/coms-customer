@@ -58,25 +58,18 @@
         <div class="area-padding">
             <div class="row">
                 <div class="span area-label">이름</div>
-                <div class="span area-input"><input type="text" id="txt-name" placeholder="이름을 입력해주세요."></div>
+                <div class="span area-input"><input type="text" id="txt-id-name" placeholder="이름을 입력해주세요."></div>
             </div>
             <hr>
             <div class="row phone">
                 <div class="span area-label">휴대폰 번호</div>
-                <div class="span area-input"><input type="text" id="phone1" placeholder="010" value="010"></div>
-                <div class="span area-input"><input type="text" id="phone2" placeholder=""></div>
-                <div class="span area-input"><input type="text" id="phone3" placeholder=""></div>
-            </div>
-            <div class="row">
-            	<a data-role="button">인증번호 전송</a>
+                <div class="span area-input"><input type="text" id="txt-id-phone1" placeholder="010" value="010"></div>
+                <div class="span area-input"><input type="text" id="txt-id-phone2" placeholder=""></div>
+                <div class="span area-input"><input type="text" id="txt-id-phone3" placeholder=""></div>
             </div>
             <hr>
             <div class="row">
-                <div class="span area-label">인증번호</div>
-                <div class="span area-input"><input type="text" id="txt-authnum" placeholder="인증번호 입력"></div>
-            </div>
-            <div class="row">
-            	<a data-role="button" data-theme="b">휴대폰으로 아이디 받기</a>
+            	<a id="btn-find-id" data-role="button" data-theme="b">아이디 찾기</a>
             </div>
         </div>
     </div>
@@ -99,18 +92,24 @@
         <div class="area-padding">
             <div class="row">
                 <div class="span area-label">이름</div>
-                <div class="span area-input"><input type="text" id="txt-name" placeholder="이름을 입력해주세요."></div>
+                <div class="span area-input"><input type="text" id="txt-pw-name" placeholder="이름을 입력해주세요."></div>
             </div>
             <hr>
             <div class="row">
                 <div class="span area-label">이메일아이디</div>
-                <div class="span area-input"><input type="text" id="txt-email" placeholder="이메일 아이디를 입력해주세요."></div>
+                <div class="span area-input"><input type="text" id="txt-pw-email" placeholder="이메일 아이디를 입력해주세요."></div>
+            </div>
+            <div class="row phone">
+                <div class="span area-label">휴대폰 번호</div>
+                <div class="span area-input"><input type="text" id="txt-pw-phone1" placeholder="010" value="010"></div>
+                <div class="span area-input"><input type="text" id="txt-pw-phone2" placeholder=""></div>
+                <div class="span area-input"><input type="text" id="txt-pw-phone3" placeholder=""></div>
             </div>
             <div class="row">
-            	<a data-role="button" data-theme="b">휴대폰으로 비밀번호 받기</a>
+            	<a id="btn-find-pw" data-role="button" data-theme="b">이메일로 비밀번호 받기</a>
             </div>
             <div class="row">
-            	<p><i class="icon-asterisk"></i> 회원 가입시 등록한 핸드폰 번호로 임시 비밀번호가 전송됩니다.</p>
+            	<p><i class="icon-asterisk"></i> 회원 가입시 등록한 메일주소로 임시 비밀번호가 전송됩니다.</p>
             	<p><i class="icon-asterisk"></i> 새로 발급된 비밀번호는 임시 비밀번호로 로그인 후 반드시 설정 메뉴를 통해 비밀번호를 변경하세요.</p>
             </div>
         </div>

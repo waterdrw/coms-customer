@@ -36,15 +36,101 @@ function initLoginPage ()
 }
 
 function initLostFoundPage ()
-{
-	$("#page-lost-found-id").on ( "pagebeforeshow" , function ()
+{	
+	$("#btn-find-id").on("tap",function()
 	{
+		var phone1 = $("#txt-id-phone1").val(); 
+		var phone2 = $("#txt-id-phone2").val();
+		var phone3 = $("#txt-id-phone3").val();
+		var userName = $("#txt-id-name").val();
 		
+		if ( phone1.length == 0 || phone2.length == 0 || phone3.length == 0 )
+		{
+			doAlert ( "휴대폰 번호를 입력해주세요!" , "아이디 찾기 오류" , function (){} );
+			return;
+		}
+		if ( userName.length == 0 )
+		{
+			doAlert ( "사용자명을 입력해주세요!" , "아이디 찾기 오류" , function (){} );
+			return;
+		}
+		var phoneNum = phone1 + "-" + phone2 + "-" + phone3;
+		var ajaxParam = 
+		{
+			name:userName,
+			phone:phoneNum,
+			type:"id"
+		};
+		
+		$.ajax ({
+			url:"http://teamsf.co.kr/~coms/lost_and_found.php",
+			data:ajaxParam,
+			type:"post",
+			dataType:"json",
+			success:function ( resultObj )
+			{
+				if ( resultObj.success == true )
+				{
+					doAlert ( "이메일아이디는 " + resultObj.email + "입니다" , 
+								"아이디 찾기 성공" , function (){} );
+				}
+				else
+				{
+					doAlert ( resultObj.cause , "아이디 찾기 오류" , function (){} );
+				}
+			}
+		});
 	});
 	
-	$("#page-lost-found-pw").on ( "pagebeforeshow" , function ()
+	$("#btn-find-pw").on("tap",function()
 	{
-				
+		var phone1 = $("#txt-pw-phone1").val(); 
+		var phone2 = $("#txt-pw-phone2").val();
+		var phone3 = $("#txt-pw-phone3").val();
+		var userName = $("#txt-pw-name").val();
+		var mailAddr = $("#txt-pw-email").val();
+		
+		if ( phone1.length == 0 || phone2.length == 0 || phone3.length == 0 )
+		{
+			doAlert ( "휴대폰 번호를 입력해주세요!" , "비밀번호 찾기 오류" , function (){} );
+			return;
+		}
+		if ( userName.length == 0 )
+		{
+			doAlert ( "사용자명을 입력해주세요!" , "비밀번호 찾기 오류" , function (){} );
+			return;
+		}
+		if ( mailAddr.length == 0 )
+		{
+			doAlert ( "메일주소를 입력하세요!" , "비밀번호 찾기 오류" , function (){} );
+			return;
+		}
+		var phoneNum = phone1 + "-" + phone2 + "-" + phone3;
+		var ajaxParam = 
+		{
+			name:userName,
+			phone:phoneNum,
+			email:mailAddr,
+			type:"pw"
+		};
+		
+		$.ajax ({
+			url:"http://teamsf.co.kr/~coms/lost_and_found.php",
+			data:ajaxParam,
+			type:"post",
+			dataType:"json",
+			success:function ( resultObj )
+			{
+				if ( resultObj.success == true )
+				{
+					doAlert ( "가입시의 이메일로 임시 패스워드가 전송되었습니다." , "비밀번호 찾기 성공" , function (){} );
+				}
+				else
+				{
+					doAlert ( resultObj.cause , "비밀번호 찾기 오류" , function (){} );
+				}
+			}
+		});
 	});
 }
 
