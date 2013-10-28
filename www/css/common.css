@@ -758,10 +758,10 @@ code								{ font-family: Courier New !important; font-size: 0.85em;}
 																  -ms-background-size: 150px 66px;
 																}													
 
-.comboSprite li a[data-icon="features"] span:only-child  	{ background-position:    0px -22px }
-.comboSprite li a[data-icon="brands"] span:only-child		{ background-position:  -60px -22px }
-.comboSprite li a[data-icon="fees"] span:only-child   		{ background-position:  -30px -22px }
-.comboSprite li a[data-icon="contact"] span:only-child		{ background-position:  -90px -22px }
+.comboSprite li a[data-icon="brands"] span:only-child  	{ background-position:    0px -22px }
+.comboSprite li a[data-icon="contact"] span:only-child   		{ background-position:  -30px -22px }
+.comboSprite li a[data-icon="features"] span:only-child		{ background-position:  -60px -22px }
+.comboSprite li a[data-icon="fees"] span:only-child		{ background-position:  -90px -22px }
 .comboSprite li a[data-icon="about"] span:only-child		{ background-position: -120px -22px }	
 
 /* ================ END SINGLE =============================== */
