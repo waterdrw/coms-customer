@@ -48,8 +48,8 @@ function initAll ()
 
         $('#combo').html(compon.combo_count);
         $('#discount').html(compon.discount_rate);
-        $('.buy-discount-price').html(commaNum(compon.price*10000-compon.discount_price*10000));
-        $('.buy-price').html(commaNum(compon.price*10000));
+        $('.buy-discount-price').html(commaNum(parseInt(compon.price*10000)-parseInt(compon.discount_price*10000)));
+        $('.buy-price').html(commaNum(parseInt(compon.price*10000)));
 
         $('#compon-num').val(parseInt(index)+1);
         

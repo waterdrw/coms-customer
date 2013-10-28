@@ -22,8 +22,8 @@ function initAll ()
         $('.foo #left-date').html(data.combo_left_day);
         $('.foo #compon-code').html(data.coupon_code);
         $('#shop-img').attr('src', data.shop_profile_img_path);
-        $('#buy-price').html(commaNum(data.price*10000));
-        $('#buy-discount-price').html(commaNum(data.price*10000-data.discount_price*10000));
+        $('#buy-price').html(commaNum(parseInt(data.price*10000)));
+        $('#buy-discount-price').html(commaNum(parseInt(data.price*10000)-parseInt(data.discount_price*10000)));
         
         $('#pid').val(data.purchase_id);
 
