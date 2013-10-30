@@ -4,6 +4,8 @@ var g_zoneId = 0;
 var g_isOpen = false;
 var g_panelOpen = false;
 
+var g_prevNavigator = null;
+
 function initAll () 
 {
 	g_gps = new GPSHandler ();
@@ -169,25 +171,17 @@ function initNearPage ()
 	
 	$("#coms-title").html("내 근처 상점");
 	
-	g_gps.getCoodinate ( function ( coordObj )
+	g_prevNavigator.geolocation.getCurrentPosition ( function ( position )
 	{
-		if ( coordObj.success == false ) 
-		{ 	
-			doAlert ( coordObj.cause , "GPS 수신 오류" , function (){});
-			initMainPage ();
-			return; 
-		}	
-		
 		$("#loading-msg").html("상점 리스트를 가져옵니다...");
-		
 		var ajaxParam = null;
 		if ( g_lh.isLogged() == true )
 		{
 			ajaxParam = 
 			{
 				mid:g_lh.getLocalLoginInfo().id,
-				lat:coordObj.lat,
-				lng:coordObj.lng,
+				lat:position.coords.latitude,
+				lng:position.coords.longitude,
 				km:20.0
 			};
 		}
@@ -195,8 +189,8 @@ function initNearPage ()
 		{
 			ajaxParam = 
 			{
-				lat:coordObj.lat,
-				lng:coordObj.lng,
+				lat:position.coords.latitude,
+				lng:position.coords.longitude,
 				km:20.0
 			};
 		}
@@ -216,11 +210,18 @@ function initNearPage ()
 				drawShopList ( resultObj , comboList , "#wrapper" );
 			}
 		});
+	},
+	function ( error )
+	{
+		doAlert ( "현재 위치 수신에 실패했습니다." , "GPS 수신 오류" , function (){});
+		initMainPage ();
+		return;
 	});
 }
 
 function initPhoneGap () 
 {
+	g_prevNavigator = navigator;
 	document.addEventListener ( "deviceready", initAll , false );
 }
 
