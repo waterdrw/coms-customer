@@ -88,7 +88,6 @@ p{
 .nav-glyphish-example .ui-btn-inner{
 	padding-bottom:0px !important;
 }
-
 .menu1-header {
 	background-size: 100% auto;
 	background-color: rgb(84,168,219);
@@ -97,7 +96,7 @@ p{
 	background-image: -moz-linear-gradient(rgb(84,168,219),rgb(84,168,219));
 	background-image: -ms-linear-gradient(rgb(84,168,219),rgb(84,168,219));
 	background-image: -o-linear-gradient(rgb(84,168,219),rgb(84,168,219));
-	background-image: linear-gradient(rgb(84,168,219),rgb(84,168,219))
+	background-image: linear-gradient(rgb(84,168,219),rgb(84,168,219));
 }
 .ui-header .ui-title, .ui-footer .ui-title{
 	margin: 0.3em 16% 0.3em
