@@ -10,10 +10,8 @@ function initAll ()
 	g_iu = new ImageUploader ();	
 	g_iu.setNavigatorObj ( navigator );
 	
-	bindBackButton ();
+	//bindBackButton ();
 	
-	//myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
-	//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 	
 	// 상단 공지 버튼들 이벤트 바인딩
 	$(".notice-link").on ( "click" , function ()

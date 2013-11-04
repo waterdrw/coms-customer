@@ -34,9 +34,11 @@ body {
 }
 
 .content-compon {
-    top: 90px !important;
+    top: 79px !important;
 }
-
+ .content-shop {
+    top: 42px !important;
+ }
 .content-coms {
     top: 0px !important;
 }
