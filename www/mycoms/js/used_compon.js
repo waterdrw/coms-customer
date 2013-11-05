@@ -30,7 +30,7 @@ function initAll ()
             compons_html += "<div class='list-mycompon used-compon' value='"+data[i].id+"'><div class='list-inner'>";
             compons_html += "<img class='img' src='"+data[i].shop_profile_img_path+"'>";
             compons_html += "<p class='name'>"+data[i].shop_name+" ["+data[i].ok_date+"] "+"</p>";
-            compons_html += "<p class='price'>"+commaNum(parseInt(data[i].price*10000))+" 원 이상 이용시 "+commaNum(parseInt(data[i].price*10000) - parseInt(data[i].discount_price*10000))+" 원 할인권";            
+            compons_html += "<p class='price'>"+commaNum(parseInt(data[i].price*10000))+"원 이상 이용시 "+commaNum(parseInt(data[i].price*10000) - parseInt(data[i].discount_price*10000))+"원 할인권";            
             compons_html += "</p>";
             compons_html += "<p class='limit-date'>"+data[i].limit_date+" 까지";
             compons_html += "</p>";
