@@ -122,7 +122,7 @@ function bindAccountDeletePage ()
 					g_lh.flushLogin ();
 					doAlert ( "계정이 삭제되었습니다." , "계정 삭제" , function () 
 					{
-						location.href="./index.html";
+						location.href="../index.html";
 					});
 				}
 			});
@@ -249,7 +249,7 @@ function bindAccountSettingPage ()
 							g_lh.setId ( resultObj.email ); g_lh.setPw ( newPw );
 							g_lh.doLogin ( function ( loginResult )
 							{
-								doAlert ( "정보를 변경하는데 성공하였습니다!" , "계정 설정" , function () {} );
+								doAlert ( "비밀번호를 변경하면 로그아웃 됩니다. 다시 로그인 해주세요." , "계정 설정" , function () {} );
 								location.href="./index.html";
 							});
 						}
