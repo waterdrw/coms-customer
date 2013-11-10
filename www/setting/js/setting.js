@@ -294,8 +294,13 @@ function loadPrevAccountSetting ( id )
 				data:param,
 				success:function ( resultObj )
 				{
-					$("#profile-img").attr("src",resultObj.profile_img_path)
-									.attr("imgid",resultObj.profile_img_id);
+					if ( resultObj.profile_img_id == 0 ) { $("#profile-img").attr("imgid",0); }
+					else
+					{
+						$("#profile-img").attr( "imgid",resultObj.profile_img_id )
+										.attr( "src",resultObj.profile_img_path );
+					}
+
 					$("#account-customer-name").html ( resultObj.name );
 					$("#account-customer-email").html ( resultObj.email );
 					$("#zone-selector").val(resultObj.zone_id);

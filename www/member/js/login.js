@@ -71,10 +71,12 @@ function initLostFoundPage ()
 			{
 				if ( resultObj.success == true )
 				{
-					doAlert ( "이메일아이디는 " + resultObj.email + "입니다" , 
-								"아이디 찾기 성공" , function (){
-									location.href="../coms/index.html";
-								} );
+					var msg = "이메일아이디는 다음과 같습니다.\n"; var i;
+					for ( i = 0 ; i < resultObj.email_arr.length ; i++ )
+					{
+						msg += "[" + resultObj.email_arr[i] + "]\n";
+					}
+					doAlert ( msg , "아이디 찾기 성공" , function (){} );
 				}
 				else
 				{
