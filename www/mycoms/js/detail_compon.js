@@ -55,18 +55,9 @@ function initAll ()
     		else if ( btnIndex == 2 ) {}
     	}, "발급 콤폰" ,"확인,취소" );
     	
-    	/*
-        var url = "http://teamsf.co.kr/~coms/member_compon_use.php";
-        var params = {pid:pid}
-        $.ajax({
-            type: 'post',
-            dataType: 'json',
-            url: url,
-            data: params        
-        }).done(function(data){
-            alert("사용신청이 완료되었습니다.");
-        });
-        */
+    });
+    $('#btn-unuse').on('click tap', function(){
+        window.location.replace("../mycoms/compon.html"); 
     });
 }
 
