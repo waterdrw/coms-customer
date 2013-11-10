@@ -68,9 +68,6 @@ function initAll ()
         });
         */
     });
-    $('#btn-unuse').on('click tap', function(){
-        window.location.replace("../mycoms/compon.html");     
-    });
 }
 
 function doAlert ( msg , title , callbackFunction )

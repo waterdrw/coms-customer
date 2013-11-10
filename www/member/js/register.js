@@ -77,11 +77,6 @@ function initAll ()
     		doAlert ( "휴대폰 번호를 입력하세요!",g_dlgTitle,function(){}); return; 
     	}
     	
-    	if ( email.indexOf("@") == -1 ) 
-    	{
-    		doAlert ( "잘못된 이메일 주소입니다!" , g_dlgTitle , function(){}); return;
-    	}
-    	
     	$.ajax ({
     		type:"post",
             dataType:"json",
