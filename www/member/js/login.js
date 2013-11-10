@@ -71,16 +71,16 @@ function initLostFoundPage ()
 			{
 				if ( resultObj.success == true )
 				{
-					doAlert ( "이메일아이디는 " + resultObj.email + "입니다" , 
-								"아이디 찾기 성공" , function (){
-									location.href="../coms/index.html";
-								} );
+					var msg = "이메일아이디는 다음과 같습니다.\n"; var i;
+					for ( i = 0 ; i < resultObj.email_arr.length ; i++ )
+					{
+						msg += "[" + resultObj.email_arr[i] + "]\n";
+					}
+					doAlert ( msg , "아이디 찾기 성공" , function (){} );
 				}
 				else
 				{
-					doAlert ( resultObj.cause , "아이디 찾기 오류" , function (){
-						location.href="../coms/index.html";
-					} );
+					doAlert ( resultObj.cause , "아이디 찾기 오류" , function (){} );
 				}
 			}
 		});
@@ -128,15 +128,11 @@ function initLostFoundPage ()
 				g_lh.flushLogin ();
 				if ( resultObj.success == true )
 				{
-					doAlert ( "가입시의 이메일로 임시 패스워드가 전송되었습니다." , "비밀번호 찾기 성공" , function (){
-						location.href="../coms/index.html";
-					} );
+					doAlert ( "가입시의 이메일로 임시 패스워드가 전송되었습니다." , "비밀번호 찾기 성공" , function (){} );
 				}
 				else
 				{
-					doAlert ( resultObj.cause , "비밀번호 찾기 오류" , function (){
-						location.href="../coms/index.html";
-					} );
+					doAlert ( resultObj.cause , "비밀번호 찾기 오류" , function (){} );
 				}
 			}
 		});
