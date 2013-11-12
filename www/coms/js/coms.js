@@ -96,11 +96,11 @@ function initMainPage ()
 						for(var i in siteListObj) 
 						{ 
 							temp += "<li data-icon='false' class='site-item' stid='" + siteListObj[i].id + "'>" +
-										"<a>"+siteListObj[i].name+"</a></li>"; 
+										siteListObj[i].name+"</li>"; 
 						}
 						$("#list-street").append(temp).listview("refresh");
 						
-						$(".site-item").off().on ( "tap" , function ()
+						$("#list-street").on("click", "li", function ()
 						{
 							var siteId = $(this).attr("stid");
 							g_zoneId = parseInt(siteId);
