@@ -145,7 +145,7 @@ function bindLogoutPage ()
 		{
 			g_lh.flushLogin ();
 			doAlert ( "성공적으로 로그아웃하였습니다!" , "로그아웃" , function () {} );
-			location.href = "./index.html";
+			location.href = "../member/index.html";
 		});
 	});
 }

@@ -57,7 +57,7 @@ function initLostFoundPage ()
 		var phoneNum = phone1 + "-" + phone2 + "-" + phone3;
 		var ajaxParam = 
 		{
-			name:userName,
+			name:userName, 
 			phone:phoneNum,
 			type:"id"
 		};
@@ -76,12 +76,14 @@ function initLostFoundPage ()
 					{
 						msg += "[" + resultObj.email_arr[i] + "]\n";
 					}
-					doAlert ( msg , "아이디 찾기 성공" , function (){} );
+					doAlert ( msg , "아이디 찾기 성공" , function (){
+						location.href="../member/index.html";
+					} );
 				}
 				else
 				{
 					doAlert ( resultObj.cause , "아이디 찾기 오류" , function (){
-						location.href="../coms/index.html";
+						//location.href="../index.html";
 					} );
 				}
 			}
@@ -131,13 +133,13 @@ function initLostFoundPage ()
 				if ( resultObj.success == true )
 				{
 					doAlert ( "가입시의 이메일로 임시 패스워드가 전송되었습니다." , "비밀번호 찾기 성공" , function (){
-						location.href="../coms/index.html";
+						location.href="../member/index.html";
 					} );
 				}
 				else
 				{
 					doAlert ( resultObj.cause , "비밀번호 찾기 오류" , function (){
-						location.href="../coms/index.html";
+						//location.href="../coms/index.html";
 					} );
 				}
 			}
