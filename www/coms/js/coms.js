@@ -232,6 +232,9 @@ function drawShopList ( data , combo_list , wrapperSelector )
     {
     	var temp = data.list[i];
     	combo_list[i] = temp.member_combo;
+    	if(temp.profile_img_path == null) {
+    		temp.profile_img_path = "../img/logo.png";
+    	}
 
 		//str += "<div class='list-shop'><a class='a-shop-detail' shopid='" + temp.id + "' href='./shop.html?shopId="+temp.id+"' rel='external'>";
 		str += "<div class='list-shop'><a class='a-shop-detail' shopid='" + temp.id + "'>";
