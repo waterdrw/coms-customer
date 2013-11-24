@@ -269,7 +269,7 @@ function drawShopList ( data , combo_list , wrapperSelector )
 		str += "</a></div>";
     }
     
-	$(wrapperSelector).append(str);
+	$(wrapperSelector).html(str);
 	
 	for (var i in combo_list)
 	{

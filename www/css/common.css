@@ -7,9 +7,6 @@ p{
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-.ui-mobile .ui-page{
-	min-height: 100% !important;
-}
 .ui-btn.ui-btn-right {
 	border:none;
 	border-radius: 0px;
