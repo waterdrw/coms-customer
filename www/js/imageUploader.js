@@ -48,7 +48,10 @@ function ImageUploader ()
 		{
 			"quality":50,
 			"destinationType":this.mNavObj.camera.DestinationType.FILE_URI,
-	    	"sourceType":this.mNavObj.camera.PictureSourceType.PHOTOLIBRARY
+	    	"sourceType":this.mNavObj.camera.PictureSourceType.PHOTOLIBRARY,
+	    	"targetWidth":500,
+	    	"targetHeight":400,
+	    	"encodingType": Camera.EncodingType.JPEG
 		};
 		
 		this.mNavObj.camera.getPicture ( 
@@ -66,8 +69,9 @@ function ImageUploader ()
 		var option = new FileUploadOptions ();
 		option.fileKey = "file";
 		option.fileName = imageUri.substr(imageUri.lastIndexOf('/')+1);
-		option.mimeType = "text/plain";
+		option.mimeType = "multipart/form-data";
 		option.chunkedMode = false;
+		option.headers = { Connection: "close" };
 		
 		ft.upload ( imageUri , "http://teamsf.co.kr/~coms/image_upload.php" , 
 				function ( response )
