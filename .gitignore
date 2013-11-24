@@ -3,8 +3,9 @@ cordova/*
 CordovaLib/*
 www/spec/*
 www/cordova.js
+coms-customer2.xcodeproj/*
 coms.xcodeproj/project.pbxproj
-
+coms-customer2/*
 coms.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 
 coms.xcodeproj/project.xcworkspace/xcuserdata/waterdrw.xcuserdatad/UserInterfaceState (waterdrw-PC와(과) 충돌하는 사본 2013-06-23).xcuserstate
@@ -26,3 +27,13 @@ www/.SyncIgnore
 www/spec.html
 
 www/coms.sublime-workspace
+
+www/cordova.js
+
+www/cordova.js
+
+www/cordova_plugins.js
+
+www/cordova.js
+
+www/cordova.js
