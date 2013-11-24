@@ -15,7 +15,7 @@ function initAll ()
 	$(".a-favorite").on ( "tap", function() { g_zoneId=0; initMainPage(); } );
 	$(".a-near").on ( "tap", initNearPage );
 	
-	bindPanelEvent ();
+	//bindPanelEvent ();
 	bindBackButton ();
 	initMainPage ();
 }
@@ -55,6 +55,7 @@ function doAlert ( msg , title , callbackFunction )
 //관심지역 상점 리스트 로드
 function initMainPage ()
 {
+	/******
 	$("#wrapper").css("display","none");
 	$("#loading-wrapper").css("display","block");
 	$("#loading-msg").html("상점 리스트를 가져옵니다...");
@@ -62,7 +63,8 @@ function initMainPage ()
 	$(".a-favorite").removeClass("ui-btn-active");
 	$(".a-near").removeClass("ui-btn-active");
 	$(".a-favorite").addClass("ui-btn-active");
-	
+	******/
+
 	$("#coms-title").html("콤스토어");
 	
 	// inner function : ajax request for shop list loading
@@ -77,7 +79,7 @@ function initMainPage ()
 			type:"post",
 			success:function ( shopListObj )
 			{
-				$("#loading-msg").html("콤스존 리스트를 가져옵니다...");
+				//$("#loading-msg").html("콤스존 리스트를 가져옵니다...");
 				
 				if ( shopListObj.zone_name != null ) { $("#coms-title").html(shopListObj.zone_name); } 
 				
@@ -108,8 +110,8 @@ function initMainPage ()
 							$("#panel-street").panel ( "close" );
 						});
 						
-						$("#loading-wrapper").css("display","none");
-						$("#wrapper").css("display","block");
+						//$("#loading-wrapper").css("display","none");
+						//$("#wrapper").css("display","block");
 					}
 				});
 			}
@@ -161,6 +163,7 @@ function initMainPage ()
 // 내 근처 상점 리스트 로드
 function initNearPage ()
 {
+	/*****
 	$("#wrapper").css("display","none");
 	$("#loading-wrapper").css("display","block");
 	$("#loading-msg").html("GPS 정보를 가져옵니다...");
@@ -168,7 +171,8 @@ function initNearPage ()
 	$(".a-favorite").removeClass("ui-btn-active");
 	$(".a-near").removeClass("ui-btn-active");
 	$(".a-near").addClass("ui-btn-active");
-	
+	******/
+
 	$("#coms-title").html("내 근처 상점");
 	
 	g_prevNavigator.geolocation.getCurrentPosition ( function ( position )
@@ -204,8 +208,8 @@ function initNearPage ()
 			type:"post",
 			success:function ( resultObj )
 			{
-				$("#wrapper").css("display","block");
-				$("#loading-wrapper").css("display","none");
+				//$("#wrapper").css("display","block");
+				//$("#loading-wrapper").css("display","none");
 				$("#wrapper").html("");
 				drawShopList ( resultObj , comboList , "#wrapper" );
 			}
