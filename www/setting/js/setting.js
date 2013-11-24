@@ -10,8 +10,7 @@ function initAll ()
 	g_iu = new ImageUploader ();	
 	g_iu.setNavigatorObj ( navigator );
 	
-	//bindBackButton ();
-	
+	bindBackButton ();
 	
 	// 상단 공지 버튼들 이벤트 바인딩
 	$(".notice-link").on ( "click" , function ()
@@ -29,6 +28,11 @@ function initAll ()
 	bindLogoutPage ();
 	bindAccountDeletePage ();
 	bindNoticePage ();
+}
+
+function initPhoneGap ()
+{
+	document.addEventListener("deviceready", initAll , true);
 }
 
 function bindBackButton ()
