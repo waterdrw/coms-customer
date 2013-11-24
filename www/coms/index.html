@@ -20,6 +20,10 @@
 <body>
 
 <div id="page-main" data-role="page">
+    <div data-role="panel" id="panel-street" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="c">
+        <p>콤스존을 선택하세요.</p>
+        <ul data-role="listview" id="list-street"></ul>
+    </div>      
     <div data-role="header" class="menu1-header" data-position="fixed" data-tap-toggle="false">
         <h1 id="coms-title">콤스토어</h1>        
         <a class="ui-btn-right" href="#panel-street"><i class="icon-reorder"></i></a>
@@ -33,7 +37,7 @@
 
     <div data-role="content">
     	<div id="loading-wrapper" style="display:none;"><h4 id="loading-msg" style="text-align:center;"></h4></div>
-    	<div id="wrapper" class="content-coms"><div id="scroller"></div></div>
+    	<div id="wrapper" class="content-coms" id="scroller"></div>
     </div>
 
     <div data-role="footer" data-id="mainFooter" data-position="fixed" data-tap-toggle="false">
@@ -47,10 +51,6 @@
             </ul>
         </div>
     </div>
-    <div data-role="panel" id="panel-street" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="c">
-        <p>콤스존을 선택하세요.</p>
-        <ul data-role="listview" id="list-street"></ul>
-    </div>      
 </div>
 
 <script type="text/javascript">initPhoneGap();</script>

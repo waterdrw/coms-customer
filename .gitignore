@@ -3,6 +3,7 @@ cordova/*
 CordovaLib/*
 www/spec/*
 www/cordova.js
+www/plugins/*
 coms-customer2.xcodeproj/*
 coms.xcodeproj/project.pbxproj
 coms-customer2/*
