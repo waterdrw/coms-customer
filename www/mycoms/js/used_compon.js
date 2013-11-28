@@ -32,7 +32,7 @@ function initAll ()
             compons_html += "<p class='name'>"+data[i].shop_name+" ["+data[i].ok_date+"] "+"</p>";
             compons_html += "<p class='price'>"+commaNum(parseInt(data[i].price*10000))+"원 이상 이용시 "+commaNum(parseInt(data[i].price*10000) - parseInt(data[i].discount_price*10000))+"원 할인권";            
             compons_html += "</p>";
-            compons_html += "<p class='limit-date'>"+data[i].limit_date+" 까지";
+            compons_html += "<p><span class='compon-nums'>"+data[i].combo_count+"</span> 콤보 / <span class='compon-nums'>"+data[i].discount_rate+"%</span> 할인";
             compons_html += "</p>";
             compons_html += "<p class='foo'><span class='combo-left used-compon'><i class='icon-time'></i> "+data[i].combo_left_day+"일</span><span class='compon-code'>콤폰번호 : "+data[i].coupon_code+"</span>";
             compons_html += "</p>";            

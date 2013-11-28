@@ -42,6 +42,17 @@ p{
 	background: linear-gradient(to bottom,  rgb(248,248,248) 0%,rgb(248,248,248) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(248,248,248)', endColorstr='rgb(248,248,248)',GradientType=0 ); /* IE6-9 */	
 }
+.compon-nums {
+	background-color: rgb(84,168,219);
+	padding: 0px 3px 0px 3px ;
+	border-radius: 4px;
+	margin-right: 3px;
+	color:white;
+	text-shadow: none;
+	font-size: 13px;
+
+}	
+
 #list-street{
 	margin-top:5px;
 }

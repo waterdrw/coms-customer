@@ -20,7 +20,8 @@ function initAll ()
         
         $('.name').html(data.shop_name);
         $('.price').html(commaNum(parseInt(data.price*10000))+"원 이상 이용시 "+commaNum(parseInt(data.price*10000) - parseInt(data.discount_price*10000))+"원 할인권");
-        $('.limit-date').html(data.limit_date+"까지");
+        $('#combo-count').html(data.combo_count);
+        $('#price-discount').html(data.discount_rate);
         $('.icon-time').html(" "+data.combo_left_day+"일");
         $('.compon-code').html("콤폰번호 : "+data.compon_code);
         $('.img').attr('src', data.shop_profile_img_path);
