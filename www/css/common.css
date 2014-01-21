@@ -1,3 +1,7 @@
+.ui-panel{
+	width: 100%;
+}
+
 body{
 	color: #777;
 	background-color: #f8f8f8;
@@ -42,17 +46,6 @@ p{
 	background: linear-gradient(to bottom,  rgb(248,248,248) 0%,rgb(248,248,248) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(248,248,248)', endColorstr='rgb(248,248,248)',GradientType=0 ); /* IE6-9 */	
 }
-.compon-nums {
-	background-color: rgb(84,168,219);
-	padding: 0px 3px 0px 3px ;
-	border-radius: 4px;
-	margin-right: 3px;
-	color:white;
-	text-shadow: none;
-	font-size: 13px;
-
-}	
-
 #list-street{
 	margin-top:5px;
 }
@@ -161,7 +154,7 @@ p{
 }
 
 .list-shop img{
-	width: 27%;
+	width: 55px;
 	height: 54px;
 	border-radius: 5px;
 	float:left;
@@ -236,15 +229,30 @@ p{
 	width:75%;
 	margin: 0 0 0 5%;
 }
+.combo-progress2{
+	color: gray;
+	width:100%;
+	margin: 0 0 10px;
+	padding: 8px 3px 8px 3px;
+	border: 1px solid #f8f8f8;
+	border-radius: 15px;
+	box-shadow: 0px 1px 5px #a8a8a8;
+	-moz-box-shadow: 0px 1px 5px #a8a8a8;
+	-webkit-box-shadow: 0px 1px 5px #a8a8a8;
+}
+
 .with-line{
 	background: url('../img/bg-combo-progress.png') 0 2px repeat-x;
 }
 .combo-box{
 	font-size: 20px;
-	width: 20%;	
+	width: 19%;	
 	line-height: 0px;
 	text-align: center;
 	display: inline-block;
+}
+.combo-progress2 .combo-box {
+	font-size: 28px;
 }
 .combo-box .icon-gift{
 	background-color: #d3cec4;
@@ -258,12 +266,15 @@ p{
 	line-height: 13px;
 	display: block;
 }
-.combo-progress .active{
+.combo-progress .active,
+.combo-progress2 .active{
 	color:rgb(218,68,63);
 }
-.combo-progress .active .icon-gift{
+.combo-progress .active .icon-gift
+.combo-progress2 .active .icon-gift{
 	color:rgb(218,68,63);
 }
+
 
 .notice-near-shop{
 	padding: 5px;
@@ -298,6 +309,20 @@ p{
 	text-align: center;
 	margin-bottom: 10px;
 }
+
+.area-shop-benefit{
+
+}
+.list-shop-benefits{
+
+}
+.list-shop-benefit{
+
+}
+.list-shop-benefit .benefit-desc{
+	font-size: 13px;
+	text-overflow: ellipsis;
+}
 .area-shop-combo{
 	padding:10px 10px 10px 10px;
 }
@@ -331,7 +356,7 @@ p{
 	color: gray;
 	font-size:10px;
 }
-.combo-notice .left-combo-text{
+.left-combo-text{
 	color: #000;
 	font-size: 13px;
 	font-weight: bold;
@@ -634,7 +659,7 @@ p{
 }
 .well {
 	border: 1px solid #000;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 
@@ -870,3 +895,4 @@ code								{ font-family: Courier New !important; font-size: 0.85em;}
 #friend .ui-icon { background:  url(../img/glyphish-icons/btn-friends.png) 50% 50% no-repeat;  background-size: 100px 100px; }
 #comstory .ui-icon { background:  url(../img/glyphish-icons/btn-compons.png) 50% 50% no-repeat;  background-size: 100px 100px; }
 #setting .ui-icon { background:  url(../img/glyphish-icons/btn-setting.png) 50% 50% no-repeat;  background-size: 100px 100px; }
+

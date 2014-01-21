@@ -67,8 +67,60 @@ function initAll ()
 			.attr ( "sname",currentShop.name);
 		}
 	});
+	$.ajax({
+		url:"http://teamsf.co.kr/~coms/shop_benefit_list_show.php",
+		type:"post",
+		dataType:"json",
+		data:param,
+		success:function(benefit){
+			if (benefit.length == 0) { return 0; }			
+			var html = "<ul class='list-shop-benefits'>";
+			for(var i in benefit) { 
+				
+				html += "<li ='list-shop-benefit'><p class='benefit-desc'><span class='combo-count'>"+benefit[i].combo_count+
+						"콤보 서비스</span><span class='benefit-type'>"+returnReward(benefit[i].benefit_type)+
+						"</span></p><p class='benefit-desc'>"+benefit[i].benefit_desc+"</p></li>"; 				
+			}
+			html+="</div>";			
+			$("#area-shop-benefit").html(html);
+		}
+	})
 }
 
+function returnReward(num) {
+	var temp;
+
+	switch(num){
+		case "1":
+			temp = "공짜메뉴";
+		break;
+		case "2":
+			temp = "내맘대로";
+		break;
+		case "3":
+			temp = "랜덤";
+		break;
+		case "4":
+			temp = "1+1";
+		break;
+		case "5":
+			temp = "콤보세트";
+		break;
+		case "6":
+			temp = "쿠폰";
+		break;
+		case "7":
+			temp = "사은품";
+		break;
+		case "8":
+			temp = "이벤트";
+		break;
+		case "9":
+			temp = "비밀이야";
+		break;
+	}
+	return temp;
+}
 function initMenuPage ()
 {
 	$("#page-menu").on ( "pagebeforeshow" , function ()
