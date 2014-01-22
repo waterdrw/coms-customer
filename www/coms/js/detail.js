@@ -77,8 +77,8 @@ function initAll ()
 			var html = "<ul class='list-shop-benefits'>";
 			for(var i in benefit) { 
 				
-				html += "<li ='list-shop-benefit'><p class='benefit-desc'><span class='combo-count'>"+benefit[i].combo_count+
-						"콤보 서비스</span><span class='benefit-type'>"+returnReward(benefit[i].benefit_type)+
+				html += "<li class='list-shop-benefit type"+benefit[i].benefit_type+"'><p class='benefit-desc'><span class='combo-count'>"+benefit[i].combo_count+
+						"</span><span>콤보 서비스</span><span class='benefit-type type"+benefit[i].benefit_type+"'>"+returnReward(benefit[i].benefit_type)+
 						"</span></p><p class='benefit-desc'>"+benefit[i].benefit_desc+"</p></li>"; 				
 			}
 			html+="</div>";			
@@ -149,7 +149,7 @@ function initLocationPage ()
 {
 	$("#page-location").on ( "pagebeforeshow" , function ()
 	{
-		navigator.notification.activityStart("위치보기", "지도 정보를 가져오는 중...");
+		//navigator.notification.activityStart("위치보기", "지도 정보를 가져오는 중...");
 		$("#content-location").css("display","invisible");
 		
 		var lat = $("#page-location").attr("lat");
