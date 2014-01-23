@@ -82,30 +82,47 @@ function initMainPage ()
 				if ( shopListObj.zone_name != null ) { $("#coms-title").html(shopListObj.zone_name); } 
 				
 				$.ajax ({
-					url:"http://teamsf.co.kr/~coms/site_list_show.php",
+					url:"http://teamsf.co.kr/~coms/location_zone_list_show.php",
 					data:{type:"all"},
 					dataType:"json",
 					type:"post",
-					success:function ( siteListObj )
+					success:function ( locationListObj )
 					{	
 						$("#wrapper").html("");
 						drawShopList ( shopListObj , comboList , "#wrapper" );
 						
 						$("#list-street").html("");
-						var temp = "";
-						for(var i in siteListObj) 
-						{ 
-							temp += "<li data-icon='false' class='site-item' stid='" + siteListObj[i].id + "'>" +
-										siteListObj[i].name+"</li>"; 
-						}
-						$("#list-street").append(temp).listview("refresh");
+						var i; var j;
 						
-						$("#list-street").on("click", "li", function ()
+						for ( i = 0 ; i < locationListObj.length ; i++ )
 						{
-							var siteId = $(this).attr("stid");
-							g_zoneId = parseInt(siteId);
-							initMainPage ();
+							var locationObj = locationListObj[i];
+							
+							var htmlExpr = "";
+							htmlExpr += "<div data-role=\"collapsible\" data-icon=\"false\">";
+							htmlExpr += 	"<h3>" + locationObj.name + "<h3>";
+							htmlExpr += 	"<p class=\"inner-list-wrapper\">";
+							htmlExpr += 		"<ul id=\"inner-list-" + locationObj.id + "\" data-role=\"listview\"></ul>";
+							htmlExpr += 	"</p>";
+							htmlExpr += "</div>";
+							
+							var zoneRowExpr = "";
+							for ( j = 0 ; j < locationObj.zone_list.length ; j++ )
+							{
+								var zoneObj = locationObj.zone_list[j];
+								zoneRowExpr += "<li stid=\"" + zoneObj.id + "\" class=\"site-item\">" + 
+													zoneObj.name + "</li>";
+							}
+							$("#list-street").append(htmlExpr).collapsibleset("refresh");
+							$("#inner-list-" + locationObj.id).append ( zoneRowExpr ).listview();
+						}
+						
+						$(".site-item").off().on("click",function() 
+						{
 							$("#panel-street").panel ( "close" );
+							var zoneId = $(this).attr("stid");
+							g_zoneId = parseInt(zoneId);
+							initMainPage ();
 						});
 						
 						$("#loading-wrapper").css("display","none");
