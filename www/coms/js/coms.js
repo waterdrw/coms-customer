@@ -78,6 +78,8 @@ function initMainPage ()
 			success:function ( shopListObj )
 			{
 				$("#loading-msg").html("콤스존 리스트를 가져옵니다...");
+				$("#wrapper").html("");
+				drawShopList ( shopListObj , comboList , "#wrapper" );
 				
 				if ( shopListObj.zone_name != null ) { $("#coms-title").html(shopListObj.zone_name); } 
 				
@@ -88,8 +90,6 @@ function initMainPage ()
 					type:"post",
 					success:function ( locationListObj )
 					{	
-						$("#wrapper").html("");
-						drawShopList ( shopListObj , comboList , "#wrapper" );
 						
 						$("#list-street").html("");
 						var i; var j;
@@ -99,32 +99,33 @@ function initMainPage ()
 							var locationObj = locationListObj[i];
 							
 							var htmlExpr = "";
-							htmlExpr += "<div data-role=\"collapsible\" data-icon=\"false\">";
-							htmlExpr += 	"<h3>" + locationObj.name + "<h3>";
-							htmlExpr += 	"<p class=\"inner-list-wrapper\">";
-							htmlExpr += 		"<ul id=\"inner-list-" + locationObj.id + "\" data-role=\"listview\"></ul>";
-							htmlExpr += 	"</p>";
+							htmlExpr += "<div data-role='collapsible' data-theme='b' data-content-theme='d' data-inset='false' data-iconpos='right' data-collapsed-icon='arrow-d' data-expanded-icon='arrow-u'>";
+							htmlExpr += 	"<h3>" + locationObj.name + "</h3>";
+							htmlExpr += 	"<div id='inner-list-"+locationObj.id+"'></div>";
 							htmlExpr += "</div>";
 							
 							var zoneRowExpr = "";
 							for ( j = 0 ; j < locationObj.zone_list.length ; j++ )
 							{
 								var zoneObj = locationObj.zone_list[j];
-								zoneRowExpr += "<li stid=\"" + zoneObj.id + "\" class=\"site-item\">" + 
-													zoneObj.name + "</li>";
-							}
+								zoneRowExpr += "<a class='shops-in-location' stid=\"" + zoneObj.id + "\">" + zoneObj.name + "</a>";
+							}						
+							
 							$("#list-street").append(htmlExpr).collapsibleset("refresh");
-							$("#inner-list-" + locationObj.id).append ( zoneRowExpr ).listview();
+							$("#inner-list-"+locationObj.id).append ( zoneRowExpr );
 						}
 						
-						$(".site-item").off().on("click",function() 
+						$(".shops-in-location").on("click",function() 
 						{
-							$("#panel-street").panel ( "close" );
 							var zoneId = $(this).attr("stid");
 							g_zoneId = parseInt(zoneId);
 							initMainPage ();
+
+							$("#panel-street").panel ( "close" );
 						});
+
 						
+						$("#panel-street").trigger("updatelayout");
 						$("#loading-wrapper").css("display","none");
 						$("#wrapper").css("display","block");
 					}

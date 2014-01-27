@@ -19,19 +19,6 @@ body {
     font-family: ubuntu, helvetica, arial;
     overflow: hidden; /* this is important to prevent the whole page to bounce */
 }
-#wrapper {
-    position: absolute;
-    z-index: 1;
-    top: 44px;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f8f8f8;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-    
-}
 
 .content-compon {
     top: 79px !important;

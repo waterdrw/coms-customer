@@ -91,31 +91,31 @@ function returnReward(num) {
 	var temp;
 
 	switch(num){
-		case "1":
+		case "0":
 			temp = "공짜메뉴";
 		break;
-		case "2":
+		case "1":
 			temp = "내맘대로";
 		break;
-		case "3":
+		case "2":
 			temp = "랜덤";
 		break;
-		case "4":
+		case "3":
 			temp = "1+1";
 		break;
-		case "5":
+		case "4":
 			temp = "콤보세트";
 		break;
-		case "6":
+		case "5":
 			temp = "쿠폰";
 		break;
-		case "7":
+		case "6":
 			temp = "사은품";
 		break;
-		case "8":
+		case "7":
 			temp = "이벤트";
 		break;
-		case "9":
+		case "8":
 			temp = "비밀이야";
 		break;
 	}

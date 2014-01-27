@@ -1,5 +1,6 @@
 .ui-panel{
-	width: 100%;
+	width: 100% !important;
+	z-index: 60000 !important;
 }
 
 body{
@@ -48,6 +49,16 @@ p{
 }
 #list-street{
 	margin-top:5px;
+}
+.ui-collapsible-content{
+	padding:0px;
+}
+.shops-in-location{
+	display: block;
+	padding:10px;
+	border-bottom: 1px solid #f8f8f8;
+	text-decoration: none;
+	font-weight: 900;
 }
 .row::before, .row::after{
 	display: table;
@@ -309,12 +320,11 @@ p{
 	text-align: center;
 	margin-bottom: 10px;
 }
-/*상점 정보 확인 시 콤보 서비스에 대한 부분*/
+/*상점 정보 확인 시 콤보 서비스에 대한 부분 START*/
 .area-shop-benefit{
-
 }
 .list-shop-benefits{
-
+	list-style: none;
 }
 .list-shop-benefit{	
 	margin: 5px 5px 0px 5px;
@@ -330,27 +340,27 @@ p{
 	line-height: 35px;
 	margin:0 3px;
 }
+.list-shop-benefit.type0,
 .list-shop-benefit.type1,
-.list-shop-benefit.type2,
-.list-shop-benefit.type3{
+.list-shop-benefit.type2{
 	border: 3px solid #e74c3c;
 	color: #e74c3c;
 	font-weight: bold;
 }
-.list-shop-benefit.type4,
-.list-shop-benefit.type5{
+.list-shop-benefit.type3,
+.list-shop-benefit.type4{
 	border: 3px solid #27ae60;
 	color: #27ae60;
 	font-weight: bold;
 }
-.list-shop-benefit.type6,
-.list-shop-benefit.type7{
+.list-shop-benefit.type5,
+.list-shop-benefit.type6{
 	border: 3px solid #2980b9;
 	color: #2980b9;
 	font-weight: bold;
 }
-.list-shop-benefit.type8,
-.list-shop-benefit.type9{
+.list-shop-benefit.type7,
+.list-shop-benefit.type8{
 	border: 3px solid #f39c12;
 	color: #f39c12;
 	font-weight: bold;
@@ -366,24 +376,24 @@ p{
 	padding:3px;
 	text-shadow:none;
 }
+.benefit-type.type0,
 .benefit-type.type1,
-.benefit-type.type2,
-.benefit-type.type3{
+.benefit-type.type2{
 	background-color: #e74c3c;
 }
-.benefit-type.type4,
-.benefit-type.type5{
+.benefit-type.type3,
+.benefit-type.type4{
 	background-color: #27ae60;
 }
-.benefit-type.type6,
-.benefit-type.type7{
+.benefit-type.type5,
+.benefit-type.type6{
 	background-color: #2980b9;
 }
-.benefit-type.type8,
-.benefit-type.type9{
+.benefit-type.type7,
+.benefit-type.type8{
 	background-color: #f39c12;
 }
-
+/* 상점 콤보 서비스에 대한 CSS END*/
 .area-shop-combo{
 	padding:10px 10px 10px 10px;
 }
