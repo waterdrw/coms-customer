@@ -5,7 +5,6 @@ var g_dlgTitle = "가입 오류";
 function initAll ()
 {
     var lh = new LoginHandler ();
-    var comszone_url = "http://teamsf.co.kr/~coms/site_list_show.php";
 
     lh.flushLogin ();
     
@@ -13,21 +12,6 @@ function initAll ()
     g_iu.setNavigatorObj ( navigator );
         
     $("#img-profile").attr("imgid",0);
-    
-    $.ajax({
-        type: 'post',
-        dataType: 'json',
-        url:'http://teamsf.co.kr/~coms/site_list_show.php',
-        data: {type:"campus"}      
-    }).done(function(data)
-    {
-        var temp = "";
-        for(var i in data) 
-        {
-            temp += "<option value='"+data[i].id+"'>"+data[i].name+"</option>";       
-        }
-        $("#select-comszone").append(temp).selectmenu("refresh", true);
-    });
     
     $("#register2").on ( "pagebeforeshow" , function ()
     {
@@ -99,9 +83,9 @@ function initAll ()
     {
     	var nick = $("#nickname").val();
     	var imgid = $("#img-profile").attr("imgid");
-    	var zoneId = $("#select-comszone").val();
+    	//var zoneId = $("#select-comszone").val();
     	
-    	if ( zoneId == null ) { doAlert("콤스존을 선택해 주세요!",g_dlgTitle,function(){}); return; }
+    	//if ( zoneId == null ) { doAlert("콤스존을 선택해 주세요!",g_dlgTitle,function(){}); return; }
     	//if ( nick.length == 0 ) { alert("콤스 닉네임을 입력하세요!"); return; }
     	//if ( parseInt(imgid) == 0 ) { alert("프로실 사진을 선택하세요!"); return; }
     	
@@ -112,8 +96,7 @@ function initAll ()
             name:$('#name').val(),            
             phone:$('#phone1').val()+"-"+$('#phone2').val()+"-"+$('#phone3').val(),
             nick:$('#nickname').val(),
-            pw:$('#pw').val(),
-            zid:$("#select-comszone").val(),
+            pw:$('#pw').val(),            
             pimgid:$("#img-profile").attr("imgid")
         };
         
@@ -126,7 +109,7 @@ function initAll ()
             if ( data.success == true )
             {
             	doAlert("회원 등록이 완료 되었습니다.","축하합니다!",function(){});
-            	window.location="../mycoms/index.html";
+            	//window.location="../mycoms/index.html";
             }
             else { doAlert ( "에러 : " + data.cause , g_dlgTitle , function(){} ); }
         });

@@ -7,6 +7,7 @@ www/plugins/*
 coms-customer2.xcodeproj/*
 coms.xcodeproj/project.pbxproj
 coms-customer2/*
+build/*
 coms.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 
 coms.xcodeproj/project.xcworkspace/xcuserdata/waterdrw.xcuserdatad/UserInterfaceState (waterdrw-PC와(과) 충돌하는 사본 2013-06-23).xcuserstate

@@ -116,6 +116,7 @@ function LoginHandler ()
 					{
 						window.localStorage.setItem ( "id" , jsonObj.id );
 						window.localStorage.setItem ( "pw" , jsonObj.pw );
+						window.localStorage.setItem ( "zid" , jsonObj.zid );
 
 						ret.memberInfo = jsonObj;
 						ret.success = true; ret.cause = null;
@@ -146,6 +147,7 @@ function LoginHandler ()
 					{
 						window.localStorage.setItem ( "id" , jsonObj.id );
 						window.localStorage.setItem ( "pw" , jsonObj.pw );
+						window.localStorage.setItem ( "zid" , jsonObj.zid );
 
 						ret.memberInfo = jsonObj;
 						ret.success = true; ret.cause = null;
@@ -175,11 +177,14 @@ function LoginHandler ()
 
 	this.getLocalLoginInfo = function ()
 	{
-		var ret = { "id":null,"pw":null };
+		var ret = { "id":null,"pw":null,"zid":null };
 		var localId = window.localStorage["id"]; 
 		var localPw = window.localStorage["pw"];
-		if ( localId == null || localPw == null ) { return null; }
-		ret.id = localId; ret.pw = localPw;
+		var localzId = window.localStorage["zid"];
+		if ( localId == null || localPw == null || localzId == null ) { return null; }
+		ret.id = localId; 
+		ret.pw = localPw; 
+		ret.zid = localzId;
 		return ret;
 	};
 }

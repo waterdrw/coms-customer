@@ -63,13 +63,14 @@ function initMainPage ()
 	$(".a-near").removeClass("ui-btn-active");
 	$(".a-favorite").addClass("ui-btn-active");
 	
-	$("#coms-title").html("콤스토어");
+	//$("#coms-title").html("콤스토어");
 	
 	// inner function : ajax request for shop list loading
 	function requestShopList ( param )
 	{
 		var comboList = new Array ();
-		
+		//console.log(param);
+
 		$.ajax ({
 			url:"http://teamsf.co.kr/~coms/shop_list_show.php",
 			data:param,
@@ -119,6 +120,9 @@ function initMainPage ()
 						{
 							var zoneId = $(this).attr("stid");
 							g_zoneId = parseInt(zoneId);
+
+							setComboZone(zoneId);
+							window.localStorage.setItem ( "zid" , zoneId );
 							initMainPage ();
 
 							$("#panel-street").panel ( "close" );
@@ -131,7 +135,10 @@ function initMainPage ()
 					}
 				});
 			}
-		});
+		});	
+		if (g_zoneId == 0) {
+			$("#panel-street").panel ( "open" );
+		};		
 	}
 	
 	var shopListParam = null;
@@ -141,14 +148,18 @@ function initMainPage ()
 		{	
 			if ( loginInfoObj.success == true )
 			{
-				var zid = 1; 
-				if ( g_zoneId != 0 ) { zid = g_zoneId; }
-				else { zid = loginInfoObj.memberInfo.zone_id; }
+
+				//var zid = loginInfoObj.memberInfo.zid; 
+				console.log(loginInfoObj);
+				console.log(g_zoneId);
+
+				if ( g_zoneId == 0 ) { g_zoneId = loginInfoObj.memberInfo.zid; }
+				//else { g_zoneId = loginInfoObj.memberInfo.zid; }
 				shopListParam = 
 				{
 					start:0, 
 					end:30, 
-					zid:zid, 
+					zid:g_zoneId, 
 					mid:loginInfoObj.memberInfo.id
 				};
 				requestShopList ( shopListParam );
@@ -165,6 +176,7 @@ function initMainPage ()
 					zid:1
 				};
 				requestShopList ( shopListParam );
+
 			}
 		});
 	}
@@ -304,4 +316,34 @@ function drawShopList ( data , combo_list , wrapperSelector )
 		var shopId = $(this).attr("shopid");
 		location.href = "./shop.html?shopId=" + shopId;
 	});
+}
+
+function setComboZone(comboZoneId){
+	
+	if (!g_lh.isLogged()) {
+		g_zoneId = comboZoneId;
+	}
+
+	else {
+		g_zoneId = comboZoneId;
+		var param =
+		{
+			mid : g_lh.getLocalLoginInfo().id,
+			zid : g_zoneId
+		}
+
+		$.ajax ({
+			url:"http://teamsf.co.kr/~coms/member_zone_modify.php",
+			dataType:"json",
+			data:param,
+			type:"post",
+			success:function ( resultObj )
+			{
+				console.log("[coms]set combo zone : "+resultObj.success);	
+				g_lh.doLogin ( function ( loginInfoObj ){ console.log("re login"); });	
+			}
+		});
+	}
+
+
 }
