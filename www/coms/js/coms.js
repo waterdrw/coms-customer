@@ -15,7 +15,8 @@ function initAll ()
 	$(".a-favorite").on ( "tap", function() { g_zoneId=0; initMainPage(); } );
 	$(".a-near").on ( "tap", initNearPage );
 	
-	bindPanelEvent ();
+
+	//bindPanelEvent ();
 	bindBackButton ();
 	initMainPage ();
 }
@@ -98,24 +99,39 @@ function initMainPage ()
 						for ( i = 0 ; i < locationListObj.length ; i++ )
 						{
 							var locationObj = locationListObj[i];
-							
-							var htmlExpr = "";
-							htmlExpr += "<div data-role='collapsible' data-theme='b' data-content-theme='d' data-inset='false' data-iconpos='right' data-collapsed-icon='arrow-d' data-expanded-icon='arrow-u'>";
-							htmlExpr += 	"<h3>" + locationObj.name + "</h3>";
-							htmlExpr += 	"<div id='inner-list-"+locationObj.id+"'></div>";
-							htmlExpr += "</div>";
-							
-							var zoneRowExpr = "";
+							var zoneRowExpr = ""; 
+
+							$("#list-street")
+								.append($('<div>')
+								.attr({
+									'class' : 'list-location',									
+									'id' : 'list-location'+locationObj.id,
+									'locationId' : locationObj.id
+								})
+								.html("<p>"+locationObj.name+"</p>"));
+
 							for ( j = 0 ; j < locationObj.zone_list.length ; j++ )
 							{
 								var zoneObj = locationObj.zone_list[j];
 								zoneRowExpr += "<a class='shops-in-location' stid=\"" + zoneObj.id + "\">" + zoneObj.name + "</a>";
 							}						
 							
-							$("#list-street").append(htmlExpr).collapsibleset("refresh");
-							$("#inner-list-"+locationObj.id).append ( zoneRowExpr );
+							//$("#list-street").append(htmlExpr);
+							$("#list-location"+locationObj.id)
+								.append ($('<div>')
+								.attr({
+									'class' : 'inner-list'+locationObj.id,
+									'style' : 'display:none'
+								})
+								.html(zoneRowExpr));
 						}
-						
+						// 리스트 클릭 시 내부 리스트 보여주기 애니메이션 재생 
+						$('.list-location').on("click", function(){
+							var id = $(this).attr('locationId');
+							$('.inner-list'+id).toggle(0);
+						});
+
+						//$("#list-street").collapsibleset().trigger("create");						
 						$(".shops-in-location").on("click",function() 
 						{
 							var zoneId = $(this).attr("stid");
@@ -127,18 +143,13 @@ function initMainPage ()
 
 							$("#panel-street").panel ( "close" );
 						});
-
 						
-						$("#panel-street").trigger("updatelayout");
 						$("#loading-wrapper").css("display","none");
 						$("#wrapper").css("display","block");
 					}
 				});
 			}
 		});	
-		if (g_zoneId == 0) {
-			$("#panel-street").panel ( "open" );
-		};		
 	}
 	
 	var shopListParam = null;
@@ -152,8 +163,9 @@ function initMainPage ()
 				//var zid = loginInfoObj.memberInfo.zid; 
 				console.log(loginInfoObj);
 				console.log(g_zoneId);
-
-				if ( g_zoneId == 0 ) { g_zoneId = loginInfoObj.memberInfo.zid; }
+				//if (loginInfoObj.memberInfo.zid == null) { g_zoneId = 0; }
+				if (loginInfoObj.memberInfo.zid != null) { g_zoneId = loginInfoObj.memberInfo.zid; }
+				else if ( g_zoneId == 0 || loginInfoObj.memberInfo.zid == null) { g_zoneId = 1; $("#panel-street").panel ( "open" ); }
 				//else { g_zoneId = loginInfoObj.memberInfo.zid; }
 				shopListParam = 
 				{
@@ -344,6 +356,4 @@ function setComboZone(comboZoneId){
 			}
 		});
 	}
-
-
 }

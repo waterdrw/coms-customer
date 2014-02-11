@@ -208,7 +208,7 @@ function bindAccountSettingPage ()
 			var confirmPw = $("#edit-pw-confirm").val();
 			var phoneNum = $("#phone1").val() + "-" + $("#phone2").val() + "-" + $("#phone3").val();
 			var authCode = $("#edit-authcode").val();
-			var zoneId = $("#zone-selector").val();
+			var newNick = $("#edit-nick").val();
 			
 			if ( newPw.length != 0 )
 			{
@@ -232,10 +232,10 @@ function bindAccountSettingPage ()
 			var ajaxParam = {
 				mid:memberId,
 				pw:newPw,
-				zid:zoneId,
 				imgid:imgid,
 				phonenum:phoneNum,
-				authcode:authCode
+				authcode:authCode,
+				nick:newNick
 			};
 			
 			$.ajax ({
@@ -281,14 +281,6 @@ function loadPrevAccountSetting ( id )
 		dataType:"json",
 		success:function ( zoneListArr )
 		{
-			var zoneExpr = "";
-			var i;
-			for ( i = 0 ; i < zoneListArr.length ; i++ )
-			{
-				var zoneObj = zoneListArr[i];
-				zoneExpr += "<option value=\"" + zoneObj.id + "\">" + zoneObj.name + "</option>";
-			}
-			$("#zone-selector").html(zoneExpr);
 			
 			var param = {mid:id};
 			$.ajax ({
@@ -307,13 +299,13 @@ function loadPrevAccountSetting ( id )
 
 					$("#account-customer-name").html ( resultObj.name );
 					$("#account-customer-email").html ( resultObj.email );
-					$("#zone-selector").val(resultObj.zone_id);
-					$("#zone-selector").selectmenu("refresh");
 					
 					var phone = resultObj.phone;
 					var phoneArr = phone.split ( "-" );
 					
 					$("#phone1").val(phoneArr[0]); $("#phone2").val(phoneArr[1]); $("#phone3").val(phoneArr[2]);
+
+					$("#edit-nick").val(resultObj.nickname);
 				}
 			});
 		}

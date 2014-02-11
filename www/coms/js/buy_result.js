@@ -19,6 +19,8 @@ function initAll ()
         console.log(data);
         $('#shop-name').html(data.shop_name);
         $('#limit-date').html(data.limit_date);
+        $('#combo-count').html(data.combo_count);
+        $('#price-discount').html(data.discount_rate);
         $('.foo #left-date').html(data.combo_left_day);
         $('.foo #compon-code').html(data.coupon_code);
         $('#shop-img').attr('src', data.shop_profile_img_path);

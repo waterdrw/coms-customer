@@ -40,6 +40,7 @@ function initAll ()
 	        $("#closed").html(currentShop.closed);
 	        $("#phone").html(currentShop.phone);
 	        $("#profile-img").attr("src", currentShop.profile_img_path);
+	        $("#shop-address").html("<i class='icon-map-marker'></i> "+currentShop.address);
 
 	        $("#combo1").html(currentShop.combo_1);
 	        $("#combo2").html(currentShop.combo_2);
@@ -78,7 +79,7 @@ function initAll ()
 			for(var i in benefit) { 
 				
 				html += "<li class='list-shop-benefit type"+benefit[i].benefit_type+"'><p class='benefit-desc'><span class='combo-count'>"+benefit[i].combo_count+
-						"</span><span>콤보 서비스</span><span class='benefit-type type"+benefit[i].benefit_type+"'>"+returnReward(benefit[i].benefit_type)+
+						"</span><span style='font-size:13px'>콤보 서비스</span><span class='benefit-type type"+benefit[i].benefit_type+"'>"+returnReward(benefit[i].benefit_type)+
 						"</span></p><p class='benefit-desc'>"+benefit[i].benefit_desc+"</p></li>"; 				
 			}
 			html+="</div>";			
@@ -150,7 +151,8 @@ function initLocationPage ()
 	$("#page-location").on ( "pagebeforeshow" , function ()
 	{
 		//navigator.notification.activityStart("위치보기", "지도 정보를 가져오는 중...");
-		$("#content-location").css("display","invisible");
+		//$("#content-location").css("display","invisible");
+		var params = {};
 		
 		var lat = $("#page-location").attr("lat");
 		var lng = $("#page-location").attr("lng");
@@ -163,7 +165,7 @@ function initLocationPage ()
             mapTypeId : google.maps.MapTypeId.ROADMAP 
         };
         
-        var $content = $("#page-location div:jqmData(role=content)");
+        var $content = $("#map_canvas");
         $content.height (screen.height-60);
         
         var map = new google.maps.Map ($content[0], options);
@@ -175,11 +177,12 @@ function initLocationPage ()
 	    }); 
         
         $("#title-location").html(shopName);
+        
 	});
 	
 	$("#page-location").on ( "pageshow" , function ()
 	{
-		navigator.notification.activityStop ();
+		//navigator.notification.activityStop ();
 		$("#content-location").css("display","block");
 	});
 }

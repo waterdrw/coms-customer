@@ -6,9 +6,6 @@ function initAll ()
 {
 	bindBackButton ();
 	
-	myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });	
-	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-	
     var lh = new LoginHandler ();
     var userData = lh.getLocalLoginInfo();
 
@@ -37,14 +34,16 @@ function initAll ()
         $('#profile').attr('src', data.profile_img_path);  
         $('#grade').html(data.grade_name);  
         $('.member-name').html(data.name);
-        $('#zone-name').html(data.zone_name);
+        $('#nickname').html(data.nickname);
         $('#heart-cash').html(data.heart_cash);
+
+        $("#total_shop_count").html(data.shop_count);
+        $("#favorite_shop_count").html(data.favorite_shop);
+        $("#total_sales_sum").html(data.sales_sum);
+        $("#total_discount_sum").html(data.discount_sum);
       
         $('#compon-num').html(data.unused_compon_count);
 
-        myScroll = new IScroll('#wrapper', { scrollbars: true, mouseWheel: true, interactiveScrollbars: true, click:true });
-
-        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
     });
 }
 

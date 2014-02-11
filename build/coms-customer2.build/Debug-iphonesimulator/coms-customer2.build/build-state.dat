@@ -1,923 +1,0 @@
-Tcoms-customer2
-v6
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Info.plist /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/coms-customer2-Info.plist
-cPhaseScriptExecution Copy\ www\ directory /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Script-304B58A110DAC018002A0835.sh
-cCpResource coms-customer2/config.xml build/emulator/coms-customer2.app/config.xml
-cCpResource coms-customer2/Resources/icons/icon-72.png build/emulator/coms-customer2.app/icon-72.png
-cCpResource coms-customer2/Resources/icons/icon.png build/emulator/coms-customer2.app/icon.png
-cCpResource coms-customer2/Resources/icons/icon@2x.png build/emulator/coms-customer2.app/icon@2x.png
-cCopyStringsFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/en.lproj/Localizable.strings coms-customer2/Resources/en.lproj/Localizable.strings
-cCopyStringsFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/es.lproj/Localizable.strings coms-customer2/Resources/es.lproj/Localizable.strings
-cCompileXIB /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.xib
-cCopyStringsFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/de.lproj/Localizable.strings coms-customer2/Resources/de.lproj/Localizable.strings
-cCopyStringsFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/se.lproj/Localizable.strings coms-customer2/Resources/se.lproj/Localizable.strings
-cCpResource coms-customer2/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/coms-customer2.app/Default-Landscape@2x~ipad.png
-cCpResource coms-customer2/Resources/splash/Default-Landscape~ipad.png build/emulator/coms-customer2.app/Default-Landscape~ipad.png
-cCpResource coms-customer2/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/coms-customer2.app/Default-Portrait@2x~ipad.png
-cCpResource coms-customer2/Resources/splash/Default-Portrait~ipad.png build/emulator/coms-customer2.app/Default-Portrait~ipad.png
-cCpResource coms-customer2/Resources/splash/Default@2x~iphone.png build/emulator/coms-customer2.app/Default@2x~iphone.png
-cCpResource coms-customer2/Resources/splash/Default~iphone.png build/emulator/coms-customer2.app/Default~iphone.png
-cCpResource coms-customer2/Resources/splash/Default-568h@2x~iphone.png build/emulator/coms-customer2.app/Default-568h@2x~iphone.png
-cCpResource coms-customer2/Resources/icons/icon-72@2x.png build/emulator/coms-customer2.app/icon-72@2x.png
-cCpResource coms-customer2/Resources/CDVNotification.bundle build/emulator/coms-customer2.app/CDVNotification.bundle
-cProcessPCH /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch.pch coms-customer2/coms-customer2-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/main.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/AppDelegate.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/MainViewController.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVNotification.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVVibration.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVCamera.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVJpegHeaderWriter.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFile.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file/CDVFile.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFileTransfer.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/coms-customer2 normal i386
-cGenerateDSYMFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app.dSYM /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/coms-customer2
-cTouch /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
-c00000000528228570000000000000176
-t1384261719
-s374
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
-c000000005245028000000000000003B5
-t1380254336
-s949
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
-c0000000052675E9800000000000001A0
-t1382506136
-s416
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-c0000000052675E980000000000059350
-t1382506136
-s365392
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c0000000052675E9900000000009040F0
-t1382506137
-s9453808
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c0000000052675E980000000000445870
-t1382506136
-s4479088
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c0000000052675E9800000000000EC820
-t1382506136
-s968736
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
-c0000000052675E990000000000666670
-t1382506137
-s6710896
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c0000000052675E9900000000001BA530
-t1382506137
-s1811760
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/AppDelegate.o
-t1390281576
-s77852
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVCamera.o
-t1390281576
-s153604
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFile.o
-t1390281576
-s185928
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFileTransfer.o
-t1390281576
-s160916
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVJpegHeaderWriter.o
-t1390281576
-s62312
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVNotification.o
-t1390281576
-s71872
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVVibration.o
-t1390281576
-s43192
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/MainViewController.o
-t1390281576
-s53812
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/coms-customer2.LinkFileList
-c0000000052DE036700000000000007E2
-t1390281575
-s2018
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/main.o
-t1390281575
-s3296
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Script-304B58A110DAC018002A0835.sh
-c0000000052DE0367000000000000002D
-t1390281575
-s45
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app
-t1390281576
-s782
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app.dSYM
-t2
-s0
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/CDVNotification.bundle
-t1390281575
-s102
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-568h@2x~iphone.png
-t1390281575
-s34225
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-Landscape@2x~ipad.png
-t1390281575
-s77300
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-Landscape~ipad.png
-t1390281575
-s34935
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-Portrait@2x~ipad.png
-t1390281575
-s76546
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-Portrait~ipad.png
-t1390281575
-s34278
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default@2x~iphone.png
-t1390281575
-s29475
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default~iphone.png
-t1390281575
-s10394
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Info.plist
-t1390281575
-s1079
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/MainViewController.nib
-t1390281575
-s1332
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/PkgInfo
-t2
-s0
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/coms-customer2
-t1390281576
-s536152
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/config.xml
-t1390281575
-s1823
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/de.lproj/Localizable.strings
-t1390281575
-s280
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/en.lproj/Localizable.strings
-t1390281575
-s166
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/es.lproj/Localizable.strings
-t1390281575
-s334
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/icon-72.png
-t1390281575
-s4944
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/icon-72@2x.png
-t1390281575
-s11706
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/icon.png
-t1390281575
-s3902
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/icon@2x.png
-t1390281575
-s7869
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/se.lproj/Localizable.strings
-t1390281575
-s283
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/libCordova.a
-c0000000052DE036700000000000DF218
-t1390281575
-s913944
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/AppDelegate.m
-c00000000528DCF9700000000000013B3
-t1385025431
-s5043
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.m
-c00000000528DCF97000000000000126F
-t1385025431
-s4719
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.xib
-c00000000528DCF970000000000001759
-t1385025431
-s5977
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.m
-c000000005291B2670000000000007B75
-t1385280103
-s31605
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.m
-c000000005291B267000000000000672A
-t1385280103
-s26410
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.m
-c000000005291B1570000000000001626
-t1385279831
-s5670
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.m
-c000000005291B2DB0000000000007D79
-t1385280219
-s32121
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file/CDVFile.m
-c000000005291B2D2000000000000FA52
-t1385280210
-s64082
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.m
-c000000005291B1B600000000000003B2
-t1385279926
-s946
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/CDVNotification.bundle
-c000000005291B1570000000000000066
-t1385279831
-s102
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/de.lproj/Localizable.strings
-c00000000528DCF9700000000000004BF
-t1385025431
-s1215
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/en.lproj/Localizable.strings
-c00000000528DCF9700000000000004AA
-t1385025431
-s1194
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/es.lproj/Localizable.strings
-c00000000528DCF9700000000000004B7
-t1385025431
-s1207
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/icons/icon-72.png
-c00000000528DCF970000000000001350
-t1385025431
-s4944
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/icons/icon-72@2x.png
-c00000000528DCF970000000000002DBA
-t1385025431
-s11706
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/icons/icon.png
-c00000000528DCF970000000000000F3E
-t1385025431
-s3902
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/icons/icon@2x.png
-c00000000528DCF970000000000001EBD
-t1385025431
-s7869
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/se.lproj/Localizable.strings
-c00000000528DCF9700000000000004AB
-t1385025431
-s1195
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-568h@2x~iphone.png
-c00000000528DCF9700000000000085B1
-t1385025431
-s34225
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-Landscape@2x~ipad.png
-c00000000528DCF970000000000012DF4
-t1385025431
-s77300
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-Landscape~ipad.png
-c00000000528DCF970000000000008877
-t1385025431
-s34935
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-Portrait@2x~ipad.png
-c00000000528DCF970000000000012B02
-t1385025431
-s76546
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-Portrait~ipad.png
-c00000000528DCF9700000000000085E6
-t1385025431
-s34278
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default@2x~iphone.png
-c00000000528DCF970000000000007323
-t1385025431
-s29475
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default~iphone.png
-c00000000528DCF97000000000000289A
-t1385025431
-s10394
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/coms-customer2-Info.plist
-c0000000052DE035D000000000000073E
-t1390281565
-s1854
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/coms-customer2-Prefix.pch
-c00000000528DCF9700000000000003CD
-t1385025431
-s973
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/config.xml
-c0000000052DE035D000000000000071F
-t1390281565
-s1823
-
-N/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/main.m
-c00000000528DCF970000000000000460
-t1385025431
-s1120
-
-N/var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch.pch
-t1390278216
-s5349180
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies128863e73a8eb841^5d1964e73a8eb841^---0#1#1#--18"Check dependencies36"DB444B65-5AA8-44F3-8C24-311303560DDB-
-
-CCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/AppDelegate.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s411974375.953937
-e411974376.059523
-r1
-xCompileC
-xbuild/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/AppDelegate.o
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/AppDelegate.m
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/AppDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection163"Compile /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/AppDelegate.m217"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/AppDelegate.o coms-customer2/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler3754f4e73a8eb841^9f3d0fe83a8eb841^---0#0#1#-19%DVTDocumentLocation2@272"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Classes/AppDelegate.m0000000000000000^4400"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/AppDelegate.o coms-customer2/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-generated-files.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-own-target-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-all-target-headers.hmap -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-project-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources/i386 -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -include /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch -MMD -MT dependencies -MF /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/waterdrw/Dropbox/외주\36"50A084EC-24D9-4B39-8439-AA5C541A96F0-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVCamera.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s411974375.955958
-e411974376.138829
-r1
-xCompileC
-xbuild/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVCamera.o
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.m
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection187"Compile /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.m239"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVCamera.o coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compileref38f5e73a8eb841^6e8a23e83a8eb841^---0#0#1#-19%DVTDocumentLocation2@296"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.m0000000000000000^4438"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVCamera.o coms-customer2/Plugins/org.apache.cordova.camera/CDVCamera.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-generated-files.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-own-target-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-all-target-headers.hmap -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-project-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources/i386 -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -include /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch -MMD -MT dependencies -MF /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVCamera.d --serialize-diagnostics /Users/waterdrw/Dropbox/외주\ project/콤36"6B4C15F1-E2C8-4A9D-9851-2D43178DE42A-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFile.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file/CDVFile.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s411974375.957044
-e411974376.164078
-r1
-xCompileC
-xbuild/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFile.o
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file/CDVFile.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file/CDVFile.m
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file/CDVFile.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDV.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection183"Compile /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file/CDVFile.m233"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFile.o coms-customer2/Plugins/org.apache.cordova.file/CDVFile.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5f46f5e73a8eb841^d2002ae83a8eb841^---0#0#1#-19%DVTDocumentLocation2@292"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file/CDVFile.m0000000000000000^4424"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFile.o coms-customer2/Plugins/org.apache.cordova.file/CDVFile.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-generated-files.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-own-target-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-all-target-headers.hmap -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-project-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources/i386 -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -include /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch -MMD -MT dependencies -MF /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFile.d --serialize-diagnostics /Users/waterdrw/Dropbox/외주\ project/ᄏ36"172950C0-BA93-438E-A0F4-26476DA06C58-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFileTransfer.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s411974375.983128
-e411974376.136514
-r1
-xCompileC
-xbuild/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFileTransfer.o
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.m
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDV.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file/CDVFile.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection200"Compile /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.m258"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFileTransfer.o coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler4ad0fbe73a8eb841^a6f222e83a8eb841^---0#0#1#-19%DVTDocumentLocation2@309"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.m0000000000000000^4488"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFileTransfer.o coms-customer2/Plugins/org.apache.cordova.file-transfer/CDVFileTransfer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-generated-files.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-own-target-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-all-target-headers.hmap -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-project-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources/i386 -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -include /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch -MMD -MT dependencies -MF /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFileTransfer.d --serialize-diagnostics /Users/waterdrw/Dropbox/외주\ project/콤스(스마트36"ED59B135-754F-4A28-9414-86593E694D1B-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVJpegHeaderWriter.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s411974375.956310
-e411974376.052690
-r1
-xCompileC
-xbuild/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVJpegHeaderWriter.o
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.m
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVExif.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection197"Compile /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.m259"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVJpegHeaderWriter.o coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilercd1df5e73a8eb841^11c40de83a8eb841^---0#0#1#-19%DVTDocumentLocation2@306"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.m0000000000000000^4499"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVJpegHeaderWriter.o coms-customer2/Plugins/org.apache.cordova.camera/CDVJpegHeaderWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-generated-files.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-own-target-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-all-target-headers.hmap -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-project-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources/i386 -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -include /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch -MMD -MT dependencies -MF /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVJpegHeaderWriter.d --serialize-diagnostics /Users/waterdrw/Dropbox/외주\ project/콤스(스마트어36"97BE645B-A909-4E41-AAC9-072E1AC2F9DD-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVNotification.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s411974375.954748
-e411974376.057052
-r1
-xCompileC
-xbuild/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVNotification.o
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.m
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection194"Compile /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.m252"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVNotification.o coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilercfa1f4e73a8eb841^809a0ee83a8eb841^---0#0#1#-19%DVTDocumentLocation2@303"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.m0000000000000000^4476"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVNotification.o coms-customer2/Plugins/org.apache.cordova.dialogs/CDVNotification.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-generated-files.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-own-target-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-all-target-headers.hmap -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-project-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources/i386 -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -include /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch -MMD -MT dependencies -MF /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVNotification.d --serialize-diagnostics /Users/waterdrw/Dropbox/외주\ project/콤스(스마36"8BD386F1-F10C-4B43-9366-652560AC976B-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVVibration.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s411974375.955212
-e411974376.030866
-r1
-xCompileC
-xbuild/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVVibration.o
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.m
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection193"Compile /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.m248"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVVibration.o coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler20b2f4e73a8eb841^65fc07e83a8eb841^---0#0#1#-19%DVTDocumentLocation2@302"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.m0000000000000000^4463"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVVibration.o coms-customer2/Plugins/org.apache.cordova.vibration/CDVVibration.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-generated-files.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-own-target-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-all-target-headers.hmap -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-project-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources/i386 -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -include /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch -MMD -MT dependencies -MF /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVVibration.d --serialize-diagnostics /Users/waterdrw/Dropbox/외주\ project/콤스(스36"C6435ED9-DA49-4B94-BA63-B5DE231DD7A1-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/MainViewController.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s411974375.954264
-e411974376.046162
-r1
-xCompileC
-xbuild/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/MainViewController.o
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.m
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection170"Compile /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.m231"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/MainViewController.o coms-customer2/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb77cf4e73a8eb841^ccd10be83a8eb841^---0#0#1#-19%DVTDocumentLocation2@279"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.m0000000000000000^4442"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/MainViewController.o coms-customer2/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-generated-files.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-own-target-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-all-target-headers.hmap -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-project-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources/i386 -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -include /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch -MMD -MT dependencies -MF /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/waterdrw/Dropbox/외주\ project/콤ᄉ36"ED348190-B700-44CB-A846-8EA73F77150D-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/main.o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s411974375.953641
-e411974375.982786
-r1
-xCompileC
-xbuild/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/main.o
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/main.m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Compile /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/main.m195"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/main.o coms-customer2/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7446f4e73a8eb841^3cdbfbe73a8eb841^---0#0#1#-19%DVTDocumentLocation2@257"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/main.m0000000000000000^4342"CompileC build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/main.o coms-customer2/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-generated-files.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-own-target-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-all-target-headers.hmap -iquote /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-project-headers.hmap -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources/i386 -I/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -include /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch -MMD -MT dependencies -MF /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/w36"40BDFD70-C07F-4433-8FFB-B83493B35B14-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCompileXIB /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.xib
-s411974375.937088
-e411974375.952593
-r1
-xCompileXIB
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.xib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection174"Compiling /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.xib56"CompileXIB coms-customer2/Classes/MainViewController.xibc6fdefe73a8eb841^51def3e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@281"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Classes/MainViewController.xib0000000000000000^1025"CompileXIB coms-customer2/Classes/MainViewController.xib    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.0 --output-format human-readable-text --compile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/MainViewController.nib /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Classes/MainV36"077145DE-0313-4E19-A339-8CD4933AB11B-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCopyStringsFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/de.lproj/Localizable.strings coms-customer2/Resources/de.lproj/Localizable.strings
-s411974375.937472
-e411974375.939210
-r1
-xCopyStringsFile
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/de.lproj/Localizable.strings
-xcoms-customer2/Resources/de.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy coms-customer2/Resources/de.lproj/Localizable.strings132"CopyStringsFile build/emulator/coms-customer2.app/de.lproj/Localizable.strings coms-customer2/Resources/de.lproj/Localizable.stringsd72ff0e73a8eb841^6973f0e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@289"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Resources/de.lproj/Localizable.strings0000000000000000^781"CopyStringsFile build/emulator/coms-customer2.app/de.lproj/Localizable.strings coms-customer2/Resources/de.lproj/Localizable.strings    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/de.lproj -- coms-customer2/Resources/de.lproj/Localizable.strings36"ADD9B224-5E9B-42CD-83BB-7A5E2115EC95-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCopyStringsFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/en.lproj/Localizable.strings coms-customer2/Resources/en.lproj/Localizable.strings
-s411974375.936103
-e411974375.937640
-r1
-xCopyStringsFile
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/en.lproj/Localizable.strings
-xcoms-customer2/Resources/en.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy coms-customer2/Resources/en.lproj/Localizable.strings132"CopyStringsFile build/emulator/coms-customer2.app/en.lproj/Localizable.strings coms-customer2/Resources/en.lproj/Localizable.stringsacc9efe73a8eb841^800df0e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@289"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Resources/en.lproj/Localizable.strings0000000000000000^781"CopyStringsFile build/emulator/coms-customer2.app/en.lproj/Localizable.strings coms-customer2/Resources/en.lproj/Localizable.strings    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/en.lproj -- coms-customer2/Resources/en.lproj/Localizable.strings36"14D5CB11-CFD0-4327-8031-B7F709684C27-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCopyStringsFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/es.lproj/Localizable.strings coms-customer2/Resources/es.lproj/Localizable.strings
-s411974375.936533
-e411974375.938579
-r1
-xCopyStringsFile
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/es.lproj/Localizable.strings
-xcoms-customer2/Resources/es.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy coms-customer2/Resources/es.lproj/Localizable.strings132"CopyStringsFile build/emulator/coms-customer2.app/es.lproj/Localizable.strings coms-customer2/Resources/es.lproj/Localizable.stringscaddefe73a8eb841^691ef0e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@289"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Resources/es.lproj/Localizable.strings0000000000000000^781"CopyStringsFile build/emulator/coms-customer2.app/es.lproj/Localizable.strings coms-customer2/Resources/es.lproj/Localizable.strings    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/es.lproj -- coms-customer2/Resources/es.lproj/Localizable.strings36"748F01E4-C1E4-4EAC-88B5-036FC665C492-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCopyStringsFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/se.lproj/Localizable.strings coms-customer2/Resources/se.lproj/Localizable.strings
-s411974375.937852
-e411974375.939657
-r1
-xCopyStringsFile
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/se.lproj/Localizable.strings
-xcoms-customer2/Resources/se.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy coms-customer2/Resources/se.lproj/Localizable.strings132"CopyStringsFile build/emulator/coms-customer2.app/se.lproj/Localizable.strings coms-customer2/Resources/se.lproj/Localizable.stringsce35f0e73a8eb841^098df0e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@289"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/Resources/se.lproj/Localizable.strings0000000000000000^781"CopyStringsFile build/emulator/coms-customer2.app/se.lproj/Localizable.strings coms-customer2/Resources/se.lproj/Localizable.strings    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/se.lproj -- coms-customer2/Resources/se.lproj/Localizable.strings36"CC468024-8A4E-4FDD-8B3A-B35133257588-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/CDVNotification.bundle build/emulator/coms-customer2.app/CDVNotification.bundle
-s411974375.942130
-e411974375.943278
-r1
-xCpResource
-xcoms-customer2/Resources/CDVNotification.bundle
-xbuild/emulator/coms-customer2.app/CDVNotification.bundle
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/emulator/coms-customer2.app/CDVNotification.bundle115"CpResource coms-customer2/Resources/CDVNotification.bundle build/emulator/coms-customer2.app/CDVNotification.bundle5f42f1e73a8eb841^537bf1e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@292"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/CDVNotification.bundle00343821ddffdf42^888"CpResource coms-customer2/Resources/CDVNotification.bundle build/emulator/coms-customer2.app/CDVNotification.bundle    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/CDVNotification.bundle /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"3821F57D-57CB-4F8A-97A9-07CDBC296CD4-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/icons/icon-72.png build/emulator/coms-customer2.app/icon-72.png
-s411974375.935009
-e411974375.935945
-r1
-xCpResource
-xcoms-customer2/Resources/icons/icon-72.png
-xbuild/emulator/coms-customer2.app/icon-72.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy build/emulator/coms-customer2.app/icon-72.png99"CpResource coms-customer2/Resources/icons/icon-72.png build/emulator/coms-customer2.app/icon-72.pngbd70efe73a8eb841^f4a9efe73a8eb841^---0#0#1#-19%DVTDocumentLocation2@281"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/icon-72.png00343821ddffdf42^867"CpResource coms-customer2/Resources/icons/icon-72.png build/emulator/coms-customer2.app/icon-72.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/icons/icon-72.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"5C6694AF-077B-4E7B-B8E2-AF96C9D7B3AA-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/icons/icon-72@2x.png build/emulator/coms-customer2.app/icon-72@2x.png
-s411974375.941824
-e411974375.942834
-r1
-xCpResource
-xcoms-customer2/Resources/icons/icon-72@2x.png
-xbuild/emulator/coms-customer2.app/icon-72@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/emulator/coms-customer2.app/icon-72@2x.png105"CpResource coms-customer2/Resources/icons/icon-72@2x.png build/emulator/coms-customer2.app/icon-72@2x.png7539f1e73a8eb841^aa63f1e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@284"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/icon-72@2x.png00343821ddffdf42^876"CpResource coms-customer2/Resources/icons/icon-72@2x.png build/emulator/coms-customer2.app/icon-72@2x.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/icons/icon-72@2x.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"95DE8844-0DDF-4C0D-8DB2-ED558833AA13-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/icons/icon.png build/emulator/coms-customer2.app/icon.png
-s411974375.935295
-e411974375.936421
-r1
-xCpResource
-xcoms-customer2/Resources/icons/icon.png
-xbuild/emulator/coms-customer2.app/icon.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Copy build/emulator/coms-customer2.app/icon.png93"CpResource coms-customer2/Resources/icons/icon.png build/emulator/coms-customer2.app/icon.pngf183efe73a8eb841^3cbcefe73a8eb841^---0#0#1#-19%DVTDocumentLocation2@278"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/icon.png00343821ddffdf42^858"CpResource coms-customer2/Resources/icons/icon.png build/emulator/coms-customer2.app/icon.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/icons/icon.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"F60E8E74-BA52-4AF4-8821-5AD9C3B9260F-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/icons/icon@2x.png build/emulator/coms-customer2.app/icon@2x.png
-s411974375.935667
-e411974375.936663
-r1
-xCpResource
-xcoms-customer2/Resources/icons/icon@2x.png
-xbuild/emulator/coms-customer2.app/icon@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy build/emulator/coms-customer2.app/icon@2x.png99"CpResource coms-customer2/Resources/icons/icon@2x.png build/emulator/coms-customer2.app/icon@2x.pnga19defe73a8eb841^a6d2efe73a8eb841^---0#0#1#-19%DVTDocumentLocation2@281"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/icon@2x.png00343821ddffdf42^867"CpResource coms-customer2/Resources/icons/icon@2x.png build/emulator/coms-customer2.app/icon@2x.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/icons/icon@2x.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"7E26FBE2-0E60-4974-A6A9-BEA89499E34F-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/splash/Default-568h@2x~iphone.png build/emulator/coms-customer2.app/Default-568h@2x~iphone.png
-s411974375.941559
-e411974375.942741
-r1
-xCpResource
-xcoms-customer2/Resources/splash/Default-568h@2x~iphone.png
-xbuild/emulator/coms-customer2.app/Default-568h@2x~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/emulator/coms-customer2.app/Default-568h@2x~iphone.png130"CpResource coms-customer2/Resources/splash/Default-568h@2x~iphone.png build/emulator/coms-customer2.app/Default-568h@2x~iphone.png6422f1e73a8eb841^ee5ff1e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@296"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-568h@2x~iphone.png00343821ddffdf42^914"CpResource coms-customer2/Resources/splash/Default-568h@2x~iphone.png build/emulator/coms-customer2.app/Default-568h@2x~iphone.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-568h@2x~iphone.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"C919A921-BCF3-429F-AA55-865719756A97-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/coms-customer2.app/Default-Landscape@2x~ipad.png
-s411974375.939281
-e411974375.940480
-r1
-xCpResource
-xcoms-customer2/Resources/splash/Default-Landscape@2x~ipad.png
-xbuild/emulator/coms-customer2.app/Default-Landscape@2x~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/emulator/coms-customer2.app/Default-Landscape@2x~ipad.png136"CpResource coms-customer2/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/coms-customer2.app/Default-Landscape@2x~ipad.pngf38df0e73a8eb841^cac5f0e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@299"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-Landscape@2x~ipad.png00343821ddffdf42^923"CpResource coms-customer2/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/coms-customer2.app/Default-Landscape@2x~ipad.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-Landscape@2x~ipad.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"97AFA8C6-4598-4BE5-A39E-344B4950BD2F-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/splash/Default-Landscape~ipad.png build/emulator/coms-customer2.app/Default-Landscape~ipad.png
-s411974375.939690
-e411974375.940711
-r1
-xCpResource
-xcoms-customer2/Resources/splash/Default-Landscape~ipad.png
-xbuild/emulator/coms-customer2.app/Default-Landscape~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/emulator/coms-customer2.app/Default-Landscape~ipad.png130"CpResource coms-customer2/Resources/splash/Default-Landscape~ipad.png build/emulator/coms-customer2.app/Default-Landscape~ipad.png90a4f0e73a8eb841^99d4f0e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@296"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-Landscape~ipad.png00343821ddffdf42^914"CpResource coms-customer2/Resources/splash/Default-Landscape~ipad.png build/emulator/coms-customer2.app/Default-Landscape~ipad.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-Landscape~ipad.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"FF6C7F21-E438-4EF9-AC18-B88162F4A8CE-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/coms-customer2.app/Default-Portrait@2x~ipad.png
-s411974375.939968
-e411974375.941042
-r1
-xCpResource
-xcoms-customer2/Resources/splash/Default-Portrait@2x~ipad.png
-xbuild/emulator/coms-customer2.app/Default-Portrait@2x~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy build/emulator/coms-customer2.app/Default-Portrait@2x~ipad.png134"CpResource coms-customer2/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/coms-customer2.app/Default-Portrait@2x~ipad.png6bb8f0e73a8eb841^d9e8f0e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@298"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-Portrait@2x~ipad.png00343821ddffdf42^920"CpResource coms-customer2/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/coms-customer2.app/Default-Portrait@2x~ipad.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-Portrait@2x~ipad.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"93B5FDB4-648E-4DCD-87BD-041CA7004D65-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/splash/Default-Portrait~ipad.png build/emulator/coms-customer2.app/Default-Portrait~ipad.png
-s411974375.940352
-e411974375.941461
-r1
-xCpResource
-xcoms-customer2/Resources/splash/Default-Portrait~ipad.png
-xbuild/emulator/coms-customer2.app/Default-Portrait~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/emulator/coms-customer2.app/Default-Portrait~ipad.png128"CpResource coms-customer2/Resources/splash/Default-Portrait~ipad.png build/emulator/coms-customer2.app/Default-Portrait~ipad.png66dcf0e73a8eb841^5706f1e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@295"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default-Portrait~ipad.png00343821ddffdf42^911"CpResource coms-customer2/Resources/splash/Default-Portrait~ipad.png build/emulator/coms-customer2.app/Default-Portrait~ipad.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default-Portrait~ipad.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"827CEEBD-F6C6-4EFB-A874-B3A319EA1358-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/splash/Default@2x~iphone.png build/emulator/coms-customer2.app/Default@2x~iphone.png
-s411974375.940775
-e411974375.941905
-r1
-xCpResource
-xcoms-customer2/Resources/splash/Default@2x~iphone.png
-xbuild/emulator/coms-customer2.app/Default@2x~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/emulator/coms-customer2.app/Default@2x~iphone.png120"CpResource coms-customer2/Resources/splash/Default@2x~iphone.png build/emulator/coms-customer2.app/Default@2x~iphone.png45f3f0e73a8eb841^0c1ff1e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@291"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default@2x~iphone.png00343821ddffdf42^899"CpResource coms-customer2/Resources/splash/Default@2x~iphone.png build/emulator/coms-customer2.app/Default@2x~iphone.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default@2x~iphone.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"EB28F7D4-AAE0-421E-AC2D-75F83C1C9743-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/Resources/splash/Default~iphone.png build/emulator/coms-customer2.app/Default~iphone.png
-s411974375.941231
-e411974375.942229
-r1
-xCpResource
-xcoms-customer2/Resources/splash/Default~iphone.png
-xbuild/emulator/coms-customer2.app/Default~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/emulator/coms-customer2.app/Default~iphone.png114"CpResource coms-customer2/Resources/splash/Default~iphone.png build/emulator/coms-customer2.app/Default~iphone.pngbf0df1e73a8eb841^f836f1e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@288"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Default~iphone.png00343821ddffdf42^890"CpResource coms-customer2/Resources/splash/Default~iphone.png build/emulator/coms-customer2.app/Default~iphone.png    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/Resources/splash/Default~iphone.png /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"787B2E7E-7763-4323-8AE5-673AC4848EF2-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CCpResource coms-customer2/config.xml build/emulator/coms-customer2.app/config.xml
-s411974375.934763
-e411974375.935775
-r1
-xCpResource
-xcoms-customer2/config.xml
-xbuild/emulator/coms-customer2.app/config.xml
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/emulator/coms-customer2.app/config.xml81"CpResource coms-customer2/config.xml build/emulator/coms-customer2.app/config.xmldd5defe73a8eb841^5c92efe73a8eb841^---0#0#1#-19%DVTDocumentLocation2@280"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/config.xml00343821ddffdf42^832"CpResource coms-customer2/config.xml build/emulator/coms-customer2.app/config.xml    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/config.xml /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"E589DF9B-69EB-4046-9382-0FE54099013F-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CGenerateDSYMFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app.dSYM /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/coms-customer2
-s411974376.218675
-e411974376.266306
-r1
-xGenerateDSYMFile
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app.dSYM
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/coms-customer2
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection166"Generate /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app.dSYM104"GenerateDSYMFile build/emulator/coms-customer2.app.dSYM build/emulator/coms-customer2.app/coms-customer24e0938e83a8eb841^172d44e83a8eb841^---0#0#1#-19%DVTDocumentLocation2@274"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app.dSYM00343821ddffdf42^874"GenerateDSYMFile build/emulator/coms-customer2.app.dSYM build/emulator/coms-customer2.app/coms-customer2    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/coms-customer2 -o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app.dSYM36"68EB4AC4-D85A-4C45-B499-2AE904406E9E-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CLd /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/coms-customer2 normal i386
-s411974376.165276
-e411974376.217813
-r1
-xLd
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/coms-customer2
-xnormal
-xi386
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/coms-customer2.LinkFileList
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/libCordova.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/main.o
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/AppDelegate.o
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/MainViewController.o
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVNotification.o
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVVibration.o
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVCamera.o
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVJpegHeaderWriter.o
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFile.o
-d/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/CDVFileTransfer.o
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
-d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphonesimulator.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
-d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
-d/usr/lib/libSystem.B.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
-d/usr/lib/system/libcache.dylib
-d/usr/lib/system/libcommonCrypto.dylib
-d/usr/lib/system/libcompiler_rt.dylib
-d/usr/lib/system/libcopyfile.dylib
-d/usr/lib/system/libcorecrypto.dylib
-d/usr/lib/system/libkeymgr.dylib
-d/usr/lib/system/liblaunch.dylib
-d/usr/lib/system/libmacho.dylib
-d/usr/lib/system/libquarantine.dylib
-d/usr/lib/system/libremovefile.dylib
-d/usr/lib/system/libsystem_asl.dylib
-d/usr/lib/system/libsystem_blocks.dylib
-d/usr/lib/system/libsystem_c.dylib
-d/usr/lib/system/libsystem_configuration.dylib
-d/usr/lib/system/libsystem_dnssd.dylib
-d/usr/lib/system/libsystem_info.dylib
-d/usr/lib/system/libsystem_kernel.dylib
-d/usr/lib/system/libsystem_m.dylib
-d/usr/lib/system/libsystem_malloc.dylib
-d/usr/lib/system/libsystem_notify.dylib
-d/usr/lib/system/libsystem_platform.dylib
-d/usr/lib/system/libsystem_pthread.dylib
-d/usr/lib/system/libsystem_sandbox.dylib
-d/usr/lib/system/libunc.dylib
-d/usr/lib/system/libunwind.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection172"Link /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/coms-customer263"Ld build/emulator/coms-customer2.app/coms-customer2 normal i386fe622ae83a8eb841^40c337e83a8eb841^---0#0#1#--2086"Ld build/emulator/coms-customer2.app/coms-customer2 normal i386    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -F/Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator -filelist /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/coms-customer2.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.0 -framework AssetsLibrary /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/libCordova.a -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -weak_framework AudioToolbox -weak_framework ImageIO -Xlinker -dependency_info -Xlinker /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/com36"498D23EA-D8D9-4A29-848D-089D12AF71B2-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CPhaseScriptExecution Copy\ www\ directory /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Script-304B58A110DAC018002A0835.sh
-s411974375.394700
-e411974375.934202
-r1
-xPhaseScriptExecution
-xCopy www directory
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Script-304B58A110DAC018002A0835.sh
-o
-oreal	0m0.511s
-ouser	0m0.203s
-osys	0m0.307s
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'146"PhaseScriptExecution Copy\ www\ directory build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Script-304B58A110DAC018002A0835.sh4e4166e73a8eb841^e92cefe73a8eb841^-42"real	0m0.511suser	0m0.203ssys	0m0.307s3(21%IDEActivityLogMessage2@14"real	0m0.511s-411974375#1#14#-0#-----2@14"user	0m0.203s-411974375#15#14#-0#-----2@13"sys	0m0.307s-411974375#29#13#-0#-----0#0#1#--24370"PhaseScriptExecution Copy\ www\ directory build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Script-304B58A110DAC018002A0835.sh    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER waterdrw    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv ALWAYS_USE_SEPARATE_HEADERMAPS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD i386    setenv ARCHS_STANDARD_32_64_BIT i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv ARCHS_STANDARD_INCLUDING_64_BIT "i386 x86_64"    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build"    setenv BUILD_ROOT "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build"    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator"    setenv CACHE_ROOT /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode    setenv CCHROOT /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_BOOL_CONVERSION YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app"    setenv CODE_SIGNING_ALLOWED NO    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneSimulatorCodeSignContext    setenv COLOR_DIAGNOSTICS NO    setenv COMBINE_HIDPI_IMAGES NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator"    setenv CONFIGURATION_TEMP_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator"    setenv CONTENTS_FOLDER_PATH coms-customer2.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CREATE_INFOPLIST_SECTION_IN_BINARY NO    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEFAULT_KEXT_INSTALL_PATH /System/Library/Extensions    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH coms-customer2.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/coms-customer2.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME coms-customer2.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator"    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH coms-customer2.app/Executables    setenv EXECUTABLE_FOLDER_PATH coms-customer2.app    setenv EXECUTABLE_NAME coms-customer2    setenv EXECUTABLE_PATH coms-customer2.app/coms-customer2    setenv FILE_LIST "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH coms-customer2.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME coms-customer2.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER coms-customer2/coms-customer2-Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNDECLARED_SELECTOR YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_FUNCTION YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/include \"/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/usr/local/lib/include\" \"/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/UninstalledProducts/include\" \"/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE coms-customer2/coms-customer2-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH coms-customer2.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH coms-customer2.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/coms-customer2.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER waterdrw    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/coms-customer2.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH coms-customer2.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_DEPENDENCY_INFO_FILE "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/coms-customer2_dependency_info.dat"    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/coms-customer2-LinkMap-normal-i386.txt"    setenv LD_NO_PIE NO    setenv LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER YES    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_KEXT_INSTALL_PATH /Library/Extensions    setenv LIBRARY_SEARCH_PATHS "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal/i386/coms-customer2.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH coms-customer2.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 13B42    setenv MAC_OS_X_VERSION_ACTUAL 1091    setenv MAC_OS_X_VERSION_MAJOR 1090    setenv MAC_OS_X_VERSION_MINOR 0901    setenv MODULE_CACHE_DIR /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/ModuleCache    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/Objects-normal"    setenv OBJROOT "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build"    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load \"/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/libCordova.a\" -ObjC"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH coms-customer2.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/PkgInfo"    setenv PKGINFO_PATH coms-customer2.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 11B508    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 70000    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH coms-customer2.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH coms-customer2.app/PrivateHeaders    setenv PRODUCT_NAME coms-customer2    setenv PRODUCT_SETTINGS_PATH "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/coms-customer2-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT coms-customer2    setenv PROJECT_DERIVED_FILE_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/DerivedSources"    setenv PROJECT_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PROJECT_FILE_PATH "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2.xcodeproj"    setenv PROJECT_NAME coms-customer2    setenv PROJECT_TEMP_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build"    setenv PROJECT_TEMP_ROOT "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build"    setenv PUBLIC_HEADERS_FOLDER_PATH coms-customer2.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator "    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH coms-customer2.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk    setenv SDK_NAME iphonesimulator7.0    setenv SDK_PRODUCT_BUILD_VERSION 11B508    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH coms-customer2.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH coms-customer2.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv SRCROOT "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_KEXT_INSTALL_PATH /System/Library/Extensions    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME coms-customer2    setenv TARGET_BUILD_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator"    setenv TARGET_NAME coms-customer2    setenv TARGET_TEMP_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build"    setenv TEMP_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build"    setenv TEMP_FILES_DIR "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/coms-customer2.build/Debug-iphonesimulator/coms-customer2.build"    setenv TEMP_FILE_DIR "/Users/waterdrw/Dropbox/외주36"A2C6D7EB-A572-4FE8-9F4B-273F6CF1AB63-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CProcessInfoPlistFile /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Info.plist /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/coms-customer2-Info.plist
-s411974375.391612
-e411974375.393120
-r1
-xProcessInfoPlistFile
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/Info.plist
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/coms-customer2-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection167"Process /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/coms-customer2-Info.plist106"ProcessInfoPlistFile build/emulator/coms-customer2.app/Info.plist coms-customer2/coms-customer2-Info.plistb05764e73a8eb841^09a464e73a8eb841^---0#0#1#-19%DVTDocumentLocation2@276"file:///Users/waterdrw/Dropbox/%E1%84%8B%E1%85%AC%E1%84%8C%E1%85%AE%20project/%E1%84%8F%E1%85%A9%E1%86%B7%E1%84%89%E1%85%B3(%E1%84%89%E1%85%B3%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%E1%84%8B%E1%85%A5%E1%86%B8)/coms-customer2/platforms/ios/coms-customer2/coms-customer2-Info.plist0000000000000000^1025"ProcessInfoPlistFile build/emulator/coms-customer2.app/Info.plist coms-customer2/coms-customer2-Info.plist    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-infoPlistUtility /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/coms-customer2/coms-customer2-Info.plist -genpkginfo /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.a36"C2E98F18-3779-4E3F-A265-C2676F1E4401-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
-CProcessPCH /var/folders/d2/n4y4z2xx6q54l1qm18z_7lqc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/coms-customer2-Prefix-drxbkpkrwnycodfhvgnjheoumlzg/coms-customer2-Prefix.pch.pch coms-customer2/coms-customer2-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-r0
-
-CTouch /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app
-s411974376.268160
-e411974376.271731
-r1
-xTouch
-x/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection158"Touch /Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app39"Touch build/emulator/coms-customer2.appf6b344e83a8eb841^7e9045e83a8eb841^---0#0#1#--554"Touch build/emulator/coms-customer2.app    cd "/Users/waterdrw/Dropbox/외주 project/콤스(스마트업)/coms-customer2/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /usr/bin/touch -c /Users/waterdrw/Dropbox/외주\ project/콤스(스마트업)/coms-customer2/platforms/ios/build/emulator/coms-customer2.app36"FAFBDF01-D79F-4E0E-B60E-9F2D406451C5-
-b79D6F604-1B96-4795-B845-FED33958E51A
-
